@@ -34,7 +34,28 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav class="navbar navbar-expand-md navbar-light bg-primary" id="the-menu">
 
-			<?php echo big_menu();?>
+		<div class="container">
+  <div class="row alt-menu">
+    <div class="col-md-6 alt-logo"></div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-cog" aria-hidden="true"></i>
+design<br>courses </div>
+         <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-wifi" aria-hidden="true"></i>
+move<br>online</div>
+        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-play" aria-hidden="true"></i>
+produce<br>videos </div>
+        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-file-code-o" aria-hidden="true"></i>
+create<br> websites</div>
+        <div class="col-md-6 menu-item last hvr-sweep-to-right"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+attend<br>workshops</div>
+        <div class="col-md-6 menu-item last hvr-sweep-to-right"><i class="fa fa-share" aria-hidden="true"></i>
+contact<br> us</div>       
+      </div>        
+      </div>
+    </div>
+  </div>
+</div>
 
 		</nav><!-- .site-navigation -->
 

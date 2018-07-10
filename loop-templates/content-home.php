@@ -24,10 +24,10 @@
 									<!--ITEMS END-->
 								  </div>
 								  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">								   
-								    <span class="quote-nav left">Prev</span>
+								    <span class="quote-nav left"><i class="fa fa-chevron-left"></i></span>
 								  </a>
 								  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-								    <span class="quote-nav right">Next</span>
+								    <span class="quote-nav right"><i class="fa fa-chevron-right"></i></span>
 								  </a>
 								</div>
 						</div>	
