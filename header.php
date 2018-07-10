@@ -34,31 +34,78 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav class="navbar navbar-expand-md navbar-light bg-primary" id="the-menu">
 
-		<div class="container">
-  <div class="row alt-menu">
-    <div class="col-md-6 alt-logo"></div>
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-cog" aria-hidden="true"></i>
-design<br>courses </div>
-         <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-wifi" aria-hidden="true"></i>
-move<br>online</div>
-        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-play" aria-hidden="true"></i>
-produce<br>videos </div>
-        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-file-code-o" aria-hidden="true"></i>
-create<br> websites</div>
-        <div class="col-md-6 menu-item last hvr-sweep-to-right"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-attend<br>workshops</div>
-        <div class="col-md-6 menu-item last hvr-sweep-to-right"><i class="fa fa-share" aria-hidden="true"></i>
-contact<br> us</div>       
-      </div>        
-      </div>
-    </div>
-  </div>
-</div>
+		<?php if ( 'container' == $container ) : ?>
+			<div class="container" >
+		<?php endif; ?>
+
+					<!-- Your site title as branding in the menu -->
+					<?php if ( ! has_custom_logo() ) { ?>
+
+						<?php if ( is_front_page() && is_home() ) : ?>
+
+							<h1 class="navbar-brand mb-0 nav-big"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+							<h1 class="navbar-brand mb-0 nav-small"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">VCU ENVS</a></h1>
+
+						<?php else : ?>
+
+							<a class="navbar-brand nav-big" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+							<a class="navbar-brand nav-small" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'description' );?></a>
+						<?php endif; ?>
+
+
+					<?php } else {
+						the_custom_logo();
+					} ?><!-- end custom logo -->
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- The WordPress Menu goes here -->
+				<?php wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'depth'           => 2,
+						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+					)
+				); ?>
+			<?php if ( 'container' == $container ) : ?>
+			</div><!-- .container -->
+			<?php endif; ?>
+			<button class="search-icon" type="button" data-toggle="collapse" data-target="#search-box-dropdown" aria-label="Toggle search bar" aria-controls="search-box-dropdown" aria-expanded="false"><i class="fa fa-search"></i></button>
+			<div class="collapse" id="search-box-dropdown"><?php get_search_form();?></div>	
 
 		</nav><!-- .site-navigation -->
-
 	</div><!-- #wrapper-navbar end -->
+
+		<!--BIG MENU-->
+			<div class="container big-menu">
+			  <div class="row alt-menu">
+			    <div class="col-md-6 alt-logo"></div>
+			    <div class="col-md-6">
+			      <div class="row">
+			        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-cog" aria-hidden="true"></i>
+			design<br>courses </div>
+			         <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-wifi" aria-hidden="true"></i>
+			move<br>online</div>
+			        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-play" aria-hidden="true"></i>
+			produce<br>videos </div>
+			        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-file-code-o" aria-hidden="true"></i>
+			create<br> websites</div>
+			        <div class="col-md-6 menu-item last hvr-sweep-to-right"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+			attend<br>workshops</div>
+			        <div class="col-md-6 menu-item last hvr-sweep-to-right"><i class="fa fa-share" aria-hidden="true"></i>
+			contact<br> us</div>       
+			      </div>        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
 
 <?php echo bannerMaker();?>
