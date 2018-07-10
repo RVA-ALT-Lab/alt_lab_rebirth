@@ -89,18 +89,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 			    <div class="col-md-6 alt-logo"></div>
 			    <div class="col-md-6 alt-big-menu">
 			      <div class="row">
-			        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-cog" aria-hidden="true"></i>
-			design<br>courses </div>
-			         <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-wifi" aria-hidden="true"></i>
-			move<br>online</div>
-			        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-play" aria-hidden="true"></i>
-			produce<br>videos </div>
-			        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-file-code-o" aria-hidden="true"></i>
-			create<br> websites</div>
-			        <div class="col-md-6 menu-item last hvr-sweep-to-right"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-			attend<br>workshops</div>
-			        <div class="col-md-6 menu-item last hvr-sweep-to-right"><i class="fa fa-share" aria-hidden="true"></i>
-			contact<br> us</div>       
+			        <div class="col-md-6 menu-item hvr-sweep-to-right"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>
+			design<br>courses </a></div>
+			        <div class="col-md-6 menu-item hvr-sweep-to-right"><a href="#"><i class="fa fa-wifi" aria-hidden="true"></i>
+			move<br>online</a></div>
+			        <div class="col-md-6 menu-item hvr-sweep-to-right"><a href="#"><i class="fa fa-play" aria-hidden="true"></i>
+			produce<br>videos</a></div>
+			        <div class="col-md-6 menu-item hvr-sweep-to-right"><a href="#"><i class="fa fa-file-code-o" aria-hidden="true"></i>
+			create<br> websites</a></div>
+			        <div class="col-md-6 menu-item last hvr-sweep-to-right"><a href="#"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+			attend<br>workshops</a></div>
+			        <div class="col-md-6 menu-item last hvr-sweep-to-right"><a href="#"><i class="fa fa-share" aria-hidden="true"></i>
+			contact<br>us</a></div>       
 			      </div>        
 			      </div>
 			    </div>

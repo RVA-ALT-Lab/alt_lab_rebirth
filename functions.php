@@ -210,6 +210,34 @@ function big_menu(){
 
 }
 
+function home_topics(){
+  $html = "";
+  $html_a = "";
+  $html_b = "";
+  $args = array(
+      'posts_per_page' => 18,
+      'post_type'   => 'topic', 
+      'post_status' => 'publish', 
+      'order_by' => 'date',  
+      'nopaging' => false,                                        
+                    );
+  $i = 0;
+    $the_query = new WP_Query( $args );
+                    if( $the_query->have_posts() ): 
+                      while ( $the_query->have_posts() ) : $the_query->the_post();                            
+                      $html_a .= '<div class="col-md-4 topic-slide"><h3>' . get_the_title() . '</h3><a class="btn btn-primary" data-toggle="collapse" href="#' . sanitize_title(get_the_title()).'" role="button" aria-expanded="false" aria-controls="collapseExample">+details</a></div>';
+                      $html_b .= '<div class="col-md-12 collapse" id="' . sanitize_title(get_the_title()) . '">'.get_the_excerpt().'</div>'; 
+                      $i++;     
+                       if ($i === 3 || $i === 6 || $i === 9 ) {
+                          $html .= $html_a . $html_b;  
+                          $html_a = "";
+                          $html_b = "";
+                        }                                 
+                       endwhile;
+                  endif;
+            wp_reset_query();  // Restore global post data stomped by the_post().
+   return $html;
+}
 
 //HOME PAGE ACF FUNCTIONS
 

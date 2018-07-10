@@ -10,10 +10,39 @@
 
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title entry-home">', '</h1>' ); ?>
+			
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
 		<div class="home-description"><?php echo acf_fetch_description_one();?></div>
 		<div class="home-callout"><?php echo acf_fetch_call_out_two();?></div>
-		<div class="home-description"><?php echo acf_fetch_description_two();?></div>
-		<div class="row quotes justify-content-md-center">
+		<div class="home-description"><?php echo acf_fetch_description_two();?></div>	
+		<?php the_content(); ?>
+
+		<?php
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+			'after'  => '</div>',
+		) );
+		?>
+
+	</div><!-- .entry-content -->
+</article>
+</div>
+</div>
+</div>
+
+
+<div class="home-topics">
+	<div class="container" >
+		<div class="row">
+			<?php echo home_topics();?>
+		</div>
+	</div>
+</div>
+<!--quote slider-->
+<div class="container">
+<div class="row quotes justify-content-md-center">
 						<div class="col-md-12 quote-box">
 							<div id="carouselExampleControls" class="carousel slide" data-ride="false">
 								  <div class="carousel-inner">
@@ -32,23 +61,10 @@
 								</div>
 						</div>	
  					</div>
-
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-
-		<?php the_content(); ?>
-
-		<?php
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-			'after'  => '</div>',
-		) );
-		?>
-
-	</div><!-- .entry-content -->
-
+</div>
+<div class="container">
 	<footer class="entry-footer">
+</footer>		
 
 		<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
 
