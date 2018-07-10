@@ -32,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-light bg-primary" id="the-menu">
+		<nav class="navbar navbar-expand-md" id="the-menu">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container" >
@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
-			<button class="search-icon" type="button" data-toggle="collapse" data-target="#search-box-dropdown" aria-label="Toggle search bar" aria-controls="search-box-dropdown" aria-expanded="false"><i class="fa fa-search"></i></button>
+			<button class="search-icon" type="button" data-toggle="collapse" data-target="#search-box-dropdown" aria-label="Toggle search bar" aria-controls="search-box-dropdown" aria-expanded="false" id="search-button"><i class="fa fa-search"></i></button>
 			<div class="collapse" id="search-box-dropdown"><?php get_search_form();?></div>	
 
 		</nav><!-- .site-navigation -->
@@ -87,7 +87,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="container big-menu">
 			  <div class="row alt-menu">
 			    <div class="col-md-6 alt-logo"></div>
-			    <div class="col-md-6">
+			    <div class="col-md-6 alt-big-menu">
 			      <div class="row">
 			        <div class="col-md-6 menu-item hvr-sweep-to-right"><i class="fa fa-cog" aria-hidden="true"></i>
 			design<br>courses </div>

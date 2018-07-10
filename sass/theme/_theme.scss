@@ -1,6 +1,14 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 //************************NAVBAR TWEEKS************************
 //aligns menu items to the right
+.assistive-text {
+  height: 1px; 
+  width: 1px; 
+  position: absolute; 
+  overflow: hidden; 
+  top: -10px;
+}
+
 #navbarNavDropdown {
   justify-content: flex-end;
 }
@@ -20,14 +28,6 @@
   color: $dark-gray;
 }
 
-#the-menu {
-	background-color: #fff !important;
-}
-
-li.active {
-	text-decoration: underline;
-	color: $dark-gray;
-}
 
 .sticky {
   position: fixed;
@@ -47,16 +47,19 @@ li.active {
   background-size: contain;
 }
 
-.menu-item {
-  font-size: 1.7em;
-  line-height: .9em;  
-  margin: .4em 0;
+.alt-big-menu {
+  padding-left: 2em;
 }
 
 .menu-item {
+  font-size: 1.7em;
+  line-height: .9em;  
+  margin: .53em 0;
+  padding-left: .4em;
   padding-top: .5em;
   position: relative;
 }
+
 
 .menu-item i {
   display: block;
@@ -71,6 +74,62 @@ li.active {
   margin-top: 0;
 }
 
+li.menu-item {
+  font-size: 1em;
+  border-bottom: 3px solid $gold;
+  border-top: 3px solid $gold;  
+  text-align: center;
+   -webkit-transition: all .3s; /* Safari */
+  transition: all .3s;
+    padding: .2em;
+}
+
+.current_page_item, li.active {
+  border-bottom: 3px solid $black;  
+} 
+
+li.menu-item:hover {
+  border-top: 3px solid $black;  
+  }
+
+#the-menu {
+  background-color: $gold;
+}
+
+#the-menu a {
+   color: $black;
+}
+
+#search-box-dropdown {
+  position: absolute;
+  right: 0px;
+  top: 70px;
+}
+
+.nav-big{
+  display: none;
+}
+
+.sticky .nav-big {
+  display: inline-block;
+}
+
+.sticky .nav-small {
+  display: none;
+}
+
+.search-icon {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  -webkit-transition: all .3s; /* Safari */
+  transition: all .3s;
+}
+
+.search-icon:hover {
+  font-size: 1.4em;
+  cursor: pointer;
+}
 
 /*from https://github.com/IanLunn/Hover/blob/master/css/hover.css*/
 /* Sweep To Right */

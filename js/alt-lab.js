@@ -18,3 +18,9 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+//supposed to move focus to search box but doesn't seem to be working
+document.getElementById('search-button').addEventListener('click', function(){
+   var input = document.getElementById('s');
+    input.focus();
+});

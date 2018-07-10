@@ -9,7 +9,7 @@
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
-		<?php the_title( '<h2 class="entry-title entry-home">', '</h2>' ); ?>
+		<?php the_title( '<h1 class="entry-title entry-home">', '</h1>' ); ?>
 		<div class="home-description"><?php echo acf_fetch_description_one();?></div>
 		<div class="home-callout"><?php echo acf_fetch_call_out_two();?></div>
 		<div class="home-description"><?php echo acf_fetch_description_two();?></div>
