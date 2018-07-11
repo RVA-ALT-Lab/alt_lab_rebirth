@@ -24,3 +24,24 @@ document.getElementById('search-button').addEventListener('click', function(){
    var input = document.getElementById('s');
     input.focus();
 });
+
+function topicHighlighter(){
+	if (document.getElementsByClassName('topic-link')){
+		var topicLinks = document.getElementsByClassName('topic-link');
+		for (var i = 0; i < topicLinks.length; i++) {
+  			topicLinks[i].addEventListener("click", function() {
+  				if (document.getElementsByClassName("topic-highlight")>0){
+		   			var current = document.getElementsByClassName("topic-highlight");
+		    		current[0].className = current[0].className.replace(" topic-highlight", "");
+		    	}
+		    this.parentElement.className += " topic-highlight";
+		  });
+		}
+	}
+}
+
+var addHightlight = function() {	
+    var attribute = this.parentElement.classList.add("topic-highlight");
+};
+
+topicHighlighter();

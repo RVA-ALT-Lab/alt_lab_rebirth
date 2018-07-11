@@ -225,10 +225,10 @@ function home_topics(){
     $the_query = new WP_Query( $args );
                     if( $the_query->have_posts() ): 
                       while ( $the_query->have_posts() ) : $the_query->the_post();                            
-                      $html_a .= '<div class="col-md-4 topic-slide"><h3>' . get_the_title() . '</h3><a class="btn btn-primary" data-toggle="collapse" href="#' . sanitize_title(get_the_title()).'" role="button" aria-expanded="false" aria-controls="collapseExample" >+details</a></div>';
+                      $html_a .= '<div class="col-md-4 topic-slide"><h3>' . get_the_title() . '</h3><a class="btn btn-primary topic-link" data-toggle="collapse" href="#' . sanitize_title(get_the_title()).'" role="button" aria-expanded="false" aria-controls="collapseExample" >+details</a></div>';
                       $html_b .= '<div class="col-md-12 collapse accordion" data-parent="#topic-parent" id="' . sanitize_title(get_the_title()) . '">'.get_the_excerpt().'</div>'; 
                       $i++;     
-                       if ($i === 3 || $i === 6 || $i === 9 ) {
+                       if ($i === 3 || $i === 6 || $i === 9 || $i === 12 || $i === 15 || $i === 18 ) {
                           $html .= $html_a . $html_b;  
                           $html_a = "";
                           $html_b = "";
