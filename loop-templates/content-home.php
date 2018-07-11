@@ -48,9 +48,8 @@
 								  <div class="carousel-inner">
 								  <div class="quote-slogan">Words from VCU Faculty</div>	
 
-								    <!--ITEMS START-->
 									<? echo quote_maker();?>																
-									<!--ITEMS END-->
+									
 								  </div>
 								  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">								   
 								    <span class="quote-nav left"><i class="fa fa-chevron-left"></i></span>

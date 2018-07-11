@@ -45,3 +45,31 @@ var addHightlight = function() {
 };
 
 topicHighlighter();
+
+
+if (document.getElementById('topic-parent')){
+	window.addEventListener("resize", onSquish);
+	window.addEventListener("load", onSquish);
+}
+
+
+function onSquish(){
+var screenwidth = window.innerWidth;
+var squishLimit = 766;
+  if(screenwidth < squishLimit){
+    var theIds = getPieces();
+    for(i = 0; i < theIds.length; i++){
+     jQuery('#'+theIds[i]).insertAfter('#'+theIds[i]+'-parent');
+    }
+  }
+}
+
+function getPieces(){
+  var topics = document.getElementsByClassName('accordion');//formerly topic-slide
+  var theIds = [];
+  for (i = 0; i < topics.length; i++) {
+    var id = topics[i].getAttribute('id'); 
+    theIds.push(id);
+  }
+  return theIds;
+}
