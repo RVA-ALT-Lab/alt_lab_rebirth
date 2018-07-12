@@ -33,9 +33,10 @@
 </div>
 
 <!--TOPICS-->
-<div class="home-topics">
-	<div class="container" >
-		<div class="row" id="topic-parent">
+<div class="home-topics" id="topic-parent">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12"><h2>What topics are you interested in?</h2></div>
 			<?php echo home_topics();?>
 		</div>
 	</div>

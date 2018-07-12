@@ -276,6 +276,25 @@ li.menu-item:hover {
   margin-top: .5em;
 }
 
+#topic-parent {
+   background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(255, 180, 0, 0.85), 
+      rgba(255, 180, 0, 0.85)
+    ), url(../imgs/topic_bg.jpg);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 17em;
+  margin-top: 2em;     
+}
+
+#topic-parent h2 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
 .topic-slide {
   height: 120px;
   border: 1px solid $dark-gray;
@@ -283,10 +302,30 @@ li.menu-item:hover {
   margin-top: -1px;
   text-align: center;
   padding: 1.5em;
+  background-color: $white;
+  position: relative;
+}
+
+.topic-link {
+  background: transparent;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 2em;
+}
+
+.topic-link:hover {
+  background-color: $dark-gray;
+  color: $white; 
+  border-radius: 0;
 }
 
 .topic-highlight {
-  background-color: $gold;
+  background-color: $dark-gray;
 }
 
 //************************BASIC CONTENT CHOICES************************
