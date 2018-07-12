@@ -230,7 +230,7 @@ function home_topics(){
                       $html_b .= '<div class="col-md-12 collapse accordion" data-parent="#topic-parent" id="' . sanitize_title(get_the_title()) . '">'.get_the_excerpt().'</div>'; 
                       $i++;     
                        if ($i === 3 || $i === 6 || $i === 9 || $i === 12 || $i === 15 || $i === 18 ) {
-                          $html .= $html_a . $html_b;  
+                          $html .= $html_a . $html_b . '<div class="col-md-12 collapse" id="placeholder-' . $i . '"></div>';  
                           $html_a = "";
                           $html_b = "";
                         }                                 

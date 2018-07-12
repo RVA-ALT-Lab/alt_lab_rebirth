@@ -32,7 +32,7 @@
 </div>
 </div>
 
-
+<!--TOPICS-->
 <div class="home-topics">
 	<div class="container" >
 		<div class="row" id="topic-parent">
@@ -40,6 +40,7 @@
 		</div>
 	</div>
 </div>
+<!--END TOPICS-->
 <!--quote slider-->
 <div class="container">
 <div class="row quotes justify-content-md-center">
@@ -61,6 +62,7 @@
 						</div>	
  					</div>
 </div>
+<!--end quote-->
 <div class="container">
 	<footer class="entry-footer">
 </footer>		

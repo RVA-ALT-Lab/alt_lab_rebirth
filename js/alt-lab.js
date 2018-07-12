@@ -62,6 +62,23 @@ var squishLimit = 766;
      jQuery('#'+theIds[i]).insertAfter('#'+theIds[i]+'-parent');
     }
   }
+  if(screenwidth > squishLimit){
+    var theIds = getPieces();
+    for(i = 0; i < theIds.length; i++){
+      if (i < 3){
+        jQuery('#'+theIds[i]).insertAfter('#placeholder-3');
+      } 
+      if (i > 3 && i < 6){
+        jQuery('#'+theIds[i]).insertAfter('#placeholder-6');
+      }
+      if (i > 6 && i < 9){
+        jQuery('#'+theIds[i]).insertAfter('#placeholder-9');
+      }
+      if (i > 9 && i < 12){
+        jQuery('#'+theIds[i]).insertAfter('#placeholder-12');
+      }
+    }
+  }
 }
 
 function getPieces(){
