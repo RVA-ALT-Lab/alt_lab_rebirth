@@ -277,7 +277,7 @@ function create_topic_taxonomies()
     'new_item_name' => __( 'New topic' ),
     'add_or_remove_items' => __( 'Add or remove topic' ),
     'choose_from_most_used' => __( 'Choose from the most used topics' ),
-    'menu_name' => __( 'Concepts' ),
+    'menu_name' => __( 'Topics' ),
   );
 
 //registers taxonomy to both project and faculty post types

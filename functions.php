@@ -342,3 +342,18 @@ function quote_maker(){
             wp_reset_query();  // Restore global post data stomped by the_post().
    return $html;
 }
+
+
+//auto create topics taxonomy elements based on creation of taxonomy post type
+
+function make_topic_tax( $post_id, $post ) { 
+      $title = get_the_title($post_id);
+      $type = get_post_type($post_id);
+      $status = get_post_status($post_id);
+      if ($type === 'topic' && $status = 'publish'){
+        wp_insert_term( $title, 'topics');       
+      }
+    }
+add_action( 'save_post', 'make_topic_tax', 10, 2 );
+
+
