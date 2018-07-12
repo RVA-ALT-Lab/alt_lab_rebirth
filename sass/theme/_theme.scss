@@ -303,7 +303,6 @@ li.menu-item:hover {
   text-align: center;
   padding: 1.5em;
   background-color: $white;
-  position: relative;
 }
 
 .topic-link {
@@ -319,13 +318,23 @@ li.menu-item:hover {
 }
 
 .topic-link:hover {
-  background-color: $dark-gray;
-  color: $white; 
+  background-color: $light-gray;
+  color: $black; 
   border-radius: 0;
 }
 
 .topic-highlight {
-  background-color: $dark-gray;
+  background-color: $aqua;
+  border-radius: 0;
+  border: 1px solid $aqua;
+}
+
+.show {
+  background-color: $white;
+  border: 1px solid $aqua;
+  padding: 1.5em 2em;
+  margin-left: -1px;
+  margin-top: -1px;
 }
 
 //************************BASIC CONTENT CHOICES************************
