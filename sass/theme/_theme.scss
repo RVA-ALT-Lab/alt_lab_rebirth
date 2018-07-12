@@ -87,8 +87,8 @@
 
 li.menu-item {
   font-size: 1em;
-  border-bottom: 3px solid $gold;
-  border-top: 3px solid $gold;  
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;  
   text-align: center;
    -webkit-transition: all .3s; /* Safari */
   transition: all .3s;

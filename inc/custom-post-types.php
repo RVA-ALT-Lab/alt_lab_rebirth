@@ -258,6 +258,42 @@ add_action( 'init', 'create_workshop_cpt', 0 );
 //TAXONOMIES
 //create emails taxonomies, genres and tags for the post type project and faculty
 
+//TOPICS TAXONOMY
+add_action( 'init', 'create_topic_taxonomies', 0 );
+function create_topic_taxonomies()
+{
+  // Add new taxonomy, NOT hierarchical (like tags)
+  $labels = array(
+    'name' => _x( 'topics', 'taxonomy general name' ),
+    'singular_name' => _x( 'topic', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search topics' ),
+    'popular_items' => __( 'Popular topics' ),
+    'all_items' => __( 'All topics' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit topic' ),
+    'update_item' => __( 'Update topic' ),
+    'add_new_item' => __( 'Add New topic' ),
+    'new_item_name' => __( 'New topic' ),
+    'add_or_remove_items' => __( 'Add or remove topic' ),
+    'choose_from_most_used' => __( 'Choose from the most used topics' ),
+    'menu_name' => __( 'Concepts' ),
+  );
+
+//registers taxonomy to both project and faculty post types
+  register_taxonomy('topics',array('project','workshop'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'topic' ),
+    'show_in_rest'          => true,
+    'rest_base'             => 'topic',
+    'rest_controller_class' => 'WP_REST_Terms_Controller',
+  ));
+}
+
 //EMAILS
 add_action( 'init', 'create_tag_taxonomies', 0 );
 function create_tag_taxonomies()
@@ -408,6 +444,7 @@ function create_project_concept_taxonomies()
 
 
 
+
 //topic custom post type
 
 // Register Custom Post Type topic
@@ -454,7 +491,7 @@ function create_topic_cpt() {
     'public' => true,
     'show_ui' => true,
     'show_in_menu' => true,
-    'menu_position' => 5,
+    'menu_position' => 4,
     'show_in_admin_bar' => true,
     'show_in_nav_menus' => true,
     'can_export' => true,
@@ -473,3 +510,4 @@ function create_topic_cpt() {
   $wp_rewrite->flush_rules();
 }
 add_action( 'init', 'create_topic_cpt', 0 );
+
