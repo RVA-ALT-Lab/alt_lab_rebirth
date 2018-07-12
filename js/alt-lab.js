@@ -25,15 +25,15 @@ document.getElementById('search-button').addEventListener('click', function(){
     input.focus();
 });
 
+
+//HIGHLIGHT TOPIC ELEMENT ON CLICK
+
 function topicHighlighter(){
 	if (document.getElementsByClassName('topic-link')){
 		var topicLinks = document.getElementsByClassName('topic-link');
 		for (var i = 0; i < topicLinks.length; i++) {
   			topicLinks[i].addEventListener("click", function() {
-  				if (document.getElementsByClassName("topic-highlight")>0){
-		   			var current = document.getElementsByClassName("topic-highlight");
-		    		current[0].className = current[0].className.replace(" topic-highlight", "");
-		    	}
+  			jQuery(".topic-highlight").removeClass('topic-highlight');
 		    this.parentElement.className += " topic-highlight";
 		  });
 		}
@@ -46,6 +46,11 @@ var addHightlight = function() {
 
 topicHighlighter();
 
+
+
+
+
+//RESTRUCTURE FOR TOPICS ON HOME PAGE
 
 if (document.getElementById('topic-parent')){
 	window.addEventListener("resize", onSquish);
