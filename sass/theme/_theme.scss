@@ -29,11 +29,17 @@
 }
 
 
-.sticky {
+.sticky #the-menu{
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
+  background-color: $dark-gray; //NOT SURE IF WE SHOULD DO THIS BUT PROVIDE CONTRAST W GOLD BODY ELEMENTS
+  color: $white ;
+}
+
+.sticky #the-menu a {
+  color: $white;
 }
 
 .alt-menu {
@@ -181,12 +187,6 @@ li.menu-item:hover {
 
 
 
-
-
-
-
-
-
 //HOME PAGE
 .entry-home, .home-callout {
   font-size: 5em;
@@ -277,12 +277,7 @@ li.menu-item:hover {
 }
 
 #topic-parent {
-   background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(255, 180, 0, 0.85), 
-      rgba(255, 180, 0, 0.85)
-    ), url(../imgs/topic_bg.jpg);
+   background: url(../imgs/altlab_faculty.jpg);
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -290,9 +285,10 @@ li.menu-item:hover {
   margin-top: 2em;     
 }
 
-#topic-parent h2 {
+.big-title {
   font-size: 4em;
   font-weight: bold;
+  text-align: center;
 }
 
 .topic-slide {
@@ -331,11 +327,24 @@ li.menu-item:hover {
 
 .show {
   background-color: $white;
-  border: 1px solid $aqua;
+  border: 3px solid $aqua;
   padding: 1.5em 2em;
-  margin-left: -1px;
+  margin-left: 20px;
   margin-top: -1px;
+  display: block;
+  transition: all .3s ease-in;
 }
+
+.collapse:not(.show){
+    transition: all .3s ease-in; 
+}
+//about us portion
+
+.about-us {
+  padding-top: 14em;
+  margin-top: 2em;    
+}
+
 
 //************************BASIC CONTENT CHOICES************************
 article a {

@@ -36,12 +36,25 @@
 <div class="home-topics" id="topic-parent">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12"><h2>What topics are you interested in?</h2></div>
+			<div class="col-md-12"><h2 class="big-title">What topics are you interested in?</h2></div>
 			<?php echo home_topics();?>
 		</div>
 	</div>
 </div>
 <!--END TOPICS-->
+
+<!--about us-->
+<div class="about-us">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12"><h2 class="big-title">About Us</h2></div>
+			<?php echo 'foo';?>
+		</div>
+	</div>
+</div>
+<!--END about us-->
+
+
 <!--quote slider-->
 <div class="container">
 <div class="row quotes justify-content-md-center">
