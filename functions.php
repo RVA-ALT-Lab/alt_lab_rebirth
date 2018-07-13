@@ -71,9 +71,14 @@ require get_template_directory() . '/inc/woocommerce.php';
 require get_template_directory() . '/inc/editor.php';
 
 /**
- * Load Editor functions.
+ * Load custom post types and taxonomy functions.
  */
 require get_template_directory() . '/inc/custom-post-types.php';
+
+/**
+ * Load acf options
+ */
+require get_template_directory() . '/inc/acf-fields.php';
 
 
 //ADD FONTS and VCU Brand Bar
