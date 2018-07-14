@@ -33,14 +33,10 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
-  background-color: $dark-gray; //NOT SURE IF WE SHOULD DO THIS BUT PROVIDE CONTRAST W GOLD BODY ELEMENTS
-  color: $white ;
+  z-index: 100; 
+  box-shadow: 0 4px 4px rgba(0,0,0,0.06);
 }
 
-.sticky #the-menu a {
-  color: $white;
-}
 
 .alt-menu {
   margin-top: 2em;
@@ -294,11 +290,14 @@ li.menu-item:hover {
 .topic-slide {
   height: 120px;
   border: 1px solid $dark-gray;
-  margin-left: -1px;
   margin-top: -1px;
   text-align: center;
   padding: 1.5em;
   background-color: $white;
+}
+
+.row>.topic-slide+.topic-slide {
+  border-left: 0;
 }
 
 .topic-link {
@@ -327,12 +326,16 @@ li.menu-item:hover {
 
 .show {
   background-color: $white;
-  border: 3px solid $aqua;
-  padding: 1.5em 2em;
-  margin-left: 20px;
+  border-top: 1px solid $dark-gray;
+  //border: 1px solid $dark-gray;
+  padding: 1.5em 2em 1.5em 6em;
   margin-top: -1px;
   display: block;
   transition: all .3s ease-in;
+  max-width: -webkit-calc(100% - 1px);
+  max-width:    -moz-calc(100% - 1px);
+  max-width:         calc(100% - 1px);
+
 }
 
 .collapse:not(.show){

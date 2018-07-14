@@ -36,7 +36,7 @@
 <div class="home-topics" id="topic-parent">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12"><h2 class="big-title">What topics are you interested in?</h2></div>
+			<div class="col-md-12"><h2 class="big-title">What are you interested in?</h2></div>
 			<?php echo home_topics();?>
 		</div>
 	</div>
