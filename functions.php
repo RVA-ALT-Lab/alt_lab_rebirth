@@ -226,7 +226,7 @@ function home_topics(){
       'order_by' => 'date',  
       'nopaging' => false,                                        
                     );
-  $i = 0;
+    $i = 0;
     $the_query = new WP_Query( $args );
                     if( $the_query->have_posts() ): 
                       while ( $the_query->have_posts() ) : $the_query->the_post();
@@ -257,6 +257,9 @@ function acf_fetch_topic_callout(){
     }
 
 }
+
+//ABOUT US
+
 
 
 

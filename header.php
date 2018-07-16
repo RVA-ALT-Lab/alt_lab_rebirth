@@ -77,6 +77,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+			  Contact Us
+			</button>
 			<button class="search-icon" type="button" data-toggle="collapse" data-target="#search-box-dropdown" aria-label="Toggle search bar" aria-controls="search-box-dropdown" aria-expanded="false" id="search-button"><i class="fa fa-search"></i></button>
 			<div class="collapse" id="search-box-dropdown"><?php get_search_form();?></div>	
 

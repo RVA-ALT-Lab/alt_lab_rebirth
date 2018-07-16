@@ -111,6 +111,8 @@ li.menu-item:hover {
   position: absolute;
   right: 0px;
   top: 70px;
+  border-top: none;
+  background-color: transparent;
 }
 
 .nav-big{
@@ -136,6 +138,11 @@ li.menu-item:hover {
 .search-icon:hover {
   font-size: 1.4em;
   cursor: pointer;
+}
+
+
+#contactModal {
+  background: rgba(0,0,0,.1);
 }
 
 /*from https://github.com/IanLunn/Hover/blob/master/css/hover.css*/
