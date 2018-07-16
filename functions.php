@@ -261,6 +261,38 @@ function acf_fetch_topic_callout(){
 //ABOUT US
 
 
+//WORKSHOP
+
+function learning_outcomes(){
+    global $post;
+    $html = "";
+    if( have_rows('learning_outcomes') ):
+    $html .= '<div class="col-md-4 outcomes"><h2>Learning Outcomes</h2><ul>';
+    while ( have_rows('learning_outcomes') ) : the_row();
+        // Your loop code
+      $html .= '<li>' . get_sub_field('learning_statement') . '</li>';
+    endwhile;
+    $html .= '</ul></div>';
+    else :
+
+        // no rows found
+
+    endif;
+    return $html;
+}
+
+
+function acf_fetch_audience(){
+  global $post;
+  $html = '';
+  $audience = get_field('audience');
+
+    if( $audience) {      
+      $html = '<div class="col-md-4 outcomes"><h2>Audience</h2>' . $audience . '</div>';  
+     return $html;    
+    }
+
+}
 
 
 

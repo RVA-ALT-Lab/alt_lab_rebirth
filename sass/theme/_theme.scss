@@ -43,7 +43,7 @@
 }
 
 .alt-logo {
-  background-image: url(../imgs/alt-logo.svg);
+  background-image: url(../imgs/altlab_logo_blackgold.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -127,15 +127,16 @@ li.menu-item:hover {
   display: none;
 }
 
-.search-icon {
+.search-icon, .mail-icon {
   background: transparent;
   border: none;
   font-size: 1.2em;
   -webkit-transition: all .3s; /* Safari */
   transition: all .3s;
+  cursor: pointer;
 }
 
-.search-icon:hover {
+.search-icon:hover, .mail-icon:hover  {
   font-size: 1.4em;
   cursor: pointer;
 }

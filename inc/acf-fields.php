@@ -1,5 +1,4 @@
-<?php 
-if( function_exists('acf_add_local_field_group') ):
+<?php if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array (
 	'key' => 'group_5953e8b004dc6',
@@ -391,25 +390,6 @@ acf_add_local_field_group(array (
 	'title' => 'Workshop',
 	'fields' => array (
 		array (
-			'key' => 'field_5b479e8a39ba3',
-			'label' => 'Short Workshop Description',
-			'name' => 'short_workshop_description',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array (
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => 'This is the short and to the point description for your workshop. It\'s currently limited to 500 characters.',
-			'maxlength' => 500,
-			'rows' => '',
-			'new_lines' => '',
-		),
-		array (
 			'key' => 'field_5b479d7ef9c38',
 			'label' => 'Learning Outcomes',
 			'name' => 'learning_outcomes',
@@ -418,7 +398,7 @@ acf_add_local_field_group(array (
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
-				'width' => '',
+				'width' => '50',
 				'class' => '',
 				'id' => '',
 			),
@@ -450,6 +430,25 @@ acf_add_local_field_group(array (
 			),
 		),
 		array (
+			'key' => 'field_5b4cce5dc3a20',
+			'label' => 'Audience',
+			'name' => 'audience',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '50',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
+		array (
 			'key' => 'field_5b479ef6b1e70',
 			'label' => 'VCU Examples',
 			'name' => 'vcu_examples',
@@ -469,8 +468,27 @@ acf_add_local_field_group(array (
 			'button_label' => '',
 			'sub_fields' => array (
 				array (
+					'key' => 'field_5b4cceb1153c1',
+					'label' => 'VCU Example Title',
+					'name' => 'vcu_example_title',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array (
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'maxlength' => '',
+				),
+				array (
 					'key' => 'field_5b479f0cb1e71',
-					'label' => 'VCU Example Text',
+					'label' => 'VCU Example Description Text',
 					'name' => 'vcu_example_text',
 					'type' => 'text',
 					'instructions' => '',
@@ -525,8 +543,27 @@ acf_add_local_field_group(array (
 			'button_label' => '',
 			'sub_fields' => array (
 				array (
+					'key' => 'field_5b4cce8a36b64',
+					'label' => 'Outside Example Title',
+					'name' => 'outside_example_title',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array (
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'maxlength' => '',
+				),
+				array (
 					'key' => 'field_5b479f5040215',
-					'label' => 'Outside Example Text',
+					'label' => 'Outside Example Description Text',
 					'name' => 'outside_example_text',
 					'type' => 'text',
 					'instructions' => '',
