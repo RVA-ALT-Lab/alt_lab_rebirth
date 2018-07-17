@@ -267,16 +267,14 @@ function learning_outcomes(){
     global $post;
     $html = "";
     if( have_rows('learning_outcomes') ):
-    $html .= '<div class="col-md-4 outcomes"><h2>Learning Outcomes</h2><ul>';
+    $html .= '<div class="col-md-6 outcomes"><h2>Learning Outcomes</h2><ul>';
     while ( have_rows('learning_outcomes') ) : the_row();
         // Your loop code
       $html .= '<li>' . get_sub_field('learning_statement') . '</li>';
     endwhile;
     $html .= '</ul></div>';
     else :
-
         // no rows found
-
     endif;
     return $html;
 }
@@ -288,12 +286,44 @@ function acf_fetch_audience(){
   $audience = get_field('audience');
 
     if( $audience) {      
-      $html = '<div class="col-md-4 outcomes"><h2>Audience</h2>' . $audience . '</div>';  
+      $html = '<div class="col-md-6 audience"><h2>Audience</h2>' . $audience . '</div>';  
      return $html;    
     }
 
 }
 
+
+function vcu_examples(){
+    global $post;
+    $html = "";
+    if( have_rows('vcu_examples') ):
+    $html .= '<div class="col-md-6 vcu-examples"><h2>VCU Resources</h2><ul>';
+    while ( have_rows('vcu_examples') ) : the_row();
+        // Your loop code
+      $html .= '<li><a href="' . get_sub_field('vcu_example_url') . '">' . get_sub_field('vcu_example_title') . '</a> - ' . get_sub_field('vcu_example_text') . '</li>';
+    endwhile;
+    $html .= '</ul></div>';
+    else :
+        // no rows found
+    endif;
+    return $html;
+}
+
+function outside_examples(){
+    global $post;
+    $html = "";
+    if( have_rows('outside_examples') ):
+    $html .= '<div class="col-md-6 outside-examples"><h2>External Resources</h2><ul>';
+    while ( have_rows('outside_examples') ) : the_row();
+        // Your loop code
+      $html .= '<li><a href="' . get_sub_field('outside_example_url') . '">' . get_sub_field('outside_example_title') . '</a> - ' . get_sub_field('outside_example_text') . '</li>';
+    endwhile;
+    $html .= '</ul></div>';
+    else :
+        // no rows found
+    endif;
+    return $html;
+}
 
 
 
@@ -414,3 +444,46 @@ function make_topic_tax( $post_id, $post ) {
 add_action( 'save_post', 'make_topic_tax', 10, 2 );
 
 
+
+
+//WORKSHOP TO EVENT BUTTON
+
+
+add_action('admin_menu', 'test_button_menu');
+
+function test_button_menu(){
+  add_menu_page('Test Button Page', 'Test Button', 'manage_options', 'test-button-slug', 'test_button_admin_page');
+
+}
+
+
+
+//clean it up 
+
+//episodes was a custom post type added by a previous theme
+function remove_admin_menu_items() {
+if( current_user_can( 'manage_options' ) ) { }
+    else {  
+  $remove_menu_items = array(__('Media'),__('Tools'),__('Contact'), __('Comments'));
+  global $menu;
+  end ($menu);
+  while (prev($menu)){
+    $item = explode(' ',$menu[key($menu)][0]);
+    if(in_array($item[0] != NULL?$item[0]:"" , $remove_menu_items)){
+      unset($menu[key($menu)]);
+    }
+  }
+}
+}
+add_action('admin_menu', 'remove_admin_menu_items');
+ 
+function remove_menus(){
+if( current_user_can( 'manage_options' ) ) { }
+    else {      
+  remove_menu_page( 'index.php' );                  //Dashboard
+  remove_menu_page( 'jetpack' );                    //Jetpack* 
+  remove_menu_page( 'options-general.php' );        //Settings
+  remove_menu_page( 'vc-welcome' );        //Settings
+}
+}
+add_action( 'admin_menu', 'remove_menus', 999 );

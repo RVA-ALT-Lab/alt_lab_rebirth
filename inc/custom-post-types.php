@@ -45,7 +45,6 @@ function create_quote_cpt() {
     'label' => __( 'Quote', 'textdomain' ),
     'description' => __( 'comments from the great people we work with', 'textdomain' ),
     'labels' => $labels,
-    'menu_icon' => '',
     'supports' => array('revisions', 'author', 'custom-fields', 'thumbnail',),
     'taxonomies' => array(),
     'public' => true,
@@ -53,7 +52,7 @@ function create_quote_cpt() {
     'show_in_menu' => true,
     'menu_position' => 5,
     'show_in_admin_bar' => true,
-    'show_in_nav_menus' => true,
+    'show_in_nav_menus' => false,
     'can_export' => true,
     'has_archive' => true,
     'hierarchical' => false,
@@ -120,7 +119,7 @@ function create_project_cpt() {
         'show_in_menu' => true,
         'menu_position' => 5,
         'show_in_admin_bar' => true,
-        'show_in_nav_menus' => true,
+        'show_in_nav_menus' => false,
         'can_export' => true,
         'has_archive' => true,
         'hierarchical' => false,
@@ -240,7 +239,7 @@ function create_workshop_cpt() {
         'show_in_menu' => true,
         'menu_position' => 5,
         'show_in_admin_bar' => true,
-        'show_in_nav_menus' => true,
+        'show_in_nav_menus' => false,
         'can_export' => true,
         'has_archive' => true,
         'hierarchical' => false,
@@ -291,6 +290,7 @@ function create_topic_taxonomies()
     'show_in_rest'          => true,
     'rest_base'             => 'topic',
     'rest_controller_class' => 'WP_REST_Terms_Controller',
+    'show_in_nav_menus' => false,
   ));
 }
 
@@ -328,6 +328,7 @@ function create_tag_taxonomies()
     'show_in_rest'          => true,
     'rest_base'             => 'emails',
     'rest_controller_class' => 'WP_REST_Terms_Controller',
+    'show_in_nav_menus' => false,
   ));
 }
 
@@ -365,6 +366,7 @@ function create_dept_taxonomies()
     'show_in_rest'          => true,
     'rest_base'             => 'department',
     'rest_controller_class' => 'WP_REST_Terms_Controller',
+    'show_in_nav_menus' => false,    
   ));
 }
 
@@ -393,7 +395,7 @@ function create_tool_taxonomies()
   );
 
 //registers taxonomy to both project and faculty post types
-  register_taxonomy('tools',array('project', 'workshop'), array(
+  register_taxonomy('tools',array('project', 'workshop', 'topic'), array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -406,6 +408,7 @@ function create_tool_taxonomies()
   ));
 }
 
+/*
 //PROJECT CONCEPTS
 add_action( 'init', 'create_project_concept_taxonomies', 0 );
 function create_project_concept_taxonomies()
@@ -442,7 +445,7 @@ function create_project_concept_taxonomies()
   ));
 }
 
-
+*/
 
 
 //topic custom post type

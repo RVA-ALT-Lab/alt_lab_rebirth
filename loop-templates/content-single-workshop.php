@@ -15,13 +15,14 @@
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
-	<div class="entry-content">
+	<div class="entry-content workshop-description">
 		<?php the_content(); ?>
+	</div>
 		<div class="row">
 			<?php echo learning_outcomes();?>
 			<?php echo acf_fetch_audience();?>
-			<div class="col-md-4">				
-			</div>
+			<?php echo vcu_examples();?>
+			<?php echo outside_examples();?>
 		</div>
 
 		<?php
