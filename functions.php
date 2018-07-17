@@ -78,7 +78,7 @@ require get_template_directory() . '/inc/custom-post-types.php';
 /**
  * Load acf options
  */
-require get_template_directory() . '/inc/acf-fields.php';
+//require get_template_directory() . '/inc/acf-fields.php';
 
 
 //ADD FONTS and VCU Brand Bar
@@ -94,6 +94,16 @@ function alt_lab_scripts() {
 
 	wp_enqueue_script( 'alt_lab_js', get_template_directory_uri() . '/js/alt-lab.js', array(), '1.1.1', true );
     }
+
+
+function alt_lab_register_admin_scripts() {
+
+wp_register_script( 'custom-javascript', get_template_directory_uri() . '/js/alt-lab-dashboard.js' );
+wp_enqueue_script( 'custom-javascript', array('jquery'), '1.0.0', true );
+
+} // end custom_register_admin_scripts
+add_action( 'admin_enqueue_scripts', 'alt_lab_register_admin_scripts' );
+
 
 //add footer widget areas
 if ( function_exists('register_sidebar') )
@@ -446,16 +456,37 @@ add_action( 'save_post', 'make_topic_tax', 10, 2 );
 
 
 
-//WORKSHOP TO EVENT BUTTON
+//WORKSHOP TO EVENT BUTTON ETC.
+add_action( 'post_submitbox_misc_actions', 'workshop_to_event_button' );
 
-
-add_action('admin_menu', 'test_button_menu');
-
-function test_button_menu(){
-  add_menu_page('Test Button Page', 'Test Button', 'manage_options', 'test-button-slug', 'test_button_admin_page');
-
+function workshop_to_event_button(){
+        global $post;
+        if ($post->post_type === 'workshop'){
+          $html  = '<div id="alt-actions" style="overflow:hidden">';
+          $html .= '<div id="alt-event-action">';
+          $html .= '<input accesskey="p" tabindex="5" value="Make Event ' . $post->ID .'" class="button-primary" id="workshop-to-event" name="make_event" data-title="' . $post->post_title . '">';
+          $html .= '</div>';
+          $html .= '</div>';
+          echo $html;
+      } else {
+        return;
+      }
 }
 
+
+function make_workshop_to_event(){
+  $title = sanitize_text_field($_POST['title']);
+  $my_post = array(
+      'post_title'    => $id,
+      'post_content'  => 'gazi',
+      'post_status'   => 'draft',
+  );
+   
+  // Insert the post into the database.
+  tribe_create_event( $my_post );
+  exit();
+}
+add_action('wp_ajax_make_workshop_to_event', 'make_workshop_to_event');
 
 
 //clean it up 
@@ -464,7 +495,7 @@ function test_button_menu(){
 function remove_admin_menu_items() {
 if( current_user_can( 'manage_options' ) ) { }
     else {  
-  $remove_menu_items = array(__('Media'),__('Tools'),__('Contact'), __('Comments'));
+  $remove_menu_items = array(__('Media'),__('Contact'), __('Comments'), __('Profile'), __('Tools'));
   global $menu;
   end ($menu);
   while (prev($menu)){
@@ -487,3 +518,18 @@ if( current_user_can( 'manage_options' ) ) { }
 }
 }
 add_action( 'admin_menu', 'remove_menus', 999 );
+
+
+//hide posts from other authors for author level users
+function posts_for_current_author($query) {
+    global $pagenow;
+    if( 'edit.php' != $pagenow || !$query->is_admin )
+        return $query;
+ 
+    if( !current_user_can( 'manage_options' ) ) {
+        global $user_ID;
+        $query->set('author', $user_ID );
+    }
+    return $query;
+}
+add_filter('pre_get_posts', 'posts_for_current_author');
