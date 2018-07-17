@@ -455,8 +455,27 @@ add_action( 'save_post', 'make_topic_tax', 10, 2 );
 
 
 
+//faculty bio functions
 
-//WORKSHOP TO EVENT BUTTON ETC.
+
+function acf_fetch_title(){
+  global $post;
+  $html = '';
+  $title = get_field('title');
+
+    if( $title) {      
+      $html = $title;  
+     return $html;    
+    }
+
+}
+
+
+
+
+
+
+//WORKSHOP TO EVENT BUTTON ETC.***********************************************
 add_action( 'post_submitbox_misc_actions', 'workshop_to_event_button' );
 
 function workshop_to_event_button(){
@@ -489,7 +508,37 @@ function make_workshop_to_event(){
 add_action('wp_ajax_make_workshop_to_event', 'make_workshop_to_event');
 
 
-//clean it up 
+//faculty loop
+
+function showFaculty($department){
+    $args = array(
+      'posts_per_page' => -1,
+      'post_type'   => 'faculty', 
+      'post_status' => 'publish', 
+        'tax_query' => array(
+            array(
+              'taxonomy' => 'departments',
+              'field'    => 'slug',
+              'terms'    => $department,
+            ),
+          ),
+      );
+    $html = '';
+    $the_query = new WP_Query( $args );
+                    if( $the_query->have_posts() ): 
+                      while ( $the_query->have_posts() ) : $the_query->the_post();
+                        $html .= get_the_title();
+                      endwhile;
+                    endif;
+    wp_reset_query();  // Restore global post data stomped by the_post().
+   return $html;
+}
+
+
+/*
+clean it up 
+MAKE THINGS CLEAN FOR NON SUPER ADMINS***********************************************
+*/
 
 //episodes was a custom post type added by a previous theme
 function remove_admin_menu_items() {
@@ -533,3 +582,5 @@ function posts_for_current_author($query) {
     return $query;
 }
 add_filter('pre_get_posts', 'posts_for_current_author');
+
+
