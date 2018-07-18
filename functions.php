@@ -473,43 +473,52 @@ function acf_fetch_title(){
 
 
 
-
-
 //WORKSHOP TO EVENT BUTTON ETC.***********************************************
-add_action( 'post_submitbox_misc_actions', 'workshop_to_event_button' );
 
-function workshop_to_event_button(){
-        global $post;
-        if ($post->post_type === 'workshop'){
-          $html  = '<div id="alt-actions" style="overflow:hidden">';
-          $html .= '<div id="alt-event-action">';
-          $html .= '<input accesskey="p" tabindex="5" value="Make Event ' . $post->ID .'" class="button-primary" id="workshop-to-event" name="make_event" data-title="' . $post->post_title . '">';
-          $html .= '</div>';
-          $html .= '</div>';
-          echo $html;
-      } else {
-        return;
-      }
+//ADD COLUMN HEADER TO LIST VIEW
+function make_event_columns_head($defaults) {
+    $defaults['make_event'] = 'Make Event';
+    return $defaults;
+}
+ 
+// ADD COLUMN DATA TO LIST VIEW
+function make_event_columns_content($column_name, $post_ID) {
+    if ($column_name == 'make_event') {
+       echo '<button class="button-primary" id="workshop-to-event" name="make_event" data-id="'.$post_ID.'" ><span class="dashicons dashicons-calendar-alt"></span></button>';
+    }
 }
 
+add_filter('manage_workshop_posts_columns', 'make_event_columns_head');
+add_action('manage_workshop_posts_custom_column', 'make_event_columns_content', 10, 2);
 
-function make_workshop_to_event(){
-  $title = sanitize_text_field($_POST['title']);
+
+
+function make_workshop_to_event_callback(){
+  $id = $_POST['id'];
+  $post = get_post($id);
+  $title = $post->post_title;
+  $content = $post->post_content;
   $my_post = array(
-      'post_title'    => $id,
-      'post_content'  => 'gazi',
+      'post_title'    => $title,
+      'post_content'  => $content,
       'post_status'   => 'draft',
   );
    
   // Insert the post into the database.
-  tribe_create_event( $my_post );
+  $new_event = tribe_create_event( $my_post );
+  add_post_meta($new_event, 'META-KEY-1', 'META_VALUE-1', true);
+  echo $new_event;
   exit();
 }
-add_action('wp_ajax_make_workshop_to_event', 'make_workshop_to_event');
+add_action('wp_ajax_make_workshop_to_event', 'make_workshop_to_event_callback');
+
+
+
+//allow custom field view despite acf efforts -- also remember to change option in events calendar
+add_filter( 'acf/settings/remove_wp_meta_box', '__return_false' );
 
 
 //faculty loop
-
 function showFaculty($department){
     $args = array(
       'posts_per_page' => -1,

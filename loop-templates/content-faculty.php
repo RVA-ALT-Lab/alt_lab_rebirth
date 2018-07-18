@@ -14,6 +14,9 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<h2>Innovative Media</h2>
+		<?php echo showFaculty('innovative-media');?>
+		<h2>R+D</h2>
 		<?php echo showFaculty('rd');?>
 		<?php the_content(); ?>
 
