@@ -9,7 +9,8 @@ jQuery( document ).ready(function() {
     jQuery.post(ajaxurl, data, function(response) {
             //alert(response);
             var base = window.location.pathname;
-            window.location.replace(base + '?post='+response+'&action=edit');
+            console.log(response);
+            window.location.replace(response);
             //http://192.168.33.10/wordpress/altlab/wp-admin/post.php?post=246&action=edit
         })
     });

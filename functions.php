@@ -96,10 +96,19 @@ function alt_lab_scripts() {
     }
 
 
+
 function alt_lab_register_admin_scripts() {
 
-wp_register_script( 'custom-javascript', get_template_directory_uri() . '/js/alt-lab-dashboard.js' );
-wp_enqueue_script( 'custom-javascript', array('jquery'), '1.0.0', true );
+wp_register_script( 'alt-js-dash', get_template_directory_uri() . '/js/alt-lab-dashboard.js' );
+wp_enqueue_script( 'alt-js-dash', array('jquery'), '1.0.0', true );
+
+   $local_arr = array(
+        'ajaxurl'   => admin_url( 'admin-ajax.php' ),
+        'ajax_nonce'  => wp_create_nonce( 'my-special-string' )
+    );
+
+    // Assign that data to our script as an JS object
+    wp_localize_script( 'alt-js-dash', 'ajax_object', $local_arr );
 
 } // end custom_register_admin_scripts
 add_action( 'admin_enqueue_scripts', 'alt_lab_register_admin_scripts' );
@@ -506,12 +515,10 @@ function make_workshop_to_event_callback(){
    
   // Insert the post into the database.
   $new_event = tribe_create_event( $my_post );
-  add_post_meta($new_event, 'META-KEY-1', 'META_VALUE-1', true);
-  echo $new_event;
+  echo get_edit_post_link($new_event, 'fugazi');//builds the edit direct link redirect piece that's used by js
   exit();
 }
 add_action('wp_ajax_make_workshop_to_event', 'make_workshop_to_event_callback');
-
 
 
 //allow custom field view despite acf efforts -- also remember to change option in events calendar
