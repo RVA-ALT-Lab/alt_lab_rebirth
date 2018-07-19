@@ -490,10 +490,10 @@ function make_event_columns_head($defaults) {
     return $defaults;
 }
  
-// ADD COLUMN DATA TO LIST VIEW
+// ADD BUTTON TO LIST VIEW
 function make_event_columns_content($column_name, $post_ID) {
     if ($column_name == 'make_event') {
-       echo '<button class="button-primary" id="workshop-to-event" name="make_event" data-id="'.$post_ID.'" ><span class="dashicons dashicons-calendar-alt"></span></button>';
+       echo '<button class="button-primary workshop-to-event-button" id="workshop-to-event-'.$post_ID.'" name="make_event" data-id="'.$post_ID.'" ><span class="dashicons dashicons-calendar-alt"></span></button>';
     }
 }
 
@@ -512,9 +512,11 @@ function make_workshop_to_event_callback(){
       'post_content'  => $content,
       'post_status'   => 'draft',
   );
-   
+  
+  $audience = get_field('audience', $id); 
   // Insert the post into the database.
   $new_event = tribe_create_event( $my_post );
+  update_field('audience', $audience, $new_event);
   echo get_edit_post_link($new_event, 'fugazi');//builds the edit direct link redirect piece that's used by js
   exit();
 }

@@ -1,5 +1,5 @@
 jQuery( document ).ready(function() {
-    jQuery("#workshop-to-event").click(function(){  
+    jQuery(".workshop-to-event-button").click(function(){  
     console.log('functioning');
     var post_id = jQuery(this).data('id');
     var data = {
@@ -7,10 +7,8 @@ jQuery( document ).ready(function() {
       id: post_id,
     };
     jQuery.post(ajaxurl, data, function(response) {
-            //alert(response);
-            var base = window.location.pathname;
             console.log(response);
-            window.location.replace(response);
+            window.location.href = response;
             //http://192.168.33.10/wordpress/altlab/wp-admin/post.php?post=246&action=edit
         })
     });
