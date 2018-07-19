@@ -500,7 +500,13 @@ function make_event_columns_content($column_name, $post_ID) {
 add_filter('manage_workshop_posts_columns', 'make_event_columns_head');
 add_action('manage_workshop_posts_custom_column', 'make_event_columns_content', 10, 2);
 
-
+function var_error_log( $object=null ){
+    ob_start();                    // start buffer capture
+    var_dump( $object );           // dump the values
+    $contents = ob_get_contents(); // put the buffer into a variable
+    ob_end_clean();                // end capture
+    error_log( $contents );        // log contents of the result of var_dump( $object )
+}
 
 function make_workshop_to_event_callback(){
   $id = $_POST['id'];
@@ -513,10 +519,27 @@ function make_workshop_to_event_callback(){
       'post_status'   => 'draft',
   );
   
+  //get acf data for transfer
   $audience = get_field('audience', $id); 
+  
   // Insert the post into the database.
   $new_event = tribe_create_event( $my_post );
+  $learning_statements = '';
+  if( have_rows('learning_outcomes', $id) ) {
+    while( have_rows('learning_outcomes', $id) ): the_row();
+        $statement = get_sub_field('learning_statement', $id);
+        $learning_statements['learning_statement'] = $statement;         
+    endwhile;
+    update_field('learning_outcomes', array($learning_statements), $new_event); 
+  }
+/*
+       $learning_statements = array ('learning_statement' => "get_sub_field('learning_statement')"); 
+        update_field('learning_outcomes', array($learning_statements), $new_event);
+*/
+  //add acf data to new event
   update_field('audience', $audience, $new_event);
+
+
   echo get_edit_post_link($new_event, 'fugazi');//builds the edit direct link redirect piece that's used by js
   exit();
 }
