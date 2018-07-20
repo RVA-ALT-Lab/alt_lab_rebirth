@@ -525,17 +525,17 @@ function make_workshop_to_event_callback(){
   // Insert the post into the database.
   $new_event = tribe_create_event( $my_post );
   $learning_statements = '';
+  $i = 1;
   if( have_rows('learning_outcomes', $id) ) {
     while( have_rows('learning_outcomes', $id) ): the_row();
         $statement = get_sub_field('learning_statement', $id);
-        $learning_statements['learning_statement'] = $statement;         
+        //$learning_statements['learning_statement'][] = $statement;   
+        add_sub_row('learning_statement', $statement, $id);
+        $i++;      
     endwhile;
-    update_field('learning_outcomes', array($learning_statements), $new_event); 
+    //update_field('learning_outcomes', array($learning_statements), $new_event); 
   }
-/*
-       $learning_statements = array ('learning_statement' => "get_sub_field('learning_statement')"); 
-        update_field('learning_outcomes', array($learning_statements), $new_event);
-*/
+
   //add acf data to new event
   update_field('audience', $audience, $new_event);
 
