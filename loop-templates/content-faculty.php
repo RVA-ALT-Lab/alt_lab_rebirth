@@ -14,10 +14,18 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<h2>Leadership</h2>
+		<?php echo showFaculty('leadership');?>
+
+		<h2>Instructional Design</h2>
+		<?php echo showFaculty('instructional-design');?>
+
 		<h2>Innovative Media</h2>
 		<?php echo showFaculty('innovative-media');?>
+		
 		<h2>R+D</h2>
 		<?php echo showFaculty('rd');?>
+		
 		<?php the_content(); ?>
 
 		<?php
@@ -67,10 +75,10 @@
 									<? echo quote_maker();?>																
 									
 								  </div>
-								  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">								   
+								  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" aria-label="previous" data-slide="prev">								   
 								    <span class="quote-nav left"><i class="fa fa-chevron-left"></i></span>
 								  </a>
-								  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+								  <a class="carousel-control-next" href="#carouselExampleControls" role="button" aria-label="next" data-slide="next">
 								    <span class="quote-nav right"><i class="fa fa-chevron-right"></i></span>
 								  </a>
 								</div>

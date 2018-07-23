@@ -95,3 +95,27 @@ function getPieces(){
   }
   return theIds;
 }
+
+
+//alt image alignment on bio page
+
+if (document.getElementsByClassName('bio-img')){
+  var imgs = document.getElementsByClassName('bio-img');
+  var i;
+  var left = "float-left";
+  var right = "float-right";
+  for (i = 0; i < imgs.length; i++) {
+     if(isEven(i)){
+      var style = right;
+     } else {
+      var style = left;
+     }
+     imgs[i].classList.add(style);
+  }
+
+}
+
+
+function isEven(n) {
+  return n == parseFloat(n)? !(n%2) : void 0;
+}

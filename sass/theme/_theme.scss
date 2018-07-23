@@ -362,6 +362,23 @@ li.menu-item:hover {
   column-count: 2;
 }
 
+//faculty bio things
+.faculty {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.29);
+  border: none;
+  margin: 2em;
+  border-radius: 0;
+}
+
+.bio-img.float-left {
+  margin-right: 1em;
+}
+
+.bio-img.float-right{
+  margin-left: 1em;
+}
+
+
 
 //************************BASIC CONTENT CHOICES************************
 

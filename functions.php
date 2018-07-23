@@ -250,7 +250,7 @@ function home_topics(){
                     if( $the_query->have_posts() ): 
                       while ( $the_query->have_posts() ) : $the_query->the_post();
                       $clean_title = sanitize_title(get_the_title());                            
-                      $html_a .= '<div class="col-md-4 topic-slide" id="'. $clean_title .'-parent"><a class="btn btn-primary topic-link" data-toggle="collapse" href="#' . $clean_title .'" role="button" aria-expanded="false" aria-controls="collapseExample" ><h3>' . get_the_title() . '</h3><i class="fa fa-caret-down"></i></a></div>';
+                      $html_a .= '<div class="col-md-4 topic-slide" id="'. $clean_title .'-parent"><a class="btn btn-primary topic-link" data-toggle="collapse" href="#' . $clean_title .'" role="button" aria-expanded="false" aria-controls="' . sanitize_title(get_the_title()) . '" ><h3>' . get_the_title() . '</h3><i class="fa fa-caret-down"></i></a></div>';
                       $html_b .= '<div class="col-md-12 collapse accordion" data-parent="#topic-parent" id="' . sanitize_title(get_the_title()) . '">'. acf_fetch_topic_callout() .'<div class=""><i class="fa fa-envelope"></i></div></div>'; 
                       $i++;     
                        if ($i === 3 || $i === 6 || $i === 9 || $i === 12 || $i === 15 || $i === 18 ) {
@@ -550,6 +550,23 @@ add_action('wp_ajax_make_workshop_to_event', 'make_workshop_to_event_callback');
 add_filter( 'acf/settings/remove_wp_meta_box', '__return_false' );
 
 
+
+function acf_fetch_faculty_title(){
+  global $post;
+  $html = '';
+  $faculty_title = get_field('field_5953e8d7c6322');
+
+    if( $faculty_title) {      
+      $html = $faculty_title;  
+     return $html;    
+    }
+
+}
+
+
+
+
+
 //faculty loop
 function showFaculty($department){
     $args = array(
@@ -568,7 +585,11 @@ function showFaculty($department){
     $the_query = new WP_Query( $args );
                     if( $the_query->have_posts() ): 
                       while ( $the_query->have_posts() ) : $the_query->the_post();
-                        $html .= get_the_title();
+                        $html .= '<div class="faculty card"><div class="card-body">';
+                        $html .= '<img class="bio-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'medium') . '" alt="Card image cap">';
+                        $html .= '<h3 class="card-title">' . get_the_title() . '</h3>';
+                        $html .= '<h4>' . acf_fetch_faculty_title() . '</h4>';
+                        $html .= '<div class="card-text">' . get_the_content() . '</div></div></div>';
                       endwhile;
                     endif;
     wp_reset_query();  // Restore global post data stomped by the_post().
