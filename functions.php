@@ -242,8 +242,7 @@ function home_topics(){
       'posts_per_page' => 18,
       'post_type'   => 'topic', 
       'post_status' => 'publish', 
-      'order_by' => 'date',  
-      'nopaging' => false,                                        
+      'nopaging' => false,
                     );
     $i = 0;
     $the_query = new WP_Query( $args );
@@ -573,6 +572,8 @@ function showFaculty($department){
       'posts_per_page' => -1,
       'post_type'   => 'faculty', 
       'post_status' => 'publish', 
+      'order' => 'ASC',
+      'orderby' => 'post_title',
         'tax_query' => array(
             array(
               'taxonomy' => 'departments',
@@ -646,3 +647,16 @@ function posts_for_current_author($query) {
 add_filter('pre_get_posts', 'posts_for_current_author');
 
 
+/*
+UNFINISHED
+//change slug for alpha sort 
+function faculty_alpha_slug_rewrite( $post_id ) {
+      $post_type = get_post_type($post_id);
+      if ($post_type === 'faculty'){
+
+      }
+
+}
+add_action( 'save_post', 'faculty_alpha_slug_rewrite' );
+
+*/
