@@ -47,8 +47,10 @@
 <div class="about-us">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12"><h2 class="big-title">About Us</h2></div>
-			<?php echo 'foo';?>
+			<div class="col-md-12">
+				<h2 class="big-title">About Us</h2>
+				<p>A diverse team of educators and media professionals, we are dedicated to . . . 
+			</div>			
 		</div>
 	</div>
 </div>
