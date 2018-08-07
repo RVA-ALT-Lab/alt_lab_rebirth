@@ -593,6 +593,9 @@ blockquote.default{
   border-right-color: #434a53;  
 }
 
+.mobile-logo {
+  display: none;
+}
 
 //BOOTSTRAP BREAKOUT
 
@@ -616,10 +619,83 @@ blockquote.default{
   }
 }
 
-@media only screen and (max-width: 700px) {
- 
+@media only screen and (max-width: 760px) {
+  .mobile-logo {
+   display: block;
+   margin: 0 auto;
+   width: 100px;
+   height: auto;
+}
+
+  #the-menu a  {
+    margin: 0 auto;
+    display: block;
+  }
+
+  #the-menu a.nav-big {
+    display: none;
+  }
+
+  .menu-item {
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.2em;
+    margin: .53em 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .menu-item i {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .entry-home, .home-callout{
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+
+  .home-description {
+    font-size: 1em;
+  }
+
   .workshop-description{
     column-count: 1;
+  }
+
+  .big-title {
+    font-size: 2em;
+  }
+  
+  #topic-parent {
+    padding-top: 40px
+  }
+
+  .topic-link h3 {
+    font-size: 1.4em;
+  }
+
+  .show {
+    padding: 10px;
+  }
+
+  .carousel-inner {
+    height: 550px;
+  }
+
+  .quote-text {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .quote-text h3 {
+    font-size: 1.5em;
+  }
+
+  .quote-nav {
+    bottom: 0;
   }
 
 }

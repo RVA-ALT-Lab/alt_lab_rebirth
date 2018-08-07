@@ -15,8 +15,7 @@
 
 				<div class="entry-content">
 					<div class="home-description"><?php echo acf_fetch_description_one();?></div>
-					<div class="home-callout"><?php echo acf_fetch_call_out_two();?></div>
-					<div class="home-description"><?php echo acf_fetch_description_two();?></div>	
+					
 					<?php the_content(); ?>
 
 					<?php

@@ -44,12 +44,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php if ( is_front_page() && is_home() ) : ?>
 
 							<h1 class="navbar-brand mb-0 nav-big"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
-							<h1 class="navbar-brand mb-0 nav-small"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">VCU ENVS</a></h1>
+							<h1 class="navbar-brand mb-0 nav-small"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" itemprop="url">ALT Lab</a></h1>
 
 						<?php else : ?>
 
 							<a class="navbar-brand nav-big" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
-							<a class="navbar-brand nav-small" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'description' );?></a>
+							<a class="navbar-brand nav-small" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><img src="<?php echo get_template_directory_uri();?>/imgs/alt_logo_on_black.png" class="mobile-logo" alt="ALT Lab logo."></a>
 						<?php endif; ?>
 
 
@@ -93,17 +93,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 			    <div class="col-md-6 alt-logo"></div>
 			    <div class="col-md-6 alt-big-menu">
 			      <div class="row">
-			        <div class="col-md-6 menu-item hvr-sweep-to-right"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>
+			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="design-courses"><i class="fa fa-cog" aria-hidden="true"></i>
 			design<br>courses </a></div>
-			        <div class="col-md-6 menu-item hvr-sweep-to-right"><a href="#"><i class="fa fa-wifi" aria-hidden="true"></i>
+			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="online-courses"><i class="fa fa-wifi" aria-hidden="true"></i>
 			move<br>online</a></div>
-			        <div class="col-md-6 menu-item hvr-sweep-to-right"><a href="#"><i class="fa fa-play" aria-hidden="true"></i>
+			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="produce-videos"><i class="fa fa-play" aria-hidden="true"></i>
 			produce<br>videos</a></div>
-			        <div class="col-md-6 menu-item hvr-sweep-to-right"><a href="#"><i class="fa fa-file-code-o" aria-hidden="true"></i>
+			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="create-websites"><i class="fa fa-file-code-o" aria-hidden="true"></i>
 			create<br> websites</a></div>
-			        <div class="col-md-6 menu-item last hvr-sweep-to-right"><a href="#"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+			        <div class="col-6 menu-item last hvr-sweep-to-right"><a href="workshops"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 			attend<br>workshops</a></div>
-			        <div class="col-md-6 menu-item last hvr-sweep-to-right"><a href="#"><i class="fa fa-share" aria-hidden="true"></i>
+			        <div class="col-6 menu-item last hvr-sweep-to-right"><a href="#contact"><i class="fa fa-share" aria-hidden="true"></i>
 			contact<br>us</a></div>       
 			      </div>        
 			      </div>
