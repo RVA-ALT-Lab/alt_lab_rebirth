@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial template for content in page.php
+ * Partial template for content in faculty
  *
  * @package understrap
  */
@@ -13,20 +13,39 @@
 			
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<h2>Leadership</h2>
-		<?php echo showFaculty('leadership');?>
+</article>
+</div>
+</div>
+</div>
 
-		<h2>Instructional Design</h2>
-		<?php echo showFaculty('instructional-design');?>
-
-		<h2>Innovative Media</h2>
-		<?php echo showFaculty('innovative-media');?>
-		
-		<h2>R+D</h2>
-		<?php echo showFaculty('rd');?>
-		
+<div class="entry-content faculty-page">
+	<div class="container">
 		<?php the_content(); ?>
+	</div>
+	<div class="leadership">
+		<div class="container">
+			<h2 class="faculty-group">Leadership</h2>
+			<?php echo showFaculty('leadership');?>
+		</div>
+	</div>
+	<div class="design">
+		<div class="container">
+			<h2 class="faculty-group">Instructional Design</h2>
+			<?php echo showFaculty('instructional-design');?>
+		</div>
+	</div>
+	<div class="media">
+		<div class="container">
+			<h2 class="faculty-group">Innovative Media</h2>
+			<?php echo showFaculty('innovative-media');?>
+		</div>
+	</div>
+	<div class="rd">
+		<div class="container">		
+			<h2 class="faculty-group">R+D</h2>
+			<?php echo showFaculty('rd');?>
+		</div>
+	</div>		
 
 		<?php
 		wp_link_pages( array(
@@ -36,10 +55,6 @@
 		?>
 
 	</div><!-- .entry-content -->
-</article>
-</div>
-</div>
-</div>
 
 <!--TOPICS-->
 <div class="home-topics" id="topic-parent">
@@ -52,40 +67,6 @@
 </div>
 <!--END TOPICS-->
 
-<!--about us-->
-<div class="about-us">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12"><h2 class="big-title">About Us</h2></div>
-			<?php echo 'foo';?>
-		</div>
-	</div>
-</div>
-<!--END about us-->
-
-
-<!--quote slider-->
-<div class="container">
-<div class="row quotes justify-content-md-center">
-						<div class="col-md-12 quote-box">
-							<div id="carouselExampleControls" class="carousel slide" data-ride="false">
-								  <div class="carousel-inner">
-								  <div class="quote-slogan">Words from VCU Faculty</div>	
-
-									<? echo quote_maker();?>																
-									
-								  </div>
-								  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" aria-label="previous" data-slide="prev">								   
-								    <span class="quote-nav left"><i class="fa fa-chevron-left"></i></span>
-								  </a>
-								  <a class="carousel-control-next" href="#carouselExampleControls" role="button" aria-label="next" data-slide="next">
-								    <span class="quote-nav right"><i class="fa fa-chevron-right"></i></span>
-								  </a>
-								</div>
-						</div>	
- 					</div>
-</div>
-<!--end quote-->
 <div class="container">
 	<footer class="entry-footer">
 </footer>		

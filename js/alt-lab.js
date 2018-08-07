@@ -119,3 +119,20 @@ if (document.getElementsByClassName('bio-img')){
 function isEven(n) {
   return n == parseFloat(n)? !(n%2) : void 0;
 }
+
+
+if (document.getElementsByClassName('faculty-body')){
+  var cards = document.getElementsByClassName('faculty-body');
+  var i;
+  var left = "square-left";
+  var right = "square-right";
+  for (i = 0; i < cards.length; i++) {
+     if(isEven(i)){
+      var style = right;
+     } else {
+      var style = left;
+     }
+     cards[i].classList.add(style);
+  }
+
+}

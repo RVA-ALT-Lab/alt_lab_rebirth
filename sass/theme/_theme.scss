@@ -281,19 +281,30 @@ li.menu-item:hover {
   margin-top: .5em;
 }
 
+//home topics
+
+.home-topics {
+  padding-bottom: 80px;
+}
+
 #topic-parent {
    background: url(../imgs/altlab_faculty.jpg);
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 17em;
-  margin-top: 2em;     
+}
+
+#topic-parent .show {
+  max-width: 100%;
+  border: 1px solid $black;
 }
 
 .big-title {
   font-size: 4em;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .topic-slide {
@@ -350,13 +361,20 @@ li.menu-item:hover {
 .collapse:not(.show){
     transition: all .3s ease-in; 
 }
+
+
 //about us portion
 
 .about-us {
-  padding-top: 14em;
+  padding-top: 200px;
+  padding-bottom: 80px;
   background-image: url(../imgs/altlab_hexpattern_gray.png);  
 }
 
+.about-us-img {
+   outline: 2px solid $gold;
+   outline-offset: -15px;
+}
 
 //workshop 
 .workshop-description{
@@ -364,6 +382,25 @@ li.menu-item:hover {
 }
 
 //faculty bio things
+.faculty-page {
+  position: relative;
+}
+
+.faculty-group {
+  font-size: 3em;
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+.leadership, .media {
+  padding: 50px 0;
+}
+
+.design, .rd {
+  background: #efefef;
+  padding: 50px 0;
+}
+
 .faculty {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.29);
   border: none;
@@ -374,11 +411,54 @@ li.menu-item:hover {
 .bio-img.float-left {
   margin-right: 1em;
 }
+  
+.card-body {
+  position: relative;
+}
+
+.square-right::after{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    content: '';
+    border-left: 2px solid $gold;
+    border-bottom: 2px solid $gold;
+}
+
+
+.square-left::after{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    content: '';
+    background: $gold;
+}
 
 .bio-img.float-right{
   margin-left: 1em;
 }
 
+
+.faculty-name {
+  font-weight: 600;
+}
+
+.faculty-title {
+  font-weight: 300;
+  color: $dark-gray;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+}
+
+.faculty-bio-text {
+  color: $dark-gray;  
+  font-size: 1em;
+  line-height: 1.8em;
+}
 
 
 //************************BASIC CONTENT CHOICES************************

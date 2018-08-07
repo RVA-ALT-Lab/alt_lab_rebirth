@@ -6,30 +6,30 @@
  */
 
 ?>
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title entry-home">', '</h1>' ); ?>
-			
-	</header><!-- .entry-header -->
+				<header class="entry-header">
+					<?php the_title( '<h1 class="entry-title entry-home">', '</h1>' ); ?>
+						
+				</header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<div class="home-description"><?php echo acf_fetch_description_one();?></div>
-		<div class="home-callout"><?php echo acf_fetch_call_out_two();?></div>
-		<div class="home-description"><?php echo acf_fetch_description_two();?></div>	
-		<?php the_content(); ?>
+				<div class="entry-content">
+					<div class="home-description"><?php echo acf_fetch_description_one();?></div>
+					<div class="home-callout"><?php echo acf_fetch_call_out_two();?></div>
+					<div class="home-description"><?php echo acf_fetch_description_two();?></div>	
+					<?php the_content(); ?>
 
-		<?php
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-			'after'  => '</div>',
-		) );
-		?>
+					<?php
+					wp_link_pages( array(
+						'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+						'after'  => '</div>',
+					) );
+					?>
 
-	</div><!-- .entry-content -->
-</article>
-</div>
-</div>
+				</div><!-- .entry-content -->
+			</article>
+		</div>
+	</div>
 </div>
 
 <!--TOPICS-->
@@ -48,9 +48,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2 class="big-title">About Us</h2>
+				<h2 class="big-title">About Us</h2>				
+			</div>						
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<img class="about-us-img img-fluid" src="<?php echo get_stylesheet_directory_uri();?>/imgs/about_us.jpg" alt="A group of faculty participating in faculty development.">
+			</div>
+			<div class="col-md-6">
 				<p>A diverse team of educators and media professionals, we are dedicated to . . . 
-			</div>			
+			</div>
 		</div>
 	</div>
 </div>

@@ -87,6 +87,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- #wrapper-navbar end -->
 
 		<!--BIG MENU-->
+		<?php if(is_front_page()):?>
 			<div class="container big-menu">
 			  <div class="row alt-menu">
 			    <div class="col-md-6 alt-logo"></div>
@@ -109,3 +110,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 			    </div>
 			  </div>
 			</div>
+		<?php endif;?>
