@@ -43,8 +43,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<?php if ( is_front_page() && is_home() ) : ?>
 
-							<h1 class="navbar-brand mb-0 nav-big"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
-							<h1 class="navbar-brand mb-0 nav-small"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" itemprop="url">ALT Lab</a></h1>
+							<h1 class="navbar-brand mb-0 nav-big home"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+							<h1 class="navbar-brand mb-0 nav-small home"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" itemprop="url">ALT Lab</a></h1>
 
 						<?php else : ?>
 
@@ -87,10 +87,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- #wrapper-navbar end -->
 
 		<!--BIG MENU-->
-		<?php if(is_front_page()):?>
+		<?php if(is_front_page() ):?>
 			<div class="container big-menu">
-			  <div class="row alt-menu">
-			    <div class="col-md-6 alt-logo"></div>
+			  <div class="row alt-menu justify-content-md-center">
+			    <div class="col-md-4 alt-logo"></div>
 			    <div class="col-md-6 alt-big-menu">
 			      <div class="row">
 			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="design-courses"><i class="fa fa-cog" aria-hidden="true"></i>
@@ -104,7 +104,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			        <div class="col-6 menu-item last hvr-sweep-to-right"><a href="workshops"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 			attend<br>workshops</a></div>
 			        <div class="col-6 menu-item last hvr-sweep-to-right"><a href="#contact"><i class="fa fa-share" aria-hidden="true"></i>
-			contact<br>us</a></div>       
+			inspire<br>innovation</a></div>       
 			      </div>        
 			      </div>
 			    </div>

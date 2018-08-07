@@ -19,9 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="contactModalCenterTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <?php echo do_shortcode('[gravityform id="1" title="false" description="false"]');?>
       </div>
       <div class="modal-body">
         ...

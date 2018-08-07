@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial template for content in faculty
+ * Partial template for content in service
  *
  * @package understrap
  */

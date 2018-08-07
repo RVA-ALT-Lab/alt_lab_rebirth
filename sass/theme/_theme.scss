@@ -1,6 +1,10 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 //************************NAVBAR TWEEKS************************
 //aligns menu items to the right
+html {
+  //-webkit-font-smoothing: antialiased;
+}
+
 .assistive-text {
   height: 1px; 
   width: 1px; 
@@ -54,9 +58,8 @@
 }
 
 .menu-item {
-  font-size: 1.7em;
+  font-size: 1.5em;
   line-height: .9em;  
-  margin: .53em 0;
   padding-left: .4em;
   padding-top: .5em;
   position: relative;
@@ -69,16 +72,16 @@
   display: block;
 }
 .menu-item i {
-  display: block;
-  float: left;
-  height: 1.9em;
-  width: 60px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 60px;
-  margin-right: .3em;
-  font-size: 1.5em;
-  margin-top: 0;
+    display: block;
+    float: left;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    margin-right: .3em;
+    font-size: 1.5em;
+    margin-top: -8px;
 }
 
 li.menu-item {
@@ -105,6 +108,8 @@ li.menu-item:hover {
 
 #the-menu a {
    color: $black;
+   text-transform: uppercase;
+   font-weight: 700;
 }
 
 #search-box-dropdown {
@@ -192,7 +197,7 @@ li.menu-item:hover {
 
 
 //HOME PAGE
-.entry-home, .home-callout {
+.entry-home{
   font-size: 5em;
   border-top: 1px dashed #000;
   border-bottom: 1px dashed #000;
@@ -200,6 +205,15 @@ li.menu-item:hover {
   text-align: center;
   font-weight: 400;
 }
+
+.home-callout{
+  font-size: 4em;
+  line-height: 1.2em;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
 
 .home-description {
   font-size: 2em;
@@ -292,20 +306,9 @@ li.menu-item:hover {
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: 17em;
+  padding-top: 100px;
 }
 
-#topic-parent .show {
-  max-width: 100%;
-  border: 1px solid $black;
-}
-
-.big-title {
-  font-size: 4em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-}
 
 .topic-slide {
   height: 120px;
@@ -330,6 +333,15 @@ li.menu-item:hover {
   left: 0;
   top: 0;
   padding: 2em;
+  border: 1px solid $dark-gray;
+  border-radius: 0;
+}
+
+.topic-link[aria-expanded="true"] {
+  margin: -10px;
+  background: #fff;
+  border-radius: 0;
+  border: 2px solid $dark-gray;
 }
 
 .topic-link:hover {
@@ -339,28 +351,37 @@ li.menu-item:hover {
 }
 
 .topic-highlight {
-  background-color: $aqua;
+  background-color: #D1F0F2;
   border-radius: 0;
-  border: 1px solid $aqua;
+  border-left: 1px solid #D1F0F2;
+  border-bottom: 1px solid #D1F0F2;
+  border-right: 1px solid $dark-gray;
+  border-top: none;
 }
+
 
 .show {
-  background-color: $white;
-  border-top: 1px solid $dark-gray;
-  //border: 1px solid $dark-gray;
-  padding: 1.5em 2em 1.5em 6em;
-  margin-top: -1px;
+  background-color: #D1F0F2;
+  padding: 25px 35px;
   display: block;
-  transition: all .3s ease-in;
-  max-width: -webkit-calc(100% - 1px);
-  max-width:    -moz-calc(100% - 1px);
-  max-width:         calc(100% - 1px);
-
+  transition: all .1s ease-in;
+  max-width: -webkit-calc(100% - 2px);
+  max-width:    -moz-calc(100% - 2px);
+  max-width:         calc(100% - 2px);
 }
 
-.collapse:not(.show){
-    transition: all .3s ease-in; 
+.topic-description {
+  display: inline-block;
+  width: 80%;
 }
+
+.show i {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
 
 
 //about us portion
@@ -529,6 +550,56 @@ p {
 	font-size: 1.2em;
 }
 
+//SERVICES PAGE
+
+.services-logo {
+  max-width: 230px;
+  margin: auto;
+  display: block;
+}
+
+.services-services {
+  font-family: Roboto-Medium;
+  font-size: 48px;
+  color: #292B2C;
+  letter-spacing: 0.75px;
+  text-align: center;
+}
+
+.entry-title-service {
+  font-family: Roboto-Medium;
+  font-size: 48px;
+  color: #292B2C;
+  letter-spacing: 0.75px;
+  background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 6px 1px;
+  background-repeat: repeat-x;
+  margin-top: -10px;
+}
+
+.team-member, .team-member img{
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+}
+
+.team-member img:hover {
+  width: 60px;
+  height: 60px;
+}
+
+.btn-service-contact {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 12px;
+  border-radius: 0;
+}
+
 //JUST BLOCKQUOTE
 //from https://codepen.io/iPawan/pen/emrPKP
 blockquote{
@@ -650,11 +721,6 @@ blockquote.default{
     float: none;
     display: block;
     margin: 0 auto;
-  }
-
-  .entry-home, .home-callout{
-    font-size: 3em;
-    line-height: 1.2em;
   }
 
   .home-description {

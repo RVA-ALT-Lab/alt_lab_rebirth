@@ -1,18 +1,18 @@
 <?php if( function_exists('acf_add_local_field_group') ):
 
-acf_add_local_field_group(array (
-	'key' => 'group_5953e8b004dc6',
-	'title' => 'faculty',
-	'fields' => array (
-		array (
-			'key' => 'field_5953e8d7c6322',
-			'label' => 'Title',
-			'name' => 'title',
+acf_add_local_field_group(array(
+	'key' => 'group_5b4ceb884eeb7',
+	'title' => 'Events',
+	'fields' => array(
+		array(
+			'key' => 'field_5b4ceb8e8496f',
+			'label' => 'Resources',
+			'name' => 'resources',
 			'type' => 'text',
-			'instructions' => 'Asst. Prof. and stuff like that',
+			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -24,9 +24,70 @@ acf_add_local_field_group(array (
 			'maxlength' => '',
 		),
 	),
-	'location' => array (
-		array (
-			array (
+	'location' => array(
+		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'tribe_events',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => 1,
+	'description' => '',
+));
+
+acf_add_local_field_group(array(
+	'key' => 'group_5953e8b004dc6',
+	'title' => 'faculty',
+	'fields' => array(
+		array(
+			'key' => 'field_5953e8d7c6322',
+			'label' => 'Title',
+			'name' => 'title',
+			'type' => 'text',
+			'instructions' => 'Asst. Prof. and stuff like that',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
+		array(
+			'key' => 'field_5b69c3b07ee59',
+			'label' => 'Email',
+			'name' => 'email',
+			'type' => 'email',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+	),
+	'location' => array(
+		array(
+			array(
 				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'faculty',
@@ -43,11 +104,11 @@ acf_add_local_field_group(array (
 	'description' => '',
 ));
 
-acf_add_local_field_group(array (
+acf_add_local_field_group(array(
 	'key' => 'group_5b3e76bbf13b8',
 	'title' => 'Home',
-	'fields' => array (
-		array (
+	'fields' => array(
+		array(
 			'key' => 'field_5b3e76e6f7b54',
 			'label' => 'Description One',
 			'name' => 'description_one',
@@ -55,7 +116,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -66,7 +127,7 @@ acf_add_local_field_group(array (
 			'media_upload' => 1,
 			'delay' => 0,
 		),
-		array (
+		array(
 			'key' => 'field_5b3e76f4f7b55',
 			'label' => 'Call Out Two',
 			'name' => 'call_out_two',
@@ -74,7 +135,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -85,7 +146,7 @@ acf_add_local_field_group(array (
 			'append' => '',
 			'maxlength' => '',
 		),
-		array (
+		array(
 			'key' => 'field_5b3e76fdf7b56',
 			'label' => 'Description Two',
 			'name' => 'description_two',
@@ -93,7 +154,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -104,7 +165,7 @@ acf_add_local_field_group(array (
 			'media_upload' => 1,
 			'delay' => 0,
 		),
-		array (
+		array(
 			'key' => 'field_5b3e779437309',
 			'label' => 'Call Out Three',
 			'name' => 'call_out_three',
@@ -112,7 +173,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -124,9 +185,9 @@ acf_add_local_field_group(array (
 			'maxlength' => '',
 		),
 	),
-	'location' => array (
-		array (
-			array (
+	'location' => array(
+		array(
+			array(
 				'param' => 'page_template',
 				'operator' => '==',
 				'value' => 'page-templates/fullwidthpage-home.php',
@@ -143,11 +204,11 @@ acf_add_local_field_group(array (
 	'description' => '',
 ));
 
-acf_add_local_field_group(array (
+acf_add_local_field_group(array(
 	'key' => 'group_593adfaf4fd5d',
 	'title' => 'Project',
-	'fields' => array (
-		array (
+	'fields' => array(
+		array(
 			'key' => 'field_593ae0096f84f',
 			'label' => 'Succinct description',
 			'name' => 'succinct_description',
@@ -155,7 +216,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -166,7 +227,7 @@ acf_add_local_field_group(array (
 			'append' => '',
 			'maxlength' => 300,
 		),
-		array (
+		array(
 			'key' => 'field_593ddd0e4ab5f',
 			'label' => 'Site URL',
 			'name' => 'site_url',
@@ -174,7 +235,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -182,7 +243,7 @@ acf_add_local_field_group(array (
 			'default_value' => '',
 			'placeholder' => '',
 		),
-		array (
+		array(
 			'key' => 'field_5b477c2343aa9',
 			'label' => 'Hours of Work',
 			'name' => 'hours_of_work',
@@ -190,7 +251,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -203,7 +264,7 @@ acf_add_local_field_group(array (
 			'max' => '',
 			'step' => '',
 		),
-		array (
+		array(
 			'key' => 'field_5952856e46870',
 			'label' => 'Git Repo',
 			'name' => 'git_repo',
@@ -211,7 +272,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -223,9 +284,9 @@ acf_add_local_field_group(array (
 			'maxlength' => '',
 		),
 	),
-	'location' => array (
-		array (
-			array (
+	'location' => array(
+		array(
+			array(
 				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'project',
@@ -242,11 +303,11 @@ acf_add_local_field_group(array (
 	'description' => '',
 ));
 
-acf_add_local_field_group(array (
+acf_add_local_field_group(array(
 	'key' => 'group_5b3fb2bfcf15b',
 	'title' => 'Quotes',
-	'fields' => array (
-		array (
+	'fields' => array(
+		array(
 			'key' => 'field_5b3fb2d372ed0',
 			'label' => 'Quote',
 			'name' => 'the_quote',
@@ -254,7 +315,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -265,7 +326,7 @@ acf_add_local_field_group(array (
 			'rows' => 4,
 			'new_lines' => '',
 		),
-		array (
+		array(
 			'key' => 'field_5b3fb30172ed1',
 			'label' => 'Person',
 			'name' => 'person',
@@ -273,7 +334,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '33',
 				'class' => '',
 				'id' => '',
@@ -284,7 +345,7 @@ acf_add_local_field_group(array (
 			'append' => '',
 			'maxlength' => '',
 		),
-		array (
+		array(
 			'key' => 'field_5b3fb31772ed2',
 			'label' => 'Title',
 			'name' => 'title',
@@ -292,7 +353,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '33',
 				'class' => '',
 				'id' => '',
@@ -303,7 +364,7 @@ acf_add_local_field_group(array (
 			'append' => '',
 			'maxlength' => '',
 		),
-		array (
+		array(
 			'key' => 'field_5b3fb31f72ed3',
 			'label' => 'Department',
 			'name' => 'department',
@@ -311,7 +372,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '33',
 				'class' => '',
 				'id' => '',
@@ -323,9 +384,9 @@ acf_add_local_field_group(array (
 			'maxlength' => '',
 		),
 	),
-	'location' => array (
-		array (
-			array (
+	'location' => array(
+		array(
+			array(
 				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'quote',
@@ -342,11 +403,11 @@ acf_add_local_field_group(array (
 	'description' => '',
 ));
 
-acf_add_local_field_group(array (
+acf_add_local_field_group(array(
 	'key' => 'group_5b44f344691e6',
 	'title' => 'Topic',
-	'fields' => array (
-		array (
+	'fields' => array(
+		array(
 			'key' => 'field_5b44f34ebc7fc',
 			'label' => 'Call out',
 			'name' => 'call_out',
@@ -354,7 +415,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -366,9 +427,9 @@ acf_add_local_field_group(array (
 			'new_lines' => '',
 		),
 	),
-	'location' => array (
-		array (
-			array (
+	'location' => array(
+		array(
+			array(
 				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'topic',
@@ -385,11 +446,11 @@ acf_add_local_field_group(array (
 	'description' => '',
 ));
 
-acf_add_local_field_group(array (
+acf_add_local_field_group(array(
 	'key' => 'group_5b479abf134c9',
 	'title' => 'Workshop',
-	'fields' => array (
-		array (
+	'fields' => array(
+		array(
 			'key' => 'field_5b479d7ef9c38',
 			'label' => 'Learning Outcomes',
 			'name' => 'learning_outcomes',
@@ -397,7 +458,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '50',
 				'class' => '',
 				'id' => '',
@@ -407,8 +468,8 @@ acf_add_local_field_group(array (
 			'max' => 0,
 			'layout' => 'table',
 			'button_label' => '',
-			'sub_fields' => array (
-				array (
+			'sub_fields' => array(
+				array(
 					'key' => 'field_5b479d92f9c39',
 					'label' => 'Learning Statement',
 					'name' => 'learning_statement',
@@ -416,7 +477,7 @@ acf_add_local_field_group(array (
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
-					'wrapper' => array (
+					'wrapper' => array(
 						'width' => '',
 						'class' => '',
 						'id' => '',
@@ -429,7 +490,7 @@ acf_add_local_field_group(array (
 				),
 			),
 		),
-		array (
+		array(
 			'key' => 'field_5b4cce5dc3a20',
 			'label' => 'Audience',
 			'name' => 'audience',
@@ -437,7 +498,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '50',
 				'class' => '',
 				'id' => '',
@@ -448,7 +509,7 @@ acf_add_local_field_group(array (
 			'append' => '',
 			'maxlength' => '',
 		),
-		array (
+		array(
 			'key' => 'field_5b479ef6b1e70',
 			'label' => 'VCU Examples',
 			'name' => 'vcu_examples',
@@ -456,7 +517,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '50',
 				'class' => '',
 				'id' => '',
@@ -466,8 +527,8 @@ acf_add_local_field_group(array (
 			'max' => 0,
 			'layout' => 'table',
 			'button_label' => '',
-			'sub_fields' => array (
-				array (
+			'sub_fields' => array(
+				array(
 					'key' => 'field_5b4cceb1153c1',
 					'label' => 'VCU Example Title',
 					'name' => 'vcu_example_title',
@@ -475,7 +536,7 @@ acf_add_local_field_group(array (
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
-					'wrapper' => array (
+					'wrapper' => array(
 						'width' => '',
 						'class' => '',
 						'id' => '',
@@ -486,7 +547,7 @@ acf_add_local_field_group(array (
 					'append' => '',
 					'maxlength' => '',
 				),
-				array (
+				array(
 					'key' => 'field_5b479f0cb1e71',
 					'label' => 'VCU Example Description Text',
 					'name' => 'vcu_example_text',
@@ -494,7 +555,7 @@ acf_add_local_field_group(array (
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
-					'wrapper' => array (
+					'wrapper' => array(
 						'width' => '',
 						'class' => '',
 						'id' => '',
@@ -505,7 +566,7 @@ acf_add_local_field_group(array (
 					'append' => '',
 					'maxlength' => '',
 				),
-				array (
+				array(
 					'key' => 'field_5b479f27b1e72',
 					'label' => 'VCU Example URL',
 					'name' => 'vcu_example_url',
@@ -513,7 +574,7 @@ acf_add_local_field_group(array (
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
-					'wrapper' => array (
+					'wrapper' => array(
 						'width' => '',
 						'class' => '',
 						'id' => '',
@@ -523,7 +584,7 @@ acf_add_local_field_group(array (
 				),
 			),
 		),
-		array (
+		array(
 			'key' => 'field_5b479f5040214',
 			'label' => 'Outside Examples',
 			'name' => 'outside_examples',
@@ -531,7 +592,7 @@ acf_add_local_field_group(array (
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '50',
 				'class' => '',
 				'id' => '',
@@ -541,8 +602,8 @@ acf_add_local_field_group(array (
 			'max' => 0,
 			'layout' => 'table',
 			'button_label' => '',
-			'sub_fields' => array (
-				array (
+			'sub_fields' => array(
+				array(
 					'key' => 'field_5b4cce8a36b64',
 					'label' => 'Outside Example Title',
 					'name' => 'outside_example_title',
@@ -550,7 +611,7 @@ acf_add_local_field_group(array (
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
-					'wrapper' => array (
+					'wrapper' => array(
 						'width' => '',
 						'class' => '',
 						'id' => '',
@@ -561,7 +622,7 @@ acf_add_local_field_group(array (
 					'append' => '',
 					'maxlength' => '',
 				),
-				array (
+				array(
 					'key' => 'field_5b479f5040215',
 					'label' => 'Outside Example Description Text',
 					'name' => 'outside_example_text',
@@ -569,7 +630,7 @@ acf_add_local_field_group(array (
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
-					'wrapper' => array (
+					'wrapper' => array(
 						'width' => '',
 						'class' => '',
 						'id' => '',
@@ -580,7 +641,7 @@ acf_add_local_field_group(array (
 					'append' => '',
 					'maxlength' => '',
 				),
-				array (
+				array(
 					'key' => 'field_5b479f5040216',
 					'label' => 'Outside Example URL',
 					'name' => 'outside_example_url',
@@ -588,7 +649,7 @@ acf_add_local_field_group(array (
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
-					'wrapper' => array (
+					'wrapper' => array(
 						'width' => '',
 						'class' => '',
 						'id' => '',
@@ -599,12 +660,19 @@ acf_add_local_field_group(array (
 			),
 		),
 	),
-	'location' => array (
-		array (
-			array (
+	'location' => array(
+		array(
+			array(
 				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'workshop',
+			),
+		),
+		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'tribe_events',
 			),
 		),
 	),
@@ -613,7 +681,16 @@ acf_add_local_field_group(array (
 	'style' => 'default',
 	'label_placement' => 'top',
 	'instruction_placement' => 'label',
-	'hide_on_screen' => '',
+	'hide_on_screen' => array(
+		0 => 'excerpt',
+		1 => 'custom_fields',
+		2 => 'discussion',
+		3 => 'comments',
+		4 => 'slug',
+		5 => 'format',
+		6 => 'page_attributes',
+		7 => 'send-trackbacks',
+	),
 	'active' => 1,
 	'description' => '',
 ));
