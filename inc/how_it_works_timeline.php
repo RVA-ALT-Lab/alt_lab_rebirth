@@ -21,7 +21,7 @@ function how_does_this_work() { ?>
 <div class="timeline">
   <div class="timeline-container left">
     <div class="timeline-content">
-      <img src="/imgs/boxer.svg" class="timeline-icon"</div>
+      <img src="<?php echo get_template_directory_uri();?>/imgs/boxer.svg" class="timeline-icon"</div>
       <div class="clearfix">
         <div class="box-content">
         <h2>You have an idea</h2>
@@ -32,18 +32,18 @@ function how_does_this_work() { ?>
   </div>
   <div class="timeline-container right">
     <div class="timeline-content">
-      <img src="/imgs/hander.svg" class="timeline-icon"</div>
+      <img src="<?php echo get_template_directory_uri();?>/imgs/hander.svg" class="timeline-icon"</div>
     <div class="clearfix">
       <div class="box-content">
       <h2>You get in touch</h2>
-      <p>You can reach out to use in a number of ways; If you prefer to learn as a part of a group, you can attend an upcoming workshop. If you'd prefer a one-on-one consultation, you can choose someone with similar interests or skills and reach out to them. If you're still not sure what you need, you can attend our open hours.</p>
+      <p>You can reach out to us in a number of ways; If you prefer to learn as a part of a group, you can <a href="#">attend an upcoming workshop</a>. If you'd prefer a one-on-one consultation, you can <a href="#">choose someone with similar interests or relevant skills</a> and reach out to them. If you're still not sure what you need, you can attend our <a href="">open hours.</a></p>
         </div>
       </div>
     </div>
   </div>
     <div class="timeline-container left">
     <div class="timeline-content">
-      <img src="/imgs/mapper.svg" class="timeline-icon"</div>
+      <img src="<?php echo get_template_directory_uri();?>/imgs/mapper.svg" class="timeline-icon"</div>
     <div class="clearfix">
       <div class="box-content">
       <h2>We create a plan</h2>
@@ -54,7 +54,7 @@ function how_does_this_work() { ?>
   </div>
   <div class="timeline-container right">
     <div class="timeline-content">
-      <img src="/imgs/engager.svg" class="timeline-icon"</div>
+      <img src="<?php echo get_template_directory_uri();?>/imgs/engager.svg" class="timeline-icon"</div>
     <div class="clearfix">
       <div class="box-content">
       <h2>Your students engage</h2>

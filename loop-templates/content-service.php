@@ -28,7 +28,11 @@
 				<?php echo show_faculty_service('innovative-media');?>
 			</div>
 		</div>
+		<div class="service-separator foo">
+			foo
+		</div>
 	</div>
+
 	
 
 		<?php

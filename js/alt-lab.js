@@ -143,7 +143,11 @@ jQuery('#contactModal').on('show.bs.modal', function (event) {
   var intent = button.data('intent');
   var modal = jQuery(this);
   modal.find('#input_1_5').val(recipient);
-  
+
 })
 
 
+//turn on tool tips
+jQuery(function () {
+  jQuery('[data-toggle="tooltip"]').tooltip()
+})
