@@ -791,6 +791,10 @@ p {
     margin-top: -10px;
 }
 
+.team-header {
+  padding-top: 30px;
+}
+
 .team-member,
 .team-member img {
     display: inline-block;
@@ -825,6 +829,10 @@ p {
   height: 500px;
 }
 
+.service-callout-two p {
+  padding-left: 0;
+}
+
 .img-right {
   float: right;
   object-fit: cover;
@@ -839,6 +847,48 @@ p {
      background: linear-gradient(90deg, $gold 25%, $white 25%);
 }
 
+.related h2 {
+  margin-left: 20px;
+}
+
+.service-icon {
+  display: inline-block;
+  height: 80px;
+  width: 65px;
+  margin-left: 20px;
+}
+
+.service-icon h3 {
+  display: inline-block;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: #292B2C;
+  letter-spacing: 0.25px;
+  text-align: center;
+  line-height: 23px;
+  position: relative;
+}
+
+.icon-projects {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../imgs/icon-projects.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-events {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../imgs/icon-events.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 .yellow {
   background: $gold;
@@ -849,6 +899,23 @@ p {
 }
 
 
+
+//video 
+
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
 //JUST BLOCKQUOTE
 //from https://codepen.io/iPawan/pen/emrPKP
@@ -949,7 +1016,7 @@ blockquote.default {
     }
 }
 
-    @media only screen and (max-width: 760px) {
+@media only screen and (max-width: 760px) {
         .mobile-logo {
             display: block;
             margin: 0 auto;
@@ -1068,5 +1135,14 @@ blockquote.default {
         /* Make all right containers behave like the left ones */
         .right {
             left: 0%;
+        }
+
+        .img-right {
+          object-fit: cover;
+          height: 500px;
+          width: 100%;
+          position: absolute;
+          right: 0;
+          z-index: -1;
         }
     }

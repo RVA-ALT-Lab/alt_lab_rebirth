@@ -24,7 +24,7 @@
 					<?php the_title( '<h1 class="entry-title-service">', '</h1>' ); ?>					
 				</header><!-- .entry-header -->
 				<?php echo acf_fetch_call_out_one_text() ?>
-				<h2>The Team</h2>
+				<h2 class="team-header">The Team</h2>
 				<?php echo show_faculty_service('innovative-media');?>
 			</div>
 		</div>
@@ -52,8 +52,20 @@
 	<div class="container-fluid yellow">
 		<div class="container white">			
 			<div class="row">
-				<div class="col-md-3">
-					icons
+				<div class="col-md-3 related">
+					<h2>Related</h3>
+					<a href="http://192.168.33.10/wordpress/altlab/events/category/video/list/">
+						<div class="service-icon">
+							<h3>Events</h3>
+							<i class="icon-events"></i>
+						</div>
+					</a>
+					<a href="http://192.168.33.10/wordpress/altlab/events/category/video/list/">
+						<div class="service-icon">
+							<h3>Projects</h3>
+							<i class="icon-projects"></i>
+						</div>
+					</a>
 				</div>
 				<div class="col-md-3">
 					services

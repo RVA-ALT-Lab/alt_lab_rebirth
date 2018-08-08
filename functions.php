@@ -78,7 +78,7 @@ require get_template_directory() . '/inc/custom-post-types.php';
 /**
  * Load acf options
  */
-//require get_template_directory() . '/inc/acf-fields.php';
+require get_template_directory() . '/inc/acf-fields.php';
 
 
 /**

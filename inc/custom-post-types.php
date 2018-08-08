@@ -280,7 +280,7 @@ function create_topic_taxonomies()
   );
 
 //registers taxonomy to both project and faculty post types
-  register_taxonomy('topics',array('project','workshop'), array(
+  register_taxonomy('topics',array('project','workshop','tribe_events'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -318,7 +318,7 @@ function create_tag_taxonomies()
   );
 
 //registers taxonomy to both project, faculty, and workshop post types
-  register_taxonomy('emails',array('project','faculty','workshop'), array(
+  register_taxonomy('emails',array('project','faculty','workshop','tribe_events'), array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
@@ -395,7 +395,7 @@ function create_tool_taxonomies()
   );
 
 //registers taxonomy to both project and faculty post types
-  register_taxonomy('tools',array('project', 'workshop', 'topic'), array(
+  register_taxonomy('tools',array('project', 'workshop', 'topic','tribe_events'), array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
