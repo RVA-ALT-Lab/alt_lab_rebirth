@@ -648,6 +648,50 @@ function show_faculty_service($department){
 }
 
 
+function acf_fetch_call_out_one_text(){
+  global $post;
+  $html = '';
+  $call_out_one_text = get_field('call_out_one_text');
+
+    if( $call_out_one_text) {      
+      $html = $call_out_one_text;  
+     return $html;    
+    }
+
+}
+
+
+function acf_fetch_call_out_two_title(){
+  global $post;
+  $html = '';
+  $call_out_two_title = get_field('call_out_two_title');
+
+    if( $call_out_two_title) {      
+      $html = $call_out_two_title;  
+     return $html;    
+    }
+
+}
+
+
+
+function acf_fetch_call_out_two_text(){
+  global $post;
+  $html = '';
+  $call_out_two_text = get_field('call_out_two_text');
+
+    if( $call_out_two_text) {      
+      $html = $call_out_two_text;  
+     return $html;    
+    }
+
+}
+
+
+
+
+
+
 /*
 clean it up 
 MAKE THINGS CLEAN FOR NON SUPER ADMINS***********************************************

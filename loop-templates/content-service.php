@@ -23,13 +23,45 @@
 				<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title-service">', '</h1>' ); ?>					
 				</header><!-- .entry-header -->
-				<?php the_content(); ?>
+				<?php echo acf_fetch_call_out_one_text() ?>
 				<h2>The Team</h2>
 				<?php echo show_faculty_service('innovative-media');?>
 			</div>
 		</div>
-		<div class="service-separator foo">
-			foo
+		<div class="service-separator">
+		</div>
+	</div>
+	<div class="container-fluid service-callout-two">
+		<div class="row service-thumb">			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<h2><?php echo acf_fetch_call_out_two_title() ?></h2>
+						<?php echo acf_fetch_call_out_two_text() ?>
+					</div>					
+				</div>				
+			</div>
+			<img src="<?php echo the_post_thumbnail_url('large');?>" class="img-fluid img-right">
+		</div>	
+	</div>
+	<div class="container">
+		<div class="service-separator">
+		</div>
+	</div>	
+
+	<div class="container-fluid yellow">
+		<div class="container white">			
+			<div class="row">
+				<div class="col-md-3">
+					icons
+				</div>
+				<div class="col-md-3">
+					services
+				</div>
+				<div class="col-md-3">
+					button
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -42,7 +74,7 @@
 		) );
 		?>
 
-	</div><!-- .entry-content -->
+</div><!-- .entry-content -->
 
 
 <div class="container">
