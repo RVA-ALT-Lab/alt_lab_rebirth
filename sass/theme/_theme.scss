@@ -2,8 +2,9 @@
 //************************NAVBAR TWEEKS************************
 //aligns menu items to the right
 html {
-  //-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
+
 
 .assistive-text {
   height: 1px; 
@@ -382,6 +383,168 @@ li.menu-item:hover {
   text-align: center;
 }
 
+//HOW DOES THIS WORK 
+.timeline-body {
+  font-family: Roboto, sans-serif;
+  background: #00B3BE;
+  margin: 0 0 30px 0;
+  padding: 0 0 30px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.timeline-header {
+  background: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+
+/* Set a background color and font */
+.timeline-body {
+  font-family: Roboto, sans-serif;
+  background-color: #00B3BE;
+  margin: 0 0 30px 0;
+  box-sizing: border-box;
+}
+
+/* Border under the headline */
+.border-line {
+  border-bottom: 1px dashed;
+  margin-left: 20%;
+  margin-right: 20%;
+}  
+ 
+.timeline-icon {
+  float: left;
+  margin: 10px 10px 0 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.box-content {
+  float: left;
+  width: 70%;
+  margin: 0 0 0 10px;
+}
+
+
+
+
+/* This is the last centered box */
+.box-ender {
+  text-align: center;
+  margin: auto 35%;
+  position: relative;
+  padding: 20px 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.29);
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+    background-color: #fff;
+  top: 20px;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -3px;
+  box-sizing: content-box; 
+}
+
+/* Container around content */
+.timeline-container {
+  text-align: left;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -21px;
+  background-color: white;
+  border: 8px solid #FFB300;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  box-sizing: content-box; 
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #fff;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #fff;  
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #fff;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -20px;
+}
+
+/* The actual content */
+.timeline-content {
+  padding: 20px 20px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.29);
+}
+
 
 
 //about us portion
@@ -600,6 +763,9 @@ p {
   border-radius: 0;
 }
 
+
+
+
 //JUST BLOCKQUOTE
 //from https://codepen.io/iPawan/pen/emrPKP
 blockquote{
@@ -688,6 +854,13 @@ blockquote.default{
   .alt-center {
     height: 330px;
   }
+  .box-content {
+    width: 95%;
+    float: none;
+  }
+  .timeline-icon {
+  float: left;
+  padding: 0 10px 0 0;
 }
 
 @media only screen and (max-width: 760px) {
@@ -764,4 +937,53 @@ blockquote.default{
     bottom: 0;
   }
 
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+/* Full-width containers */
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .box-content {
+    width: 100%;
+    float: none;
+    padding: 0;
+
+  }
+  
+  .box-ender {
+    margin: -10px 25px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 12px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+
 }
+
+  

@@ -81,6 +81,13 @@ require get_template_directory() . '/inc/custom-post-types.php';
 //require get_template_directory() . '/inc/acf-fields.php';
 
 
+/**
+ * Load how it works timeline
+ */
+require get_template_directory() . '/inc/how_it_works_timeline.php';
+
+
+
 //ADD FONTS and VCU Brand Bar
 add_action('wp_enqueue_scripts', 'alt_lab_scripts');
 function alt_lab_scripts() {

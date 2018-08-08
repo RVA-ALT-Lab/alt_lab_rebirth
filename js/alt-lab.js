@@ -138,12 +138,12 @@ if (document.getElementsByClassName('faculty-body')){
 //populate modal
 
 jQuery('#contactModal').on('show.bs.modal', function (event) {
-  var button = jQuery(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('person') // Extract info from data-* attributes
-  console.log(recipient)
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = jQuery(this)
-  //modal.find('.modal-title').text('New message to ' + recipient)
-  console.log(modal.find('#input_1_5').val(recipient))
+  var button = jQuery(event.relatedTarget); // Button that triggered the modal
+  var recipient = button.data('person'); // Extract info from data-* attributes
+  var intent = button.data('intent');
+  var modal = jQuery(this);
+  modal.find('#input_1_5').val(recipient);
+  
 })
+
+

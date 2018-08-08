@@ -64,7 +64,12 @@
 	</div>
 </div>
 <!--END about us-->
+<!--HOW DOES THIS WORK-->
+<div class="timeline-body">
+	<?php how_does_this_work();?>
+</div>
 
+<!--END WORK-->
 
 <!--quote slider-->
 <div class="container">
