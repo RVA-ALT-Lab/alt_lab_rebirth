@@ -140,12 +140,18 @@ if (document.getElementsByClassName('faculty-body')){
 jQuery('#contactModal').on('show.bs.modal', function (event) {
   var button = jQuery(event.relatedTarget); // Button that triggered the modal
   var recipient = button.data('person'); // Extract info from data-* attributes
-  var intent = button.data('intent');
+  var css = button.data('css');
   var modal = jQuery(this);
   modal.find('#input_1_5').val(recipient);
+  modal.find('#the-person').addClass(css);
 
 })
 
+//remove the person
+jQuery('#contactModal').on('hide.bs.modal', function (event) {
+  var modal = jQuery(this);
+  modal.find('#the-person').removeClass();
+})
 
 //turn on tool tips
 jQuery(function () {

@@ -640,7 +640,7 @@ function show_faculty_service($department){
                     if( $the_query->have_posts() ): 
                       while ( $the_query->have_posts() ) : $the_query->the_post();
                         $html .= '<div class="team-member">';
-                        $html .= '<img class="service-team-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="Faculty bio picture for '. acf_fetch_faculty_title() . '"><button type="button" class="btn btn-service-contact icon mail" data-toggle="modal" data-target="#contactModal" data-person="'.acf_fetch_email().'"></button></div>';
+                        $html .= '<img class="service-team-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="Faculty bio picture for '. acf_fetch_faculty_title() . '"><a data-toggle="modal" href="#contactModal" data-css="' . basename(get_permalink()) . '" data-person="'.acf_fetch_email().'"><div class="icon mail"></div></a></div>';
                       endwhile;
                     endif;
     wp_reset_query();  // Restore global post data stomped by the_post().

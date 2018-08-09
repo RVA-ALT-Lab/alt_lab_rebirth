@@ -167,6 +167,38 @@ li.menu-item:hover {
     max-width: 800px;
 }
 
+//modal people 
+#the-person {
+    display: block;
+    width: 100%;   
+}
+
+.molly-ransone {
+    background-image: url(../imgs/molly.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;   
+    height: 100px;
+}
+
+.moaz-elemam {
+    background-image: url(../imgs/moaz.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;   
+    height: 100px;
+    background-color: orange;
+}
+
+.sean-bullock {
+    background-image: url(../imgs/sean.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;   
+    height: 100px;
+    background-color: green;
+}
+
 
 /*from https://github.com/IanLunn/Hover/blob/master/css/hover.css*/
 
@@ -619,6 +651,13 @@ li.menu-item:hover {
     position: relative;   
 }
 
+.about-us-description p {
+    font-size: 2em;
+    font-weight: 300;
+    padding-top: 0;
+    line-height: 1.4em;
+}
+
 .about-us::after {
   content: "";
   background-image: url(../imgs/altlab_hexpattern_gray.png);
@@ -828,14 +867,18 @@ p {
     margin-top: -10px;
 }
 
+.team-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
 .team-header {
   padding-top: 30px;
 }
 
 .team-member,
 .team-member img {
-    display: inline-block;
-    margin-right: 15px;
+    display: inline-block;    
     position: relative;
 }
 
@@ -843,16 +886,10 @@ p {
     background: red; // make this real at some point
 }
 
-.btn-service-contact {
+.team-member .icon {
     position: absolute;
-    bottom: 25px;
-    right: 25px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 12px;
-    border-radius: 0;
 }
+
 
 .service-separator {
     width: 100%;

@@ -25,7 +25,9 @@
 				</header><!-- .entry-header -->
 				<?php echo acf_fetch_call_out_one_text() ?>
 				<h2 class="team-header">The Team</h2>
-				<?php echo show_faculty_service('innovative-media');?>
+				<div class="team-holder">
+					<?php echo show_faculty_service('innovative-media');?>
+				</div>
 			</div>
 		</div>
 		<div class="service-separator">
