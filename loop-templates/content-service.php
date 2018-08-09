@@ -35,7 +35,7 @@
 		<div class="row service-thumb">			
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5">
+					<div class="col-md-6">
 						<h2><?php echo acf_fetch_call_out_two_title() ?></h2>
 						<?php echo acf_fetch_call_out_two_text() ?>
 					</div>					

@@ -257,7 +257,7 @@ function home_topics(){
                       while ( $the_query->have_posts() ) : $the_query->the_post();
                       $clean_title = sanitize_title(get_the_title());                            
                       $html_a .= '<div class="col-md-4 topic-slide" id="'. $clean_title .'-parent"><a class="btn btn-primary topic-link" data-toggle="collapse" href="#' . $clean_title .'" role="button" aria-expanded="false" aria-controls="' . sanitize_title(get_the_title()) . '" ><h3>' . get_the_title() . '</h3><i class="fa fa-caret-down"></i></a></div>';
-                      $html_b .= '<div class="col-md-12 collapse accordion" data-parent="#topic-parent" id="' . sanitize_title(get_the_title()) . '"><div class="topic-description">'. acf_fetch_topic_callout() .'</div><i class="fa fa-envelope"></i></div>'; 
+                      $html_b .= '<div class="col-md-12 collapse accordion" data-parent="#topic-parent" id="' . sanitize_title(get_the_title()) . '"><div class="topic-description">'. acf_fetch_topic_callout() .'</div><i class="icon mail"></i></div>'; 
                       $i++;     
                        if ($i === 3 || $i === 6 || $i === 9 || $i === 12 || $i === 15 || $i === 18 ) {
                           $html .= $html_a . $html_b . '<div class="col-md-12 collapse" id="placeholder-' . $i . '"></div>';  
@@ -640,7 +640,7 @@ function show_faculty_service($department){
                     if( $the_query->have_posts() ): 
                       while ( $the_query->have_posts() ) : $the_query->the_post();
                         $html .= '<div class="team-member">';
-                        $html .= '<img class="service-team-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="Faculty bio picture for '. acf_fetch_faculty_title() . '"><button type="button" class="btn btn-service-contact" data-toggle="modal" data-target="#contactModal" data-person="'.acf_fetch_email().'">@</button></div>';
+                        $html .= '<img class="service-team-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="Faculty bio picture for '. acf_fetch_faculty_title() . '"><button type="button" class="btn btn-service-contact icon mail" data-toggle="modal" data-target="#contactModal" data-person="'.acf_fetch_email().'"></button></div>';
                       endwhile;
                     endif;
     wp_reset_query();  // Restore global post data stomped by the_post().
@@ -672,7 +672,6 @@ function acf_fetch_call_out_two_title(){
     }
 
 }
-
 
 
 function acf_fetch_call_out_two_text(){

@@ -153,9 +153,18 @@ li.menu-item:hover {
     cursor: pointer;
 }
 
+#header-mail, #header-search {
+    height: 25px;    
+    margin-bottom: -6px;
+    display: inline-block;
+}
 
 #contactModal {
-    background: rgba(0, 0, 0, .1);
+    background: rgba(0, 0, 0, .5);
+}
+
+.modal-dialog {
+    max-width: 800px;
 }
 
 
@@ -255,7 +264,8 @@ li.menu-item:hover {
 
 .quotes {
     border-top: 1px dashed #000;
-    margin-top: 4em;
+    border-bottom: 1px dashed #000;
+    margin-top: 100px;
 }
 
 .quote-nav {
@@ -313,9 +323,6 @@ li.menu-item:hover {
 }
 
 //home topics
-.home-topics {
-    padding-bottom: 80px;
-}
 
 #topic-parent {
     background: url(../imgs/altlab_faculty.jpg);
@@ -360,6 +367,14 @@ li.menu-item:hover {
     border: 2px solid $dark-gray;
 }
 
+.topic-wrapper .accordion, .topic-description{
+            background-color: #d1f0f2;
+        }
+        
+.topic-description {
+    background-color: #d1f0f2;
+    }
+
 .topic-link:hover {
     background-color: $light-gray;
     color: $black;
@@ -399,11 +414,18 @@ li.menu-item:hover {
 }
 
 //HOW DOES THIS WORK 
+.interested {
+    margin-top: 20px;
+}
 .timeline-body {
     font-family: Roboto, sans-serif;
     background: #00B3BE;
     margin: 0 0 30px 0;
-    padding: 0 0 30px 0;
+    padding: 30px 0 30px 0;
+    margin-top: 40px;
+    font-family: Roboto, sans-serif;
+    background-color: #00B3BE;
+    box-sizing: border-box;
 }
 
 * {
@@ -419,14 +441,6 @@ li.menu-item:hover {
 
 
 
-/* Set a background color and font */
-
-.timeline-body {
-    font-family: Roboto, sans-serif;
-    background-color: #00B3BE;
-    margin: 0 0 30px 0;
-    box-sizing: border-box;
-}
 
 
 /* Border under the headline */
@@ -539,7 +553,7 @@ li.menu-item:hover {
 
 /* Add arrows to the left container (pointing right) */
 
-.left::before {
+.timeline-container.left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -555,7 +569,7 @@ li.menu-item:hover {
 
 /* Add arrows to the right container (pointing left) */
 
-.right::before {
+.timeline-container.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -586,13 +600,35 @@ li.menu-item:hover {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .29);
 }
 
+//image row
+
+.image-row {
+    margin-top: 70px;
+}
 
 
 //about us portion
+
+.about-us-row {
+    padding-top: 70px;
+}
+
 .about-us {
-    padding-top: 200px;
+    padding-top: 50px;
     padding-bottom: 80px;
-    background-image: url(../imgs/altlab_hexpattern_gray.png);
+    position: relative;   
+}
+
+.about-us::after {
+  content: "";
+  background-image: url(../imgs/altlab_hexpattern_gray.png);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 .about-us-img {
@@ -688,8 +724,9 @@ li.menu-item:hover {
 
 
 //************************BASIC CONTENT CHOICES************************
-article a {
+article a, p a {
     text-decoration: underline;
+    color: $black;
 }
 
 body,
@@ -1001,6 +1038,25 @@ blockquote.default {
     justify-content: space-between;
 }
 
+//icons
+
+.icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+} 
+
+.mail {
+    background-image: url(../imgs/icon-mail.svg);
+}
+
+.search {
+    background-image: url(../imgs/icon-search.svg);
+}
+
 
 @media only screen and (max-width: 1199px) {
     .alt-center {
@@ -1048,6 +1104,9 @@ blockquote.default {
             display: block;
             margin: 0 auto;
         }
+        .home-callout, .entry-home {
+            font-size: 2em;
+        }
 
         .home-description {
             font-size: 1em;
@@ -1071,6 +1130,14 @@ blockquote.default {
 
         .show {
             padding: 10px;
+        }
+
+        .topic-wrapper .accordion, .topic-description{
+            background-color: #d1f0f2;
+        }
+
+        .topic-description {
+            background-color: #d1f0f2;
         }
 
         .carousel-inner {

@@ -78,9 +78,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div><!-- .container -->
 			<?php endif; ?>
 			<button type="button" class="mail-icon" data-toggle="modal" data-target="#contactModal">
-			  <i class="fa fa-envelope"></i>
+			  <i class="icon mail" id="header-mail"></i>
 			</button>
-			<button class="search-icon" type="button" data-toggle="collapse" data-target="#search-box-dropdown" aria-label="Toggle search bar" aria-controls="search-box-dropdown" aria-expanded="false" id="search-button"><i class="fa fa-search"></i></button>
+			<button class="search-icon" type="button" data-toggle="collapse" data-target="#search-box-dropdown" aria-label="Toggle search bar" aria-controls="search-box-dropdown" aria-expanded="false" id="search-button"><i class="icon search" id="header-search"></i></button>
 			<div class="collapse" id="search-box-dropdown"><?php get_search_form();?></div>	
 
 		</nav><!-- .site-navigation -->

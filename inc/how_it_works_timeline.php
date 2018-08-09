@@ -11,12 +11,7 @@
  */
 function how_does_this_work() { ?>
 
-<div class="timeline-header">
-  <div>
-    <h2 class="home-callout">How does this work?</h2>
-  </div>
-  <div class="border-line"></div>
-</div>
+
 <div class="timeline-body">
 <div class="timeline">
   <div class="timeline-container left">
