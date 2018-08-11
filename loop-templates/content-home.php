@@ -107,7 +107,7 @@
 				<img class="about-us-img img-fluid" src="<?php echo get_stylesheet_directory_uri();?>/imgs/about_us.jpg" alt="A group of faculty participating in faculty development.">
 			</div>
 			<div class="col-md-6 about-us-description">
-				<p>We are a diverse team of educators passionate about improving access, increasing educational outcomes, and creating powerful learning experiences.</p>
+				<p>We are a diverse team of educators passionate about increasing access, improving educational outcomes, and creating powerful learning experiences.</p>
 				<p><a href="#">Learn more about our team and how we can help you.</a></p>
 			</div>
 		</div>

@@ -26,7 +26,10 @@
 				<?php echo acf_fetch_call_out_one_text() ?>
 				<h2 class="team-header">The Team</h2>
 				<div class="team-holder">
-					<?php echo show_faculty_service('innovative-media');?>
+
+					<?php 
+					$dept = sanitize_title(acf_fetch_department_alignment());
+					echo show_faculty_service($dept);?>
 				</div>
 			</div>
 		</div>

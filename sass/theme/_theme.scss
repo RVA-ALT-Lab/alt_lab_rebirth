@@ -855,6 +855,10 @@ p {
     text-align: center;
 }
 
+.service-page p {
+    font-size: 1.3em;
+}
+
 .entry-title-service {
     font-family: Roboto-Medium;
     font-size: 48px;
@@ -879,7 +883,7 @@ p {
 .team-member,
 .team-member img {
     display: inline-block;    
-    position: relative;
+    position: relative;   
 }
 
 .team-member img:hover {

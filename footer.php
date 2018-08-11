@@ -21,6 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <h2 class="modal-title" id="contactModalCenterTitle">ALT Lab Conversation Initiator</h2>       
       </div>
       <div class="modal-body">
+      	<div id="the-greeting"></div>
         <div id="the-person"></div>
         <?php echo do_shortcode('[gravityform id="1" title="false" description="false"]');?>
       </div>

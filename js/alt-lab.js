@@ -140,11 +140,12 @@ if (document.getElementsByClassName('faculty-body')){
 jQuery('#contactModal').on('show.bs.modal', function (event) {
   var button = jQuery(event.relatedTarget); // Button that triggered the modal
   var recipient = button.data('person'); // Extract info from data-* attributes
+  var name = button.data('name');
   var css = button.data('css');
   var modal = jQuery(this);
   modal.find('#input_1_5').val(recipient);
   modal.find('#the-person').addClass(css);
-
+  modal.find('#the-greeting').html('<h2>Talk to ' + name + '!</h2>');
 })
 
 //remove the person

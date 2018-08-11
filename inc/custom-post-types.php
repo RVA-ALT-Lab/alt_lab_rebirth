@@ -513,4 +513,3 @@ function create_topic_cpt() {
   $wp_rewrite->flush_rules();
 }
 add_action( 'init', 'create_topic_cpt', 0 );
-

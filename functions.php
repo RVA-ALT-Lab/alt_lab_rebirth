@@ -78,7 +78,7 @@ require get_template_directory() . '/inc/custom-post-types.php';
 /**
  * Load acf options
  */
-require get_template_directory() . '/inc/acf-fields.php';
+//require get_template_directory() . '/inc/acf-fields.php';
 
 
 /**
@@ -640,7 +640,7 @@ function show_faculty_service($department){
                     if( $the_query->have_posts() ): 
                       while ( $the_query->have_posts() ) : $the_query->the_post();
                         $html .= '<div class="team-member">';
-                        $html .= '<img class="service-team-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="Faculty bio picture for '. acf_fetch_faculty_title() . '"><a data-toggle="modal" href="#contactModal" data-css="' . basename(get_permalink()) . '" data-person="'.acf_fetch_email().'"><div class="icon mail"></div></a></div>';
+                        $html .= '<img class="service-team-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="Faculty bio picture for '. acf_fetch_faculty_title() . '"><a data-toggle="modal" href="#contactModal" data-name="' . get_the_title() . '" data-css="' . basename(get_permalink()) . '" data-person="'.acf_fetch_email().'"><div class="icon mail"></div></a></div>';
                       endwhile;
                     endif;
     wp_reset_query();  // Restore global post data stomped by the_post().
@@ -685,6 +685,20 @@ function acf_fetch_call_out_two_text(){
     }
 
 }
+
+
+function acf_fetch_department_alignment(){
+  global $post;
+  $html = '';
+  $department_alignment = get_field('department_alignment');
+
+    if( $department_alignment) {      
+      $html = $department_alignment->name;  
+     return $html;    
+    }
+
+}
+
 
 
 
