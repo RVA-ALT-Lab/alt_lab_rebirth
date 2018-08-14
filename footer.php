@@ -18,16 +18,14 @@ $container = get_theme_mod( 'understrap_container_type' );
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title" id="contactModalCenterTitle">ALT Lab Conversation Initiator</h2>       
+        <h2 class="modal-title" id="the-greeting"></h2>       
       </div>
       <div class="modal-body">
-      	<div id="the-greeting"></div>
         <div id="the-person"></div>
         <?php echo do_shortcode('[gravityform id="1" title="false" description="false"]');?>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        footer elements
       </div>
     </div>
   </div>

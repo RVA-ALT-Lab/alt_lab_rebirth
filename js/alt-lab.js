@@ -139,9 +139,21 @@ if (document.getElementsByClassName('faculty-body')){
 
 jQuery('#contactModal').on('show.bs.modal', function (event) {
   var button = jQuery(event.relatedTarget); // Button that triggered the modal
-  var recipient = button.data('person'); // Extract info from data-* attributes
-  var name = button.data('name');
-  var css = button.data('css');
+  if(button.data('person')){
+    var recipient = button.data('person'); // Extract info from data-* attributes
+  } else {
+    recipient = 'ALT Lab';
+  }
+  if (button.data('name')){
+    var name = button.data('name');
+  } else {
+    name = "ALT Lab";
+  }
+  if (button.data('css')){
+    var css = button.data('css');
+  } else {
+    css ='alt-lab-generic';
+  }
   var modal = jQuery(this);
   modal.find('#input_1_5').val(recipient);
   modal.find('#the-person').addClass(css);

@@ -165,7 +165,33 @@ li.menu-item:hover {
 
 .modal-dialog {
     max-width: 800px;
+    border-radius: 0;
 }
+
+.modal-content {
+    padding: 40px;
+    border-radius: 0;
+}
+
+#gform_1 #gform_fields_1>li {
+    margin-bottom: 40px;
+}
+
+#gform_1 #input_1_2 {
+    margin-left: 30px;
+    display: block;
+}
+
+.gfield_required {
+    display: none;
+}
+
+#gform_1 ul>li,#gform_1 .gfield_label {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+
 
 //modal people 
 #the-person {
@@ -359,9 +385,9 @@ li.menu-item:hover {
 #topic-parent {
     background: url(../imgs/altlab_faculty.jpg);
     background-position: top center;
-    background-size: contain;
     background-repeat: no-repeat;
     padding-top: 100px;
+    margin-top: 70px;
 }
 
 
@@ -397,6 +423,10 @@ li.menu-item:hover {
     background: #fff;
     border-radius: 0;
     border: 2px solid $dark-gray;
+}
+
+.topic-wrapper {
+    width: 100%;
 }
 
 .topic-wrapper .accordion, .topic-description{
@@ -707,6 +737,11 @@ li.menu-item:hover {
     border: none;
     margin: 2em;
     border-radius: 0;
+}
+
+.bio-img {
+     width: 300px;
+    height: 300px;
 }
 
 .bio-img.float-left {

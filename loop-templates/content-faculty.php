@@ -36,8 +36,8 @@
 	</div>
 	<div class="media">
 		<div class="container">
-			<h2 class="faculty-group">Innovative Media</h2>
-			<?php echo showFaculty('innovative-media');?>
+			<h2 class="faculty-group">Learning Media</h2>
+			<?php echo showFaculty('learning-media');?>
 		</div>
 	</div>
 	<div class="rd">
