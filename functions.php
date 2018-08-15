@@ -427,9 +427,25 @@ function get_the_quote_speaker(){
    }
 }
 
+function get_the_quote_speaker_title(){
+  global $post;
+   $title = get_field( "title", $post->ID );
+   if ($title){
+    return $title;
+   }
+}
+
+function get_the_quote_speaker_dept(){
+  global $post;
+   $dept = get_field( "department", $post->ID );
+   if ($dept){
+    return $dept;
+   }
+}
+
 
 //get the quotes for the front page
-function quote_maker(){
+function quote_maker(){  
   $html = "";
   $inc = 1;
   $args = array(
@@ -447,7 +463,10 @@ function quote_maker(){
                        } else {
                         $active = "";
                        }
-                      $html .= '<div class="carousel-item ' . $active . ' quote-slide"><div class="quote-text"><h3>' . get_the_quote() . '</h3>'.get_the_quote_speaker() .'</div></div>';
+                      $html .= '<div class="carousel-item ' . $active . ' quote-slide"><div class="quote-text">';
+                      $html .= '<h3>' . get_the_quote() . '</h3>' . get_the_quote_speaker(); 
+                      $html .=  '<div class="quote-title">' . get_the_quote_speaker_title() . '</div>' ;
+                      $html .= '</div></div>';
                       $inc++;
                        endwhile;
                   endif;
@@ -640,7 +659,7 @@ function show_faculty_service($department){
                     if( $the_query->have_posts() ): 
                       while ( $the_query->have_posts() ) : $the_query->the_post();
                         $html .= '<div class="team-member">';
-                        $html .= '<img class="service-team-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="Faculty bio picture for '. acf_fetch_faculty_title() . '"><a data-toggle="modal" href="#contactModal" data-name="' . get_the_title() . '" data-css="' . basename(get_permalink()) . '" data-person="'.acf_fetch_email().'"><div class="icon mail"></div></a></div>';
+                        $html .= '<img class="service-team-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="Faculty bio picture for '. get_the_title() . '"><a data-toggle="modal" href="#contactModal" data-name="' . get_the_title() . '" data-css="' . basename(get_permalink()) . '" data-person="'.acf_fetch_email().'"><div class="icon mail"></div></a></div>';
                       endwhile;
                     endif;
     wp_reset_query();  // Restore global post data stomped by the_post().
@@ -767,3 +786,7 @@ function faculty_alpha_slug_rewrite( $post_id ) {
 add_action( 'save_post', 'faculty_alpha_slug_rewrite' );
 
 */
+
+//ACF allow us to see custom fields in editor view
+add_filter( 'acf/settings/remove_wp_meta_box', '__return_true' );
+//add_filter( 'is_protected_meta', '__return_false', 999 );
