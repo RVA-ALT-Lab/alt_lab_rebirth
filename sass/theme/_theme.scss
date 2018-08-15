@@ -290,8 +290,6 @@ li.menu-item:hover {
 
 //HOME PAGE
 .entry-home {
-    font-size: 5em;
-    border-top: 1px dashed #000;
     border-bottom: 1px dashed #000;
     padding: .5em;
     text-align: center;
@@ -299,7 +297,6 @@ li.menu-item:hover {
 }
 
 .home-callout {
-    font-size: 4em;
     line-height: 1.2em;
     text-align: center;
     font-weight: 400;
@@ -393,8 +390,7 @@ li.menu-item:hover {
     background: url(../imgs/altlab_faculty.jpg);
     background-position: top center;
     background-repeat: no-repeat;
-    padding-top: 100px;
-    margin-top: 70px;
+    // margin-top: 70px;
 }
 
 
@@ -420,7 +416,6 @@ li.menu-item:hover {
     position: absolute;
     left: 0;
     top: 0;
-    padding: 2em;
     border: 1px solid $dark-gray;
     border-radius: 0;
 }
@@ -484,14 +479,12 @@ li.menu-item:hover {
 
 //HOW DOES THIS WORK 
 .interested {
-    margin-top: 20px;
 }
 .timeline-body {
     font-family: Roboto, sans-serif;
     background: #00B3BE;
     margin: 0 0 30px 0;
     padding: 30px 0 30px 0;
-    margin-top: 40px;
     font-family: Roboto, sans-serif;
     background-color: #00B3BE;
     box-sizing: border-box;
@@ -1204,7 +1197,6 @@ blockquote.default {
         }
 
         #topic-parent {
-            padding-top: 40px
         }
 
         .topic-link h3 {
