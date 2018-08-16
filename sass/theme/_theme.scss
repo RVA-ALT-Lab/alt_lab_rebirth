@@ -9,7 +9,8 @@ p {
     color: #4b4f54;
     font-size: 1em;
     line-height: 1.8em;
-   padding-bottom: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
 }
 
 .assistive-text {
@@ -290,6 +291,8 @@ li.menu-item:hover {
 
 //HOME PAGE
 .entry-home {
+    font-size: 4em;
+    // border-top: 1px dashed #000;
     border-bottom: 1px dashed #000;
     padding: .5em;
     text-align: center;
@@ -297,6 +300,7 @@ li.menu-item:hover {
 }
 
 .home-callout {
+    font-size: 3.5em;
     line-height: 1.2em;
     text-align: center;
     font-weight: 400;
@@ -390,6 +394,8 @@ li.menu-item:hover {
     background: url(../imgs/altlab_faculty.jpg);
     background-position: top center;
     background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 60px;
     // margin-top: 70px;
 }
 
@@ -416,6 +422,7 @@ li.menu-item:hover {
     position: absolute;
     left: 0;
     top: 0;
+    padding: 2.5em;
     border: 1px solid $dark-gray;
     border-radius: 0;
 }
@@ -479,12 +486,14 @@ li.menu-item:hover {
 
 //HOW DOES THIS WORK 
 .interested {
+    margin-top: 40px;
 }
 .timeline-body {
     font-family: Roboto, sans-serif;
     background: #00B3BE;
     margin: 0 0 30px 0;
     padding: 30px 0 30px 0;
+    margin-top: 20px;
     font-family: Roboto, sans-serif;
     background-color: #00B3BE;
     box-sizing: border-box;
@@ -530,6 +539,13 @@ li.menu-item:hover {
     margin: 0 0 0 10px;
 }
 
+.box-content p {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-top: 0;
+    line-height: 1.6em;
+}
+
 
 
 
@@ -546,6 +562,10 @@ li.menu-item:hover {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .29);
 }
 
+.box-ender h2 {
+    font-weight: 500;
+    font-size: 2.5em;
+}
 
 /* The actual timeline (the vertical ruler) */
 
@@ -750,6 +770,7 @@ li.menu-item:hover {
 
 .card-body {
     position: relative;
+    padding: 2.2rem;
 }
 
 .square-right::after {
@@ -821,11 +842,6 @@ img.wp-post-image {
     margin-bottom: 1em;
 }
 
-p {
-    background-color: $white;
-    padding: 1em .4em;
-}
-
 .table {
     background-color: $white;
 }
@@ -847,6 +863,7 @@ p {
     background-position: right;
     background-size: 400px 800px;
     background-attachment: fixed;
+    margin-bottom: -40px;
 }
 
 
@@ -1156,8 +1173,16 @@ blockquote.default {
             height: auto;
         }
 
+        .navbar-toggler-icon {
+            background-image: url(../imgs/icon-menu.svg);
+        }
+
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+            background-image: url(../imgs/icon-x.svg);
+        }
+
         #the-menu a {
-            margin: 0 auto;
+            margin: 0;
             display: block;
         }
 
@@ -1197,6 +1222,12 @@ blockquote.default {
         }
 
         #topic-parent {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .interested {
+            margin-top: 0;
         }
 
         .topic-link h3 {
