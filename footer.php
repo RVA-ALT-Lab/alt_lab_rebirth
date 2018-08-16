@@ -31,6 +31,24 @@ $container = get_theme_mod( 'understrap_container_type' );
   </div>
 </div>
 
+		<!-- Modal -->
+<div class="modal fade" id="workshopModal" tabindex="-1" role="dialog" aria-labelledby="workshopModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="the-greeting"></h2>       
+      </div>
+      <div class="modal-body">
+        <div id="the-person"></div>
+        <?php echo do_shortcode('[gravityform id="3" title="false" description="false"]');?>
+      </div>
+      <div class="modal-footer">
+        footer elements
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="wrapper" id="wrapper-footer">
 
 	<footer class="<?php echo esc_attr( $container ); ?>">

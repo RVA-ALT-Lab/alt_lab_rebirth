@@ -24,6 +24,10 @@
 			<?php echo vcu_examples();?>
 			<?php echo outside_examples();?>
 		</div>
+		<div class="workshop-request">
+			<a href="#workshopModal" data-toggle="modal" class="btn btn-alt">Request a workshop</a>
+		</div>
+
 
 		<?php
 		wp_link_pages( array(
