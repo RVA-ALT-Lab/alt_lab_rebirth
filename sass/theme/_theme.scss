@@ -125,16 +125,20 @@ li.menu-item:hover {
 }
 
 #search-box-dropdown {
-    position: absolute;
-    right: 0px;
-    top: 70px;
+    position: relative;
+    left: 0;
+    top: 0;
     border-top: none;
     background-color: transparent;
 }
 
-.nav-big {
-    display: none;
+#search-box-dropdown.show {
+    padding: 0 0 0 10px;   
 }
+
+// .nav-big {
+//     display: none;
+// }
 
 .sticky .nav-big {
     display: inline-block;
@@ -1147,7 +1151,7 @@ blockquote.default {
     background-image: url(../imgs/icon-mail.svg);
 }
 
-.search {
+#header-search {
     background-image: url(../imgs/icon-search.svg);
 }
 
@@ -1182,6 +1186,10 @@ blockquote.default {
             background-image: url(../imgs/icon-x.svg);
         }
 
+        #search-box-dropdown.show {
+            padding: 0;   
+        }
+        
         #the-menu a {
             margin: 0;
             display: block;
@@ -1206,6 +1214,7 @@ blockquote.default {
             display: block;
             margin: 0 auto;
         }
+
         .home-callout, .entry-home {
             font-size: 2em;
         }
