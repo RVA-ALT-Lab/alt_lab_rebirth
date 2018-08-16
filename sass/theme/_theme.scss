@@ -203,7 +203,34 @@ li.menu-item:hover {
     font-weight: 400;
 }
 
+/*********************************
+ARROWS THAT TRACK CURSOR
+*********************************/
 
+#quiver {
+    border: 1px solid green;
+    height: 20px;
+    // color: red;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .arrow {
+    // background-color: #424242;
+    width:45px;
+    height:45px;
+    display:inline-block;
+        background-image: url("http://rampages.us/playgroundforme/wp-content/uploads/sites/26581/2018/03/Arrow16up_SWh.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1.5em;
+  }
+  
+  #wrappery {
+    width:100%;
+    height: 500px;
+    margin-bottom: 5px;
+  }
 
 //modal people 
 #the-person {
@@ -395,14 +422,21 @@ li.menu-item:hover {
 //home topics
 
 #topic-parent {
-    background: url(../imgs/altlab_faculty.jpg);
+    background-color: $gold;
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 60px;
     padding-bottom: 60px;
+    position: relative;
     // margin-top: 70px;
 }
 
+#topic-parent .container {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+}
 
 .topic-slide {
     height: 120px;
@@ -788,27 +822,27 @@ li.menu-item:hover {
     padding: 2.2rem;
 }
 
-.square-right::after {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 50px;
-    height: 50px;
-    content: '';
-    border-left: 2px solid $gold;
-    border-bottom: 2px solid $gold;
-}
+// .square-right::after {
+//     position: absolute;
+//     right: 10px;
+//     top: 10px;
+//     width: 50px;
+//     height: 50px;
+//     content: '';
+//     border-left: 2px solid $gold;
+//     border-bottom: 2px solid $gold;
+// }
 
 
-.square-left::after {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 50px;
-    height: 50px;
-    content: '';
-    background: $gold;
-}
+// .square-left::after {
+//     position: absolute;
+//     left: 10px;
+//     top: 10px;
+//     width: 50px;
+//     height: 50px;
+//     content: '';
+//     background: $gold;
+// }
 
 .bio-img.float-right {
     margin-left: 1em;
