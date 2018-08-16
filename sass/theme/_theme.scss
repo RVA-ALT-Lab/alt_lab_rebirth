@@ -488,6 +488,20 @@ li.menu-item:hover {
     text-align: center;
 }
 
+.btn-alt {
+    padding: 20px;
+    background-color: $dark-gray;
+    color: $white;
+    min-width: 260px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0;
+}
+
+.btn-alt:hover {
+    color: $gold;
+}
+
 //HOW DOES THIS WORK 
 .interested {
     margin-top: 40px;
