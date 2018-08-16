@@ -22,25 +22,28 @@
 	<div class="container">
 		<?php the_content(); ?>
 	</div>
-	<div class="leadership">
+	<div class="container">
+		<h2 class="entry-home" id="faculty-list">Our Team</h2>
+	</div>
+	<div class="leadership" id="faculty-list-leadership">
 		<div class="container">
 			<h2 class="faculty-group">Leadership</h2>
 			<?php echo showFaculty('leadership');?>
 		</div>
 	</div>
-	<div class="design">
+	<div class="design" id="faculty-list-instructional-design">
 		<div class="container">
 			<h2 class="faculty-group">Instructional Design</h2>
 			<?php echo showFaculty('instructional-design');?>
 		</div>
 	</div>
 	<div class="media">
-		<div class="container">
+		<div class="container" id="faculty-list-learning-media">
 			<h2 class="faculty-group">Learning Media</h2>
 			<?php echo showFaculty('learning-media');?>
 		</div>
 	</div>
-	<div class="rd">
+	<div class="rd" id="faculty-list-rd">
 		<div class="container">		
 			<h2 class="faculty-group">R+D</h2>
 			<?php echo showFaculty('rd');?>
