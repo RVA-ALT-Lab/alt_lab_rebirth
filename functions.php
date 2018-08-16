@@ -628,7 +628,7 @@ function showFaculty($department){
                     if( $the_query->have_posts() ): 
                       while ( $the_query->have_posts() ) : $the_query->the_post();
                         $html .= '<div class="faculty card"><div class="card-body faculty-body">';
-                        $html .= '<img class="bio-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'medium') . '" alt="Faculty bio picture for ' . get_the_title() . '">';
+                        $html .= '<img class="bio-img img-fluid" src="' . get_the_post_thumbnail_url(get_the_ID(),'medium') . '" alt="Faculty bio picture for ' . get_the_title() . '">';
                         $html .= '<h3 class="faculty-name">' . get_the_title() . '</h3>';
                         $html .= '<h4 class="faculty-title">' . acf_fetch_faculty_title() . '</h4>';
                         $html .= '<div class="faculty-bio-text">' . get_the_content() . '</div></div></div>';
