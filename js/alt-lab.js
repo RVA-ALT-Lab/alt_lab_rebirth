@@ -176,10 +176,21 @@ jQuery(function () {
 // var getQuiver = document.getElementById('quiver');
 // console.log(getQuiver);
 
-
-for(var i = 0; i < 77; i++){
-  makeArrow(1);
+window.onload = function(){
+  theArrows();
 }
+
+function theArrows(){
+    var body = document.getElementsByTagName("body")[0];
+    body.onmousemove = function(event) {cursorFinder(event)};
+
+    for(var i = 0; i < 50; i++){
+      makeArrow('arrow-'+i);
+    }
+}
+
+
+
 
 function makeArrow (id){
  var newDiv = document.createElement('div');
@@ -188,15 +199,11 @@ function makeArrow (id){
   // add the text node to the newly created div
   newDiv.appendChild(newContent);  
   // var quiver = document.getElementById('quiver');
-  var wrappery = document.getElementById('topic-parent');
+  var wrappery = document.getElementById('arrow-holder');
   var arrow = '<div class="arrow"></div>';
-  document.getElementById('topic-parent').insertAdjacentHTML('afterbegin', arrow); 
+  wrappery.insertAdjacentHTML('afterbegin', arrow); 
 }
 
-var body =document.getElementsByTagName("body")[0];
-console.log(body);
-
-body.onmousemove = function(event) {cursorFinder(event)};
 
 function cursorFinder(e) {
     var x = e.clientX;

@@ -33,6 +33,7 @@
 
 <!--TOPICS-->
 <div class="home-topics" id="topic-parent">
+	<div id="arrow-holder"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
