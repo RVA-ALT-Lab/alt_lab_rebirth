@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="179px" viewBox="0 0 84 179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 12</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Alt-Lab-updated" transform="translate(-87.000000, -1825.000000)">
+            <g id="Group-12" transform="translate(89.000000, 1827.000000)">
+                <g id="Group-6" transform="translate(0.000000, 67.000000)" fill-rule="nonzero" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                    <g id="Group-4" transform="translate(0.000000, 26.000000)">
+                        <polygon id="Path-4" points="39.4202899 0 78.8405797 19.1304348 39.4202899 38.2608696 0 19.1304348"></polygon>
+                        <polyline id="Path-5" points="0 19.7101449 0 61.9565217 39.7575758 81.1594203 80 61.9565217 80 19.7101449"></polyline>
+                        <path d="M39.4202899,38.2608696 L39.4202899,80.6719368" id="Path-6"></path>
+                    </g>
+                    <path d="M13.7522119,26.9253556 L0.350442387,18.1850711" id="Path-14"></path>
+                    <path d="M79.4017695,26.9253556 L66,18.1850711" id="Path-14-Copy" transform="translate(72.700885, 22.555213) scale(-1, 1) translate(-72.700885, -22.555213) "></path>
+                    <path d="M40,16 L40,0" id="Path-15"></path>
+                </g>
+                <g id="Group-8" transform="translate(32.000000, 0.000000)">
+                    <circle id="Oval" stroke="#000000" stroke-width="4" fill="#000000" fill-rule="nonzero" cx="24" cy="24" r="24"></circle>
+                    <polygon id="1" fill="#FFFFFF" points="27.4824219 36 23.2285156 36 23.2285156 15.4511719 16.953125 17.5957031 16.953125 13.9921875 26.9375 10.3183594 27.4824219 10.3183594"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

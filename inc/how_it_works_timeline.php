@@ -16,7 +16,7 @@ function how_does_this_work() { ?>
 <div class="timeline">
   <div class="timeline-container left">
     <div class="timeline-content">
-      <img src="<?php echo get_template_directory_uri();?>/imgs/circle_one_box.svg" class="timeline-icon"</div>
+      <img src="<?php echo get_template_directory_uri();?>/imgs/bl_circle_one_box.svg" class="timeline-icon"</div>
       <div class="clearfix">
         <div class="box-content">
         <h2>You have an idea</h2>
@@ -27,7 +27,7 @@ function how_does_this_work() { ?>
   </div>
   <div class="timeline-container right">
     <div class="timeline-content">
-      <img src="<?php echo get_template_directory_uri();?>/imgs/circle_two_hander.svg" class="timeline-icon"</div>
+      <img src="<?php echo get_template_directory_uri();?>/imgs/bl_circle_two_hander.svg" class="timeline-icon"</div>
     <div class="clearfix">
       <div class="box-content">
       <h2>You get in touch</h2>
@@ -38,7 +38,7 @@ function how_does_this_work() { ?>
   </div>
     <div class="timeline-container left">
     <div class="timeline-content">
-      <img src="<?php echo get_template_directory_uri();?>/imgs/circle_three_map.svg" class="timeline-icon"</div>
+      <img src="<?php echo get_template_directory_uri();?>/imgs/bl_circle_three_map.svg" class="timeline-icon"</div>
     <div class="clearfix">
       <div class="box-content">
       <h2>We create a plan</h2>
@@ -49,7 +49,7 @@ function how_does_this_work() { ?>
   </div>
   <div class="timeline-container right">
     <div class="timeline-content">
-      <img src="<?php echo get_template_directory_uri();?>/imgs/circle_four_students.svg" class="timeline-icon"</div>
+      <img src="<?php echo get_template_directory_uri();?>/imgs/bl_circle_four_students.svg" class="timeline-icon"</div>
     <div class="clearfix">
       <div class="box-content">
       <h2>Your students engage</h2>
