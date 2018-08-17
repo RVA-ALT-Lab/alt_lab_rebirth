@@ -184,14 +184,12 @@ function theArrows(){
     var body = document.getElementsByTagName("body")[0];
     body.onmousemove = function(event) {cursorFinder(event)};
     for(var i = 0; i < 50; i++){
-      makeArrow('arrow-'+i);
+      makeArrow();
     }
 }
 
 
-
-
-function makeArrow (id){
+function makeArrow (){
  var newDiv = document.createElement('div');
   newDiv.classList.add("arrow");
  var newContent = document.createTextNode(" "); 
@@ -205,14 +203,15 @@ function makeArrow (id){
 
 
 function cursorFinder(e) {
-    var x = e.clientX;
-    var y = e.clientY;
-    //var coor = "Coordinates: (" + x + "," + y + ")";  
+    var x = e.pageX;
+    var y = e.pageY;
+    var coor = "Coordinates: (" + x + "," + y + ")";  
     var theArrows = document.getElementsByClassName("arrow");
   for(var i = 0; i < theArrows.length; i++){
      var xShapeCenter = getPos(theArrows[i],'x');
      var yShapeCenter = getPos(theArrows[i],'y');
-    theArrows[i].style.transform = 'rotate('+ twisterMath(x, y, xShapeCenter, yShapeCenter)+'deg)';
+     //theArrows[i].innerHTML = xShapeCenter+', '+yShapeCenter; //for bug checking
+     theArrows[i].style.transform = 'rotate('+ twisterMath(x, y, xShapeCenter, yShapeCenter)+'deg)';
   }
 }
 
