@@ -98,7 +98,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			    <div class="col-md-6 alt-big-menu">
 			      <div class="row">
 			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="design-courses"><i class="fa fa-cog" aria-hidden="true"></i>
-			design<br>courses </a></div>
+			design<br>instruction </a></div>
 			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="online-courses"><i class="fa fa-wifi" aria-hidden="true"></i>
 			move<br>online</a></div>
 			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="produce-videos"><i class="fa fa-play" aria-hidden="true"></i>
@@ -106,9 +106,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="create-websites"><i class="fa fa-file-code-o" aria-hidden="true"></i>
 			create<br>websites</a></div>
 			        <div class="col-6 menu-item last hvr-sweep-to-right"><a href="workshops"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-			attend<br>workshops</a></div>
+			learn<br>with us</a></div>
 			        <div class="col-6 menu-item last hvr-sweep-to-right"><a href="#contact"><i class="fa fa-share" aria-hidden="true"></i>
-			inspire<br>innovation</a></div>       
+			innovate<br>with us</a></div>       
 			      </div>        
 			      </div>
 			    </div>
