@@ -183,7 +183,6 @@ window.onload = function(){
 function theArrows(){
     var body = document.getElementsByTagName("body")[0];
     body.onmousemove = function(event) {cursorFinder(event)};
-
     for(var i = 0; i < 50; i++){
       makeArrow('arrow-'+i);
     }
@@ -208,10 +207,7 @@ function makeArrow (id){
 function cursorFinder(e) {
     var x = e.clientX;
     var y = e.clientY;
-    var coor = "Coordinates: (" + x + "," + y + ")";
-  
-  
-    // document.getElementById("data").innerHTML = coor;
+    //var coor = "Coordinates: (" + x + "," + y + ")";  
     var theArrows = document.getElementsByClassName("arrow");
   for(var i = 0; i < theArrows.length; i++){
      var xShapeCenter = getPos(theArrows[i],'x');
@@ -223,7 +219,6 @@ function cursorFinder(e) {
 
 //from https://stackoverflow.com/questions/288699/get-the-position-of-a-div-span-tag
 function getPos(el, pos) {
-    // yay readability
     for (var lx=0, ly=0;
          el != null;
          lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
