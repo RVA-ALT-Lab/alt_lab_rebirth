@@ -27,8 +27,8 @@
 	</div>
 	<div class="leadership" id="faculty-list-leadership">
 		<div class="container">
-			<h2 class="faculty-group">Leadership</h2>
-			<?php echo showFaculty('leadership');?>
+			<h2 class="faculty-group">Administration</h2>
+			<?php echo showFaculty('Administration');?>
 		</div>
 	</div>
 	<div class="design" id="faculty-list-instructional-design">

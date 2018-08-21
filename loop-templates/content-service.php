@@ -46,7 +46,12 @@
 					</div>					
 				</div>				
 			</div>
-			<img src="<?php echo the_post_thumbnail_url('large');?>" class="img-fluid img-right">
+			<?php if (!acf_fetch_special_media()) :?>
+				<img src="<?php echo the_post_thumbnail_url('large');?>" class="img-fluid img-right">
+			<?php else:?>
+			   <?php echo acf_fetch_special_media();?>	
+			<?php endif;?>
+
 		</div>	
 	</div>
 	<div class="container">

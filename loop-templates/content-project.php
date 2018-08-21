@@ -90,10 +90,8 @@
       <div class="alt-proj-meta">
         <div class="row">
           <div class="col-md-6 alt-proj-concepts"><h3>Concepts:</h3> 
-            <?php
-
-			// vars	
-			$concepts = get_the_terms( get_the_ID(), 'concepts' );
+            <?php // vars	
+            $concepts = get_the_terms( get_the_ID(), 'concepts' );
 
 
 			// check

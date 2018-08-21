@@ -78,7 +78,7 @@ require get_template_directory() . '/inc/custom-post-types.php';
 /**
  * Load acf options
  */
-//require get_template_directory() . '/inc/acf-fields.php';
+require get_template_directory() . '/inc/acf-fields.php';
 
 
 /**
@@ -665,6 +665,22 @@ function show_faculty_service($department){
     wp_reset_query();  // Restore global post data stomped by the_post().
    return $html;
 }
+
+
+function acf_fetch_special_media(){
+  global $post;
+  $html = '';
+  $special_media = get_field('special_media');
+
+    if( $special_media) {      
+      $html = $special_media;  
+     return $html;    
+    }
+
+}
+
+
+
 
 
 function acf_fetch_call_out_one_text(){
