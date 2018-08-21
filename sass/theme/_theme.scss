@@ -486,6 +486,10 @@ ARROWS THAT TRACK CURSOR
     border-top: none;
 }
 
+.col-md-4.topic-slide.topic-highlight {
+    border-right: none;
+}
+
 #arrow-holder {
     position: absolute;
     display: flex;
@@ -502,9 +506,9 @@ ARROWS THAT TRACK CURSOR
     padding: 25px 35px;
     display: block;
     transition: all .1s ease-in;
-    max-width: -webkit-calc(100% - 2px);
-    max-width: -moz-calc(100% - 2px);
-    max-width: calc(100% - 2px);
+    max-width: -webkit-calc(100% - 1px);
+    max-width: -moz-calc(100% - 1px);
+    max-width: calc(100% - 1px);
 }
 
 .topic-description {
