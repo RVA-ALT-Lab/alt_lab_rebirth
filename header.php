@@ -107,7 +107,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			create<br>websites</a></div>
 			        <div class="col-6 menu-item last hvr-sweep-to-right"><a href="workshops"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 			learn<br>with us</a></div>
-			        <div class="col-6 menu-item last hvr-sweep-to-right"><a href="#contact"><i class="fa fa-share" aria-hidden="true"></i>
+			        <div class="col-6 menu-item last hvr-sweep-to-right"><a href="innovate-with-us"><i class="fa fa-share" aria-hidden="true"></i>
 			innovate<br>with us</a></div>       
 			      </div>        
 			      </div>
