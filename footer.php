@@ -14,7 +14,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php get_sidebar( 'footerfull' ); ?>
 
 <!--CONTACT Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="theGreeting" aria-hidden="true">
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="the-greeting" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" id="closer" aria-label="Close">

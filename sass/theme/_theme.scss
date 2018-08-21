@@ -34,6 +34,15 @@ p {
     border-radius: 0;
 }
 
+ul.dropdown-menu.show{
+    padding: 12px 0;
+    text-align: left;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+    min-width: 200px;
+}
+
 //force underline on sub-menu hover
 .dropdown-item:focus,
 .dropdown-item:hover {
