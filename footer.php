@@ -77,6 +77,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                   <div class="last-update">
                     Last updated: August 21, 2018
                   </div>
+                   <div class="accessibility"> 
+                    <a class="footer-link" href="https://accessibility.vcu.edu"></a>
+                  </div>
+                  <div class="kitchen-sink">
+                    <a class="footer-link" href="https://www.vcu.edu/privacy-statement/">Privacy</a> | <a class="footer-link" href="http://accessibility.vcu.edu/">Accessibility</a> | <a class="footer-link" href="mailto:altlab@vcu.edu">Webmaster</a>
+                  </div>
                 </div>
 							</div>
 							<div class="footer-widget col-md-3">

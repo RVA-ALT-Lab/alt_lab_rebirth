@@ -65,13 +65,13 @@
 		<div class="container white">			
 			<div class="row">
 				<div class="col-md-3 related">
-					<h2>Related</h3>
+					<!-- <h2>Related</h3>
 					<a href="http://192.168.33.10/wordpress/altlab/events/category/video/list/">
 						<div class="service-icon">
 							<h3>Events</h3>
 							<i class="icon-events"></i>
 						</div>
-					</a>
+					</a> -->
 					<!-- <a href="http://192.168.33.10/wordpress/altlab/events/category/video/list/">
 						<div class="service-icon">
 							<h3>Projects</h3>
