@@ -61,7 +61,7 @@
 		</div>
 	</div>	
 
-	<div class="container-fluid yellow">
+	<div class="container-fluid yellow extra-info">
 		<div class="container white">			
 			<div class="row">
 				<div class="col-md-3 related">
@@ -72,18 +72,18 @@
 							<i class="icon-events"></i>
 						</div>
 					</a>
-					<a href="http://192.168.33.10/wordpress/altlab/events/category/video/list/">
+					<!-- <a href="http://192.168.33.10/wordpress/altlab/events/category/video/list/">
 						<div class="service-icon">
 							<h3>Projects</h3>
 							<i class="icon-projects"></i>
 						</div>
-					</a>
+					</a> -->
 				</div>
 				<div class="col-md-3">
-					services
+					<!-- services -->
 				</div>
 				<div class="col-md-3">
-					button
+					<!-- button -->
 				</div>
 			</div>
 		</div>

@@ -177,6 +177,7 @@ li.menu-item:hover {
 
 #contactModal {
     background: rgba(0, 0, 0, .5);
+    margin-top: 70px;
 }
 
 .modal-dialog {
@@ -234,7 +235,7 @@ ARROWS THAT TRACK CURSOR
 }
 
 .molly-ransone {
-    background-image: url(../imgs/molly.jpg);
+   // background-image: url(../imgs/molly.jpg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;   
@@ -242,21 +243,21 @@ ARROWS THAT TRACK CURSOR
 }
 
 .moaz-elemam {
-    background-image: url(../imgs/moaz.jpg);
+   // background-image: url(../imgs/moaz.jpg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;   
     height: 100px;
-    background-color: orange;
+   // background-color: orange;
 }
 
 .sean-bullock {
-    background-image: url(../imgs/sean.jpg);
+    //background-image: url(../imgs/sean.jpg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;   
     height: 100px;
-    background-color: green;
+   // background-color: green;
 }
 
 
@@ -551,7 +552,6 @@ ARROWS THAT TRACK CURSOR
     margin: 0 0 30px 0;
     padding: 30px 0 30px 0;
     margin-top: -8px;
-    font-family: Roboto, sans-serif;
     background-color: #00B3BE;
     box-sizing: border-box;
 }
@@ -827,27 +827,6 @@ ARROWS THAT TRACK CURSOR
     padding: 2.2rem;
 }
 
-// .square-right::after {
-//     position: absolute;
-//     right: 10px;
-//     top: 10px;
-//     width: 50px;
-//     height: 50px;
-//     content: '';
-//     border-left: 2px solid $gold;
-//     border-bottom: 2px solid $gold;
-// }
-
-
-// .square-left::after {
-//     position: absolute;
-//     left: 10px;
-//     top: 10px;
-//     width: 50px;
-//     height: 50px;
-//     content: '';
-//     background: $gold;
-// }
 
 .bio-img.float-right {
     margin-left: 1em;
@@ -967,19 +946,24 @@ img.wp-post-image {
 }
 
 .services-services {
-    font-family: Roboto-Medium;
+    font-family: Roboto, 'sans-serif';
     font-size: 48px;
     color: #292B2C;
     letter-spacing: 0.75px;
     text-align: center;
 }
 
-.service-page p {
+.service-page p, .service-page ul {
     font-size: 1.3em;
+    color: #4b4f54;    
+}
+
+.service-page li {
+    margin-bottom: 10px;
 }
 
 .entry-title-service {
-    font-family: Roboto-Medium;
+    font-family: Roboto, 'sans-serif';
     font-size: 48px;
     color: #292B2C;
     letter-spacing: 0.75px;
@@ -1011,6 +995,8 @@ img.wp-post-image {
 
 .team-member .icon {
     position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 
@@ -1023,7 +1009,7 @@ img.wp-post-image {
 }
 
 .service-callout-two { 
-  height: 500px;
+  min-height: 500px;
 }
 
 .service-callout-two p {
@@ -1057,7 +1043,7 @@ img.wp-post-image {
 
 .service-icon h3 {
   display: inline-block;
-  font-family: Roboto-Regular;
+  font-family: Roboto, 'sans-serif';
   font-size: 16px;
   color: #292B2C;
   letter-spacing: 0.25px;
@@ -1102,6 +1088,9 @@ img.wp-post-image {
     z-index: -200;
 }
 
+.extra-info .white {
+    padding: 10px 0;
+}
 
 //video 
 
@@ -1221,6 +1210,73 @@ blockquote.default {
 
 #header-search {
     background-image: url(../imgs/icon-search.svg);
+}
+
+//modal 
+.close {
+    margin-right: 0;
+    margin-left: 80%;
+}
+#contactModal .close-x {
+    color: $black;
+    margin-left: 15px;
+    margin-right: 10px;   
+}
+
+.modal-body .gform_wrapper .gform_body {
+    width: 400px;
+    margin: auto;
+}
+
+.modal-dialog {
+    max-width: 60%;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    display: block;
+    margin: 0 auto;
+    font-size: 44px;
+    font-weight: 400;
+    font-family: 'Sentinel-Semibold', sans-serif;
+}
+
+.modal-message {
+    padding: 0 45px;
+    text-align: center;
+}
+
+.modal-message p {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.modal-required {
+    font-size: 16px;
+    font-style: italic;
+}
+
+#gform_wrapper_2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#contactModal .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+    width: 100%;
+}
+
+#contactModal .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield div.ginput_complex span.ginput_left select,
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield div.ginput_complex span.ginput_right select,
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield input[type=radio],
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select {
+    width: 100%;
+}
+
+#gform_submit_button_1 {
+    margin-top: 30px;
 }
 
 
@@ -1413,4 +1469,42 @@ blockquote.default {
           right: 0;
           z-index: -1;
         }
+        
+        //services 
+        .entry-title-service {
+            margin-top: 20px;
+            font-size: 40px;
+        }
+
+        .special-media {
+            position: relative;
+        }
+
+        //modal
+        .modal-dialog {
+        max-width: 100% !important;
+        margin: 0 auto;
+        overflow: hidden;
+        background: red;
+        }
+        .modal-message, .modal-bottom {
+            padding: 0 20px;
+        }
+        .modal-body .gform_wrapper .gform_body {
+            width: auto;
+        }
+
+        .gform_wrapper input.large, .gform_wrapper input.medium, .gform_wrapper input.small, .gform_wrapper select.large, .gform_wrapper select.medium, .gform_wrapper select.small {
+            max-width: 95%;
+        }
+
+        .modal-social a {
+            display: block;
+            margin-top: 20px;
+        }
+
+        .modal-linkedin {
+            margin-left: 0;
+        } 
+
     }

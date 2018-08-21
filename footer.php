@@ -17,6 +17,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" id="closer" aria-label="Close">
+          <span aria-hidden="true">Close <span class="close-x">X</span></span>
+        </button>
       <div class="modal-header">
         <h2 class="modal-title" id="the-greeting"></h2>       
       </div>
@@ -34,6 +37,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="modal fade" id="workshopModal" tabindex="-1" role="dialog" aria-labelledby="workshopModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" id="closer" aria-label="Close">
+          <span aria-hidden="true">Close <span class="close-x">X</span></span>
+        </button>
       <div class="modal-header">
         <h2 class="modal-title" id="the-greeting"></h2>       
       </div>
