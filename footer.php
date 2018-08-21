@@ -24,8 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div id="the-person"></div>
         <?php echo do_shortcode('[gravityform id="1" title="false" description="false"]');?>
       </div>
-      <div class="modal-footer">
-        footer elements
+      <div class="modal-footer">        
       </div>
     </div>
   </div>
@@ -42,8 +41,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div id="the-person"></div>
         <?php echo do_shortcode('[gravityform id="3" title="false" description="false"]');?>
       </div>
-      <div class="modal-footer">
-        footer elements
+      <div class="modal-footer">        
       </div>
     </div>
   </div>

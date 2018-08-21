@@ -32,7 +32,7 @@
 </div>
 
 <!--TOPICS-->
-<div class="home-topics" id="topic-parent">
+<!-- <div class="home-topics" id="topic-parent">
 	<div id="arrow-holder"></div>
 	<div class="container">
 		<div class="row">
@@ -43,7 +43,7 @@
 			<?php echo home_topics();?>
 		</div>
 	</div>
-</div>
+</div> -->
 <!--END TOPICS-->
 <!--HOW DOES THIS WORK-->
 
@@ -62,7 +62,7 @@
 <!--END WORK-->
 
 <!--quote slider-->
-	<div class="container">
+<!-- 	<div class="container">
 					<div class="row quotes justify-content-md-center">
 						<div class="col-md-12 quote-box">
 							<div id="carouselExampleControls" class="carousel slide" data-ride="false">
@@ -79,7 +79,7 @@
 								</div>
 						</div>	
  					</div>
-	</div>
+	</div> -->
 <!--end quote-->
 <div class="container-fluid">
 <div class="row image-row">
@@ -109,7 +109,7 @@
 			</div>
 			<div class="col-md-6 about-us-description">
 				<p>We are a diverse team of educators passionate about increasing access, improving educational outcomes, and creating powerful learning experiences.</p>
-				<p><a href="#">Learn more about our team and how we can help you.</a></p>
+				<p><a href="about-us">Learn more about our team and how we can help you.</a></p>
 			</div>
 		</div>
 	</div>

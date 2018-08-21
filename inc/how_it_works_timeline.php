@@ -16,7 +16,7 @@ function how_does_this_work() { ?>
 <div class="timeline">
   <div class="timeline-container left">
     <div class="timeline-content">
-      <img src="<?php echo get_template_directory_uri();?>/imgs/bl_circle_one_box.svg" class="timeline-icon"</div>
+      <img src="<?php echo get_template_directory_uri();?>/imgs/bl_circle_one_box.svg" class="timeline-icon" alt="A box simulating an idea.">
       <div class="clearfix">
         <div class="box-content">
         <h2>You have an idea</h2>
@@ -27,18 +27,18 @@ function how_does_this_work() { ?>
   </div>
   <div class="timeline-container right">
     <div class="timeline-content">
-      <img src="<?php echo get_template_directory_uri();?>/imgs/bl_circle_two_hander.svg" class="timeline-icon"</div>
+      <img src="<?php echo get_template_directory_uri();?>/imgs/bl_circle_two_hander.svg" class="timeline-icon" alt="A finger icon indicating getting in touch.">
     <div class="clearfix">
       <div class="box-content">
       <h2>You get in touch</h2>
-      <p>You can reach out to us in a number of ways; If you prefer to learn as a part of a group, you can <a href="#">attend an upcoming workshop</a>. If you'd prefer a one-on-one consultation, you can <a href="#">choose someone with similar interests or relevant skills</a> and reach out to them. If you're still not sure what you need, you can attend our <a href="">open hours.</a></p>
+      <p>You can reach out to us in a number of ways; If you prefer to learn as a part of a group, you can <a href="#">attend an upcoming workshop</a>. If you'd prefer a one-on-one consultation, you can <a href="about-us">choose someone with similar interests or relevant skills</a> and reach out to them. If you're still not sure what you need, you can attend our <a href="">open hours.</a></p>
         </div>
       </div>
     </div>
   </div>
     <div class="timeline-container left">
     <div class="timeline-content">
-      <img src="<?php echo get_template_directory_uri();?>/imgs/bl_circle_three_map.svg" class="timeline-icon"</div>
+      <img src="<?php echo get_template_directory_uri();?>/imgs/bl_circle_three_map.svg" class="timeline-icon" alt="A chart indicating a plan.">
     <div class="clearfix">
       <div class="box-content">
       <h2>We create a plan</h2>
@@ -49,7 +49,7 @@ function how_does_this_work() { ?>
   </div>
   <div class="timeline-container right">
     <div class="timeline-content">
-      <img src="<?php echo get_template_directory_uri();?>/imgs/bl_circle_four_students.svg" class="timeline-icon"</div>
+      <img src="<?php echo get_template_directory_uri();?>/imgs/bl_circle_four_students.svg" class="timeline-icon" alt="A bunch of hands raised indicating students engaged.">
     <div class="clearfix">
       <div class="box-content">
       <h2>Your students engage</h2>
