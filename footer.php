@@ -13,15 +13,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_sidebar( 'footerfull' ); ?>
 
-<!-- Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalCenterTitle" aria-hidden="true">
+<!--CONTACT Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="theGreeting" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" id="closer" aria-label="Close">
           <span aria-hidden="true">Close <span class="close-x">X</span></span>
         </button>
       <div class="modal-header">
-        <h2 class="modal-title" id="the-greeting"></h2>       
+        <h2 class="modal-title" id="the-greeting">Hi</h2>       
       </div>
       <div class="modal-body">
         <div id="the-person"></div>
@@ -32,19 +32,21 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
   </div>
 </div>
+    <!-- END Modal -->
 
-		<!-- Modal -->
-<div class="modal fade" id="workshopModal" tabindex="-1" role="dialog" aria-labelledby="workshopModalCenterTitle" aria-hidden="true">
+
+		<!-- WORKSHOP Modal -->
+<div class="modal fade" id="workshopModal" tabindex="-1" role="dialog" aria-labelledby="workshop-the-greeting" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal" id="closer" aria-label="Close">
+      <button type="button" class="close" data-dismiss="modal" id="workshopcloser" aria-label="Close">
           <span aria-hidden="true">Close <span class="close-x">X</span></span>
         </button>
       <div class="modal-header">
-        <h2 class="modal-title" id="the-greeting"></h2>       
+        <h2 class="modal-title" id="workshop-the-greeting">Hi</h2>       
       </div>
       <div class="modal-body">
-        <div id="the-person"></div>
+        <div id="workshop-the-person">Hi</div>
         <?php echo do_shortcode('[gravityform id="3" title="false" description="false"]');?>
       </div>
       <div class="modal-footer">        
@@ -52,6 +54,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
   </div>
 </div>
+
+    <!-- END WORKSHOP Modal -->
 
 <div class="wrapper" id="wrapper-footer">
 

@@ -40,7 +40,7 @@
 				<h2 class="home-callout">What are you interested in?</h2>
 			</div>
 		</div>
-			<?php echo home_topics();?>
+			<?php //echo home_topics();?>
 		</div>
 	</div>
 </div> -->
