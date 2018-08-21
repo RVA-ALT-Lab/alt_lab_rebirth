@@ -59,16 +59,16 @@
 
 	</div><!-- .entry-content -->
 
-<!--TOPICS-->
-<div class="home-topics" id="topic-parent">
+<!-- TOPICS-->
+<!-- <div class="home-topics" id="topic-parent">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12"><h2 class="big-title">What are you interested in?</h2></div>
-			<?php echo home_topics();?>
+			<?php// echo home_topics();?>
 		</div>
 	</div>
-</div>
-<!--END TOPICS-->
+</div> -->
+<!--END TOPICS -->
 
 <div class="container">
 	<footer class="entry-footer">
