@@ -1086,6 +1086,7 @@ img.wp-post-image {
     position: absolute;
     right:0;
     z-index: -200;
+    width: 50%;
 }
 
 .extra-info .white {
@@ -1295,7 +1296,7 @@ blockquote.default {
     }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 414px) {
         .mobile-logo {
             display: block;
             margin: 0 auto;
@@ -1427,11 +1428,7 @@ blockquote.default {
 
         /* Make sure that all arrows are pointing leftwards */
         .timeline-container::before {
-            display: none;
-            // left: 60px;
-            // border: medium solid white;
-            // border-width: 10px 10px 10px 0;
-            // border-color: transparent white transparent transparent;
+            display: none;            
         }
 
         .box-content {
@@ -1479,13 +1476,16 @@ blockquote.default {
         .special-media {
             position: relative;
         }
-
+        
         //modal
         .modal-dialog {
-        max-width: 100% !important;
-        margin: 0 auto;
-        overflow: hidden;
-        background: red;
+            max-width: 100% !important;
+            margin: 0 auto;
+            overflow: hidden;
+            background: red;
+        }
+        #closer {
+            font-size: 1em;
         }
         .modal-message, .modal-bottom {
             padding: 0 20px;
@@ -1498,13 +1498,6 @@ blockquote.default {
             max-width: 95%;
         }
 
-        .modal-social a {
-            display: block;
-            margin-top: 20px;
-        }
-
-        .modal-linkedin {
-            margin-left: 0;
-        } 
+        
 
     }
