@@ -789,6 +789,9 @@ function posts_for_current_author($query) {
 add_filter('pre_get_posts', 'posts_for_current_author');
 
 
+
+
+
 /*
 UNFINISHED
 //change slug for alpha sort 

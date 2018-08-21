@@ -54,14 +54,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row" id="footer">
 
 
-							<div class="footer-widget col-md-3">
+							<div class="footer-widget col-md-5">
 								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer - far left") ) : ?><?php endif;?>
-							</div>
-							<div class="footer-widget col-md-3">
-								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer - medium left") ) : ?><?php endif;?>
+                <div class="footer-address">
+                  <div class="alt-name">Academic Learning Transformation Lab </div>
+                  <div class="alt-address">1000 Floyd Ave, Suite 4102 | Richmond, Virginia 23284 </div>
+                  <div class="alt-contact">altlab@vcu.edu | <a href="tel:8048286786">804-828-6786</a></div>
+                </div>
 							</div>
 							<div class="footer-widget col-md-3">
 								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer - medium right") ) : ?><?php endif;?>
+                <div class="footer-required">
+                  <div class="text-only">
+                    <a href="https://ts.vcu.edu/cgi-bin/posh.pl?posh_referer=https://altlab.vcu.edu/">View text version</a>
+                  </div>
+                  <div class="last-update">
+                    Last updated: August 21, 2018
+                  </div>
+                </div>
 							</div>
 							<div class="footer-widget col-md-3">
 								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer - far right") ) : ?><?php endif;?>

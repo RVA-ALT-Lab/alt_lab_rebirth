@@ -49,7 +49,9 @@
 			<?php if (!acf_fetch_special_media()) :?>
 				<img src="<?php echo the_post_thumbnail_url('large');?>" class="img-fluid img-right">
 			<?php else:?>
-			   <?php echo acf_fetch_special_media();?>	
+				<div class="special-media">
+			   		<?php echo acf_fetch_special_media();?>	
+				</div>
 			<?php endif;?>
 
 		</div>	

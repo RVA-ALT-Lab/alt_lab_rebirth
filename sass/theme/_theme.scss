@@ -13,6 +13,10 @@ p {
     padding-left: 0;
 }
 
+.skip-link {
+    color: $black;
+}
+
 .assistive-text {
     height: 1px;
     width: 1px;
@@ -918,6 +922,8 @@ img.wp-post-image {
 }
 
 
+
+
 //FOOTER 
 #wrapper-footer {
     padding-top: 5em;
@@ -941,6 +947,16 @@ img.wp-post-image {
 .widgetizedArea h3 {
     color: $gold;
     font-size: 1.2em;
+}
+
+.footer-address div, .footer-required div {
+    margin-bottom: 10px;
+    line-height: 1.2em;
+}
+
+.footer-address a, .footer-required a {
+    color: $white;
+    text-decoration: underline;
 }
 
 //SERVICES PAGE
@@ -1079,6 +1095,12 @@ img.wp-post-image {
   background: $white;
 }
 
+
+.special-media {
+    position: absolute;
+    right:0;
+    z-index: -200;
+}
 
 
 //video 
