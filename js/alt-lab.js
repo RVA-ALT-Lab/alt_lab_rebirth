@@ -167,9 +167,9 @@ jQuery('#contactModal').on('hide.bs.modal', function (event) {
 })
 
 //turn on tool tips
-jQuery(function () {
-  jQuery('[data-toggle="tooltip"]').tooltip()
-})
+// jQuery(function () {
+//   jQuery('[data-toggle="tooltip"]').tooltip()
+// })
 
 //Arrow fun
 
