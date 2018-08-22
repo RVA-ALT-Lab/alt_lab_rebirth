@@ -876,7 +876,6 @@ ARROWS THAT TRACK CURSOR
     line-height: 1.8em;
 }
 
-
 //************************BASIC CONTENT CHOICES************************
 article a, p a {
     text-decoration: underline;
@@ -1003,6 +1002,7 @@ img.wp-post-image {
 .team-holder {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .team-header {
@@ -1012,7 +1012,8 @@ img.wp-post-image {
 .team-member,
 .team-member img {
     display: inline-block;    
-    position: relative;   
+    position: relative;  
+    width: 150px; 
 }
 
 .team-member img:hover {
