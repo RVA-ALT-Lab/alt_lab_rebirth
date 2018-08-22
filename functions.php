@@ -604,9 +604,6 @@ function acf_fetch_email(){
 
 
 
-
-
-
 //faculty loop
 function showFaculty($department){
     $args = array(
@@ -627,7 +624,7 @@ function showFaculty($department){
     $the_query = new WP_Query( $args );
                     if( $the_query->have_posts() ): 
                       while ( $the_query->have_posts() ) : $the_query->the_post();
-                        $html .= '<div class="faculty card"><div class="card-body faculty-body">';
+                        $html .= '<div class="faculty card" id="' . sanitize_title(get_the_title()) . '"><div class="card-body faculty-body">';
                         $html .= '<img class="bio-img img-fluid" src="' . get_the_post_thumbnail_url(get_the_ID(),'medium') . '" alt="Faculty bio picture for ' . get_the_title() . '">';
                         $html .= '<h3 class="faculty-name">' . get_the_title() . '</h3>';
                         $html .= '<h4 class="faculty-title">' . acf_fetch_faculty_title() . '</h4>';
@@ -659,7 +656,7 @@ function show_faculty_service($department){
                     if( $the_query->have_posts() ): 
                       while ( $the_query->have_posts() ) : $the_query->the_post();
                         $html .= '<div class="team-member">';
-                        $html .= '<img class="service-team-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="Faculty bio picture for '. get_the_title() . '"><a data-toggle="modal" href="#contactModal" data-name="' . get_the_title() . '" data-css="' . basename(get_permalink()) . '" data-person="'.acf_fetch_email().'"><div class="icon mail"></div></a></div>';
+                        $html .= '<a href="../about-us#'.sanitize_title(get_the_title()).'"><img class="service-team-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="Faculty bio picture for '. get_the_title() . '"><a data-toggle="modal" href="#contactModal" data-name="' . get_the_title() . '" data-css="' . basename(get_permalink()) . '" data-person="'.acf_fetch_email().'"></a><div class="icon mail"></div></a></div>';
                       endwhile;
                     endif;
     wp_reset_query();  // Restore global post data stomped by the_post().
@@ -678,8 +675,6 @@ function acf_fetch_special_media(){
     }
 
 }
-
-
 
 
 

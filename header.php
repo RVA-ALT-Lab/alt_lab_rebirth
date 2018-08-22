@@ -97,9 +97,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			    <div class="col-md-4 alt-logo"></div>
 			    <div class="col-md-6 alt-big-menu">
 			      <div class="row">
-			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="design-courses"><i class="fa fa-cog" aria-hidden="true"></i>
+			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="design-instruction"><i class="fa fa-cog" aria-hidden="true"></i>
 			design<br>instruction </a></div>
-			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="online-courses"><i class="fa fa-wifi" aria-hidden="true"></i>
+			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="move-online"><i class="fa fa-wifi" aria-hidden="true"></i>
 			move<br>online</a></div>
 			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="produce-videos"><i class="fa fa-play" aria-hidden="true"></i>
 			produce<br>videos</a></div>
