@@ -48,7 +48,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<?php else : ?>
 
-							<a class="navbar-brand nav-big" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+							<a class="navbar-brand nav-big" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a><span class="foo"></span>
 							<a class="navbar-brand nav-small" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><img src="<?php echo get_template_directory_uri();?>/imgs/altlogo_black_mobile.svg" class="mobile-logo" alt="ALT Lab logo."></a>
 						<?php endif; ?>
 

@@ -34,9 +34,26 @@ p {
     border-radius: 0;
 }
 
+.dropdown-menu li.menu-item {
+    padding: 0
+}
+
+.dropdown-menu li.menu-item:hover {
+    border-top: 3px solid $gold;
+}
+
 ul.dropdown-menu.show{
     padding: 12px 0;
     text-align: left;
+    background-color: #fff;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: $gold;
+}
+
+.nav-item.show {
+    background-color: #fff;
 }
 
 .navbar-expand-md .navbar-nav .dropdown-menu {
