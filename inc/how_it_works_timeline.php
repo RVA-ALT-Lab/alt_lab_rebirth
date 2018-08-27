@@ -60,7 +60,7 @@ function how_does_this_work() { ?>
   </div>
 </div>
   <div class="box-ender">
-    <h2 class="connect-with-us"><a href="#contactModal" data-toggle="modal" data-target="#contactModal"><span class="mail"></span>Connect with us to get started!</a></h2>
+    <h2 class="connect-with-us"><a href="#contactModal" data-toggle="modal" data-target="#contactModal">Connect with us to get started!</a></h2>
   </div>
 </div>
   <?php } ?>

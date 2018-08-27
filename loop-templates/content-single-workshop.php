@@ -14,18 +14,21 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 	</header><!-- .entry-header -->
-
-	<div class="entry-content workshop-description">
-		<?php the_content(); ?>
-	</div>
-		<div class="row">
-			<?php echo learning_outcomes();?>
-			<?php echo acf_fetch_audience();?>
-			<?php echo vcu_examples();?>
-			<?php echo outside_examples();?>
+	
+	<div class="row workshop-details">
+		<div class="workshop-description col-md-6">
+			<h2>Description</h2>
+			<?php the_content(); ?>			
 		</div>
-		<div class="workshop-request">
-			<a href="#workshopModal" data-toggle="modal" class="btn btn-alt">Request a workshop</a>
+			<div class="col-md-6">
+				<?php echo learning_outcomes();?>
+				<?php echo acf_fetch_audience();?>
+				<?php echo vcu_examples();?>
+				<?php echo outside_examples();?>
+			</div>
+			<div class="workshop-request">
+				<a href="#workshopModal" data-toggle="modal" class="btn btn-alt">Request a workshop</a>				
+			</div>
 		</div>
 
 

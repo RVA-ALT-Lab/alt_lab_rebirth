@@ -292,7 +292,7 @@ function learning_outcomes(){
     global $post;
     $html = "";
     if( have_rows('learning_outcomes') ):
-    $html .= '<div class="col-md-6 outcomes"><h2>Learning Outcomes</h2><ul>';
+    $html .= '<div class="outcomes"><h2>Learning Outcomes</h2><ul>';
     while ( have_rows('learning_outcomes') ) : the_row();
         // Your loop code
       $html .= '<li>' . get_sub_field('learning_statement') . '</li>';
@@ -311,7 +311,7 @@ function acf_fetch_audience(){
   $audience = get_field('audience');
 
     if( $audience) {      
-      $html = '<div class="col-md-6 audience"><h2>Audience</h2>' . $audience . '</div>';  
+      $html = '<div class="audience"><h2>Audience</h2>' . $audience . '</div>';  
      return $html;    
     }
 
@@ -322,7 +322,7 @@ function vcu_examples(){
     global $post;
     $html = "";
     if( have_rows('vcu_examples') ):
-    $html .= '<div class="col-md-6 vcu-examples"><h2>VCU Resources</h2><ul>';
+    $html .= '<div class="vcu-examples"><h2>VCU Resources</h2><ul>';
     while ( have_rows('vcu_examples') ) : the_row();
         // Your loop code
       $html .= '<li><a href="' . get_sub_field('vcu_example_url') . '">' . get_sub_field('vcu_example_title') . '</a> - ' . get_sub_field('vcu_example_text') . '</li>';
@@ -338,7 +338,7 @@ function outside_examples(){
     global $post;
     $html = "";
     if( have_rows('outside_examples') ):
-    $html .= '<div class="col-md-6 outside-examples"><h2>External Resources</h2><ul>';
+    $html .= '<div class="outside-examples"><h2>External Resources</h2><ul>';
     while ( have_rows('outside_examples') ) : the_row();
         // Your loop code
       $html .= '<li><a href="' . get_sub_field('outside_example_url') . '">' . get_sub_field('outside_example_title') . '</a> - ' . get_sub_field('outside_example_text') . '</li>';
@@ -348,6 +348,41 @@ function outside_examples(){
         // no rows found
     endif;
     return $html;
+}
+
+
+
+//CURRENTLY NOT IMPLEMENTED IN WORKSHOP BROWSE get_the_terms( get_the_ID(), 'emails' ) the to array then to function below
+function get_the_workshop_people($emails){
+    $args = array(
+      'posts_per_page' => -1,
+      'post_type'   => 'faculty', 
+      'post_status' => 'publish', 
+      'order' => 'ASC',
+      'orderby' => 'post_title',
+      'meta_key'    => 'email',
+      'meta_value' => $emails,
+        // 'tax_query' => array(
+        //     array(
+        //       'taxonomy' => 'emails',
+        //       'field'    => 'name',
+        //       'terms'    => 'woodwardtw@vcu.edu',
+        //     ),
+        //   ),
+      );
+    $html = '';
+    $the_query = new WP_Query( $args );
+                    if( $the_query->have_posts() ): 
+                      while ( $the_query->have_posts() ) : $the_query->the_post();
+                        $html .= '<div class="faculty card" id="' . sanitize_title(get_the_title()) . '"><div class="card-body faculty-body">';
+                        $html .= '<img class="bio-img img-fluid" src="' . get_the_post_thumbnail_url(get_the_ID(),'medium') . '" alt="Faculty bio picture for ' . get_the_title() . '">';
+                        $html .= '<h3 class="faculty-name">' . get_the_title() . '</h3>';
+                        $html .= '<h4 class="faculty-title">' . acf_fetch_faculty_title() . '</h4>';
+                        $html .= '<div class="faculty-bio-text">' . get_the_content() . '</div></div></div>';
+                      endwhile;
+                    endif;
+    wp_reset_query();  // Restore global post data stomped by the_post().
+   return $html;
 }
 
 
@@ -490,7 +525,6 @@ add_action( 'save_post', 'make_topic_tax', 10, 2 );
 
 
 //faculty bio functions
-
 
 function acf_fetch_title(){
   global $post;

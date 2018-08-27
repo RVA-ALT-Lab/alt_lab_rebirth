@@ -255,7 +255,7 @@ function create_workshop_cpt() {
 add_action( 'init', 'create_workshop_cpt', 0 );
 
 //TAXONOMIES
-//create emails taxonomies, genres and tags for the post type project and faculty
+//create topic taxonomies, genres and tags for the post type project and faculty
 
 //TOPICS TAXONOMY
 add_action( 'init', 'create_topic_taxonomies', 0 );

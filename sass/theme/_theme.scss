@@ -583,6 +583,23 @@ ARROWS THAT TRACK CURSOR
 }
 
 
+.connect-with-us .mail {
+       display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 8px solid #ffb300;
+    position: absolute;
+    left: -60px;
+    top: -2px;
+    background-color: #fff;
+}
+
+h2.connect-with-us a {
+    color: #000;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -810,8 +827,13 @@ ARROWS THAT TRACK CURSOR
 }
 
 //workshop 
+
+.workshop-details {
+    margin-top: 50px;
+}
+
 .workshop-description {
-    column-count: 2;
+    //column-count: 2;
 }
 
 //faculty bio things
@@ -1515,18 +1537,6 @@ blockquote.default {
           position: absolute;
           right: 0;
           z-index: -1;
-        }
-
-        .connect-with-us .mail {
-            display: inline-block;
-            height: 90px;
-            width: 90px;
-            border-radius: 50%;
-            border: 3px solid $gold;
-        }
-
-        h2.connect-with-us a {
-            color: #000;
         }
         
         //services 
