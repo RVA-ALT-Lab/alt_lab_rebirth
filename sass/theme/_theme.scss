@@ -1516,6 +1516,18 @@ blockquote.default {
           right: 0;
           z-index: -1;
         }
+
+        .connect-with-us .mail {
+            display: inline-block;
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            border: 3px solid $gold;
+        }
+
+        h2.connect-with-us a {
+            color: #000;
+        }
         
         //services 
         .entry-title-service {
