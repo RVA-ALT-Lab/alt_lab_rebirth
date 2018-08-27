@@ -46,7 +46,6 @@ $container = get_theme_mod( 'understrap_container_type' );
         <h2 class="modal-title" id="workshop-the-greeting">Hi</h2>       
       </div>
       <div class="modal-body">
-        <div id="workshop-the-person">Hi</div>
         <?php echo do_shortcode('[gravityform id="3" title="false" description="false"]');?>
       </div>
       <div class="modal-footer">        

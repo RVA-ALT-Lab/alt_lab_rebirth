@@ -232,3 +232,38 @@ function getPos(el, pos) {
 function twisterMath(x,y, xShapeCenter, yShapeCenter){
   return  Math.atan2(x - xShapeCenter,-(y - yShapeCenter)) *(180 / Math.PI)
 }
+
+
+//GRAVITY FORM FIXES
+
+window.onload = function(){
+  fixGravity();
+}
+function fixGravity(){
+  console.log('fix gravity')
+  if (document.getElementById('g-recaptcha-response')){
+    var captcha = document.getElementById('g-recaptcha-response');
+    captcha.setAttribute('aria-labelledby', 'field_1_11');
+    captcha.setAttribute('aria-label', 'captcha field');
+    captcha.setAttribute('title', 'captcha field');
+    captcha.setAttribute('role', 'option');
+  }
+
+  if (document.getElementById('input_1_7_2')){
+    var dateOne = document.getElementById('input_1_7_2');
+    dateOne.setAttribute('title', 'choose the day of the month');
+    dateOne.setAttribute('role','option');
+  }
+  
+  if(document.getElementById('input_1_7_3')){
+    var dateTwo = document.getElementById('input_1_7_3');
+    dateTwo.setAttribute('title', 'choose the year');
+    dateTwo.setAttribute('role','option');
+  }
+
+  if(document.getElementsByName('a-5gqob38542eh')){
+    var iframe = document.getElementsByName('a-5gqob38542eh')[0];
+    console.log(iframe);
+    iframe.setAttribute('title', 'captcha');
+  }
+}
