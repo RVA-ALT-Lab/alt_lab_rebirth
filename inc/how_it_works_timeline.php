@@ -31,7 +31,7 @@ function how_does_this_work() { ?>
     <div class="clearfix">
       <div class="box-content">
       <h2>You get in touch</h2>
-      <p>You can reach out to us in a number of ways; If you prefer to learn as a part of a group, you can <a href="#">attend an upcoming workshop</a>. If you'd prefer a one-on-one consultation, you can <a href="about-us">choose someone with similar interests or relevant skills</a> and reach out to them. If you're still not sure what you need, you can attend our <a href="">open hours.</a></p>
+      <p>You can reach out to us in a number of ways; If you prefer to learn as a part of a group, you can attend an upcoming workshop. If you'd prefer a one-on-one consultation, you can <a href="about-us">choose someone with similar interests or relevant skills</a> and reach out to them. If you're still not sure what you need, you can attend our open hours.</p>
         </div>
       </div>
     </div>
