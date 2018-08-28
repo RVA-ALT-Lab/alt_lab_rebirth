@@ -840,3 +840,46 @@ add_action( 'save_post', 'faculty_alpha_slug_rewrite' );
 //ACF allow us to see custom fields in editor view
 add_filter( 'acf/settings/remove_wp_meta_box', '__return_true' );
 //add_filter( 'is_protected_meta', '__return_false', 999 );
+
+
+
+//populate workshop request options
+add_filter( 'gform_pre_render_3', 'populate_checkbox' );
+add_filter( 'gform_pre_validation_3', 'populate_checkbox' );
+add_filter( 'gform_pre_submission_filter_3', 'populate_checkbox' );
+add_filter( 'gform_admin_pre_render_3', 'populate_checkbox' );
+function populate_checkbox( $form ) {
+ 
+    foreach( $form['fields'] as &$field )  {
+ 
+        //NOTE: replace 3 with your checkbox field id
+        $field_id = 6;
+        if ( $field->id != $field_id ) {
+            continue;
+        }
+ 
+        // you can add additional parameters here to alter the posts that are retreieved
+        // more info: http://codex.wordpress.org/Template_Tags/get_posts
+        $posts = get_posts( 'numberposts=-1&post_status=publish&post_type=workshop' );
+ 
+        $input_id = 1;
+        foreach( $posts as $post ) {
+ 
+            //skipping index that are multiples of 10 (multiples of 10 create problems as the input IDs)
+            if ( $input_id % 10 == 0 ) {
+                $input_id++;
+            }
+ 
+            $choices[] = array( 'text' => $post->post_title, 'value' => $post->post_title );
+            $inputs[] = array( 'label' => $post->post_title, 'id' => "{$field_id}.{$input_id}" );
+ 
+            $input_id++;
+        }
+ 
+        $field->choices = $choices;
+        $field->inputs = $inputs;
+ 
+    }
+ 
+    return $form;
+}
