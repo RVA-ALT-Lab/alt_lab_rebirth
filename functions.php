@@ -843,7 +843,7 @@ add_filter( 'acf/settings/remove_wp_meta_box', '__return_true' );
 
 
 
-//populate workshop request options
+//populate workshop request options from https://docs.gravityforms.com/gform_pre_render/#2-populate-choices-checkboxes
 add_filter( 'gform_pre_render_3', 'populate_checkbox' );
 add_filter( 'gform_pre_validation_3', 'populate_checkbox' );
 add_filter( 'gform_pre_submission_filter_3', 'populate_checkbox' );

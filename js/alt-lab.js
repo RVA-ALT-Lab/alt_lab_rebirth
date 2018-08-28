@@ -196,9 +196,11 @@ function makeArrow (){
   // add the text node to the newly created div
   newDiv.appendChild(newContent);  
   // var quiver = document.getElementById('quiver');
-  var wrappery = document.getElementById('arrow-holder');
-  var arrow = '<div class="arrow"></div>';
-  wrappery.insertAdjacentHTML('afterbegin', arrow); 
+  if (document.getElementById('arrow-holder')){
+    var wrappery = document.getElementById('arrow-holder');
+    var arrow = '<div class="arrow"></div>';
+    wrappery.insertAdjacentHTML('afterbegin', arrow); 
+  }
 }
 
 
@@ -234,36 +236,4 @@ function twisterMath(x,y, xShapeCenter, yShapeCenter){
 }
 
 
-//GRAVITY FORM FIXES -- mainly for captcha can probably delete 
 
-window.onload = function(){
-  fixGravity();
-}
-function fixGravity(){
-  console.log('fix gravity')
-  if (document.getElementById('g-recaptcha-response')){
-    var captcha = document.getElementById('g-recaptcha-response');
-    captcha.setAttribute('aria-labelledby', 'field_1_11');
-    captcha.setAttribute('aria-label', 'captcha field');
-    captcha.setAttribute('title', 'captcha field');
-    captcha.setAttribute('role', 'option');
-  }
-
-  if (document.getElementById('input_1_7_2')){
-    var dateOne = document.getElementById('input_1_7_2');
-    dateOne.setAttribute('title', 'choose the day of the month');
-    dateOne.setAttribute('role','option');
-  }
-  
-  if(document.getElementById('input_1_7_3')){
-    var dateTwo = document.getElementById('input_1_7_3');
-    dateTwo.setAttribute('title', 'choose the year');
-    dateTwo.setAttribute('role','option');
-  }
-
-  if(document.getElementsByName('a-5gqob38542eh')){
-    var iframe = document.getElementsByName('a-5gqob38542eh');
-    console.log(iframe);
-    iframe.setAttribute('title', 'captcha');
-  }
-}
