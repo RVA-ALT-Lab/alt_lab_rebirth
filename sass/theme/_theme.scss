@@ -554,7 +554,7 @@ ARROWS THAT TRACK CURSOR
     text-align: center;
 }
 
-.btn-alt {
+.btn-alt, .gform_button  {
     padding: 20px;
     background-color: $dark-gray;
     color: $white;
@@ -563,6 +563,13 @@ ARROWS THAT TRACK CURSOR
     text-decoration: none;
     border-radius: 0;
 }
+
+
+#gform_submit_button_3 {    
+    display: block;
+    margin: 0 auto;
+}
+
 
 .btn-alt:hover {
     color: $gold;
@@ -908,6 +915,8 @@ article a, p a {
     text-decoration: underline;
     color: $black;
 }
+
+
 
 body,
 p,

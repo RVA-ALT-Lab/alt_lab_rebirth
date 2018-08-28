@@ -234,7 +234,7 @@ function twisterMath(x,y, xShapeCenter, yShapeCenter){
 }
 
 
-//GRAVITY FORM FIXES
+//GRAVITY FORM FIXES -- mainly for captcha can probably delete 
 
 window.onload = function(){
   fixGravity();
@@ -262,7 +262,7 @@ function fixGravity(){
   }
 
   if(document.getElementsByName('a-5gqob38542eh')){
-    var iframe = document.getElementsByName('a-5gqob38542eh')[0];
+    var iframe = document.getElementsByName('a-5gqob38542eh');
     console.log(iframe);
     iframe.setAttribute('title', 'captcha');
   }
