@@ -68,7 +68,7 @@
 							<div id="carouselExampleControls" class="carousel slide" data-ride="false">
 								  <div class="carousel-inner">
 								  <div class="quote-slogan">Words from VCU Faculty</div>	
-									<? echo quote_maker();?>												
+									<? //echo quote_maker();?>												
 								  </div>
 								  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">								   
 								    <span class="quote-nav left"><i class="fa fa-chevron-left"></i></span>

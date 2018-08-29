@@ -848,6 +848,27 @@ h2.connect-with-us a {
     margin: 30px auto;
 }
 
+//workshop facet
+.facet-workshop a h2 {
+    color: $black;
+    font-size: 1.5em;
+    padding: 10px;
+    border-bottom: 1px solid $aqua;
+    margin-bottom: 10px;
+    -webkit-transition: all .3s; /* Safari */
+    transition: all .3s;
+
+}
+
+.facet-workshop a h2:hover {
+    background-color: $light-gray;
+}
+
+.facet-holder .btn-alp {
+    display: block;
+    margin: 30px 0;
+}
+
 //faculty bio things
 .faculty-page {
     position: relative;
