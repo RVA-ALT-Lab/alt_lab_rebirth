@@ -872,6 +872,11 @@ h2.connect-with-us a {
     margin: 30px auto;
 }
 
+.vcu-examples a:hover, .outside-examples a:hover {
+    color: $dark-gray;
+    text-decoration-color: $aqua;
+}
+
 //workshop facet
 .facet-workshop a h2 {
     color: $black;
