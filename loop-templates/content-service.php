@@ -16,7 +16,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
-				<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/altlab_logo_blackgold.svg" alt="ALT Lab logo" class="services-logo">
+				<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/altlab_vert_slash.svg" alt="ALT Lab logo" class="services-logo">
 				<h2 class="services-services">services:</h2>
 			</div>
 			<div class="col-md-8">
