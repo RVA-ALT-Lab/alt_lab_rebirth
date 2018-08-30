@@ -311,7 +311,7 @@ function acf_fetch_audience(){
   $audience = get_field('audience');
 
     if( $audience) {      
-      $html = '<div class="audience"><h2>Audience</h2>' . $audience . '</div>';  
+      $html = '<div class="audience"><h2>Audience</h2><p>' . $audience . '</p></div>';  
      return $html;    
     }
 

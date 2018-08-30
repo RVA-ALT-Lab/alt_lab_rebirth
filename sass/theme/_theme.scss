@@ -835,12 +835,36 @@ h2.connect-with-us a {
 
 //workshop 
 
+.workshop-template-default .entry-title{
+    font-weight: 800;
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+.workshop-template-default h2 {
+    border-bottom: 1px dashed #000;
+    position: relative;
+}
+
+.workshop-template-default h2::before {
+    content: '';
+    background-color: $gold;
+    width: 10px;
+    height: 35px;
+    display: inline-block;
+    margin-bottom: -6px;
+    margin-right: 20px;
+    -ms-transform: skew(-15deg); /* IE 9 */
+    -webkit-transform:  skew(-15deg); /* Safari */
+    transform:  skew(-15deg);
+}
+
 .workshop-details {
     margin-top: 50px;
 }
 
 .workshop-description {
-    //column-count: 2;
+    padding-right: 20px;
 }
 
 .workshop-request {
