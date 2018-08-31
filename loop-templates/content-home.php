@@ -100,7 +100,7 @@
 	<div class="container">		
 		<div class="row">
 			<div class="col-md-12">
-				<h2 class="entry-home">About Us</h2>				
+				<h2 class="entry-home about">About Us</h2>				
 			</div>						
 		</div>
 		<div class="row about-us-row">

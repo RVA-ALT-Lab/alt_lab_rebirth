@@ -314,8 +314,8 @@ ARROWS THAT TRACK CURSOR
     right: 0;
     bottom: 0;
     background: rgb(255, 186, 0);
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
+    -webkit-transform: skew(0) scaleX(0);
+    transform: skew(0) scaleX(0);
     -webkit-transform-origin: 0 50%;
     transform-origin: 0 50%;
     -webkit-transition-property: transform;
@@ -335,8 +335,8 @@ ARROWS THAT TRACK CURSOR
 .hvr-sweep-to-right:hover:before,
 .hvr-sweep-to-right:focus:before,
 .hvr-sweep-to-right:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+    -webkit-transform: skew(-15deg) scaleX(1);
+    transform: skew(-15deg) scaleX(1);
 }
 
 
@@ -350,6 +350,18 @@ ARROWS THAT TRACK CURSOR
     padding: .5em;
     text-align: center;
     font-weight: 400;
+}
+
+.entry-home.interested::before, .entry-home.about::before {
+    content: '';
+    background-color: #ffb300;
+    width: 15px;
+    height: 65px;
+    display: inline-block;
+    margin-bottom: -8px;
+    margin-right: 20px;
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg);
 }
 
 .home-callout {
@@ -1506,6 +1518,13 @@ blockquote.default {
 
         .home-callout, .entry-home {
             font-size: 2em;
+        }
+
+        .entry-home.interested::before, .entry-home.about::before {
+            margin-bottom: -5px;
+            margin-right: 10px;
+            width: 10px;
+            height: 35px;
         }
 
         .home-description {
