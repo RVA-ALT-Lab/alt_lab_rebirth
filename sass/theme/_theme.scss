@@ -878,15 +878,23 @@ h2.connect-with-us a {
 }
 
 //workshop facet
+
+.facet-workshop {
+    border-bottom: 1px solid $aqua;
+}
+
+.facet-workshop .show {
+    width: 100%;
+}
+
 .facet-workshop a h2 {
     color: $black;
     font-size: 1.5em;
     padding: 10px;
-    border-bottom: 1px solid $aqua;
     margin-bottom: 10px;
     -webkit-transition: all .3s; /* Safari */
     transition: all .3s;
-
+    display: inline-block;
 }
 
 .facet-workshop a h2:hover {

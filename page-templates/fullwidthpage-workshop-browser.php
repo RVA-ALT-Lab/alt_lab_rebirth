@@ -49,10 +49,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="col-md-4 facet-facets">
 						<div class="facet-box">
 							<h3 class="filter-lead">Filter workshops by</h3>
+							<h3>Concepts</h3>
+							<?php echo facetwp_display( 'facet', 'workshop_concepts');?>	
 							<h3>Tools</h3>
 							<?php echo facetwp_display( 'facet', 'workshop_tools' );?>
-							<h3>Concepts</h3>
-							<?php echo facetwp_display( 'facet', 'workshop_concepts');?>							
 						</div>	
 					</div>
 					<div class="col-md-8 facet-holder"><!--ALPHA PRIME WORKSHOP LOOP-->
