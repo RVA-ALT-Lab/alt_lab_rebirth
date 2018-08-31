@@ -85,11 +85,20 @@ ul.dropdown-menu.show{
     margin-top: 4em;
 }
 
-.alt-logo {
-    background-image: url(../imgs/altlab_logo_blackgold.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+.alt-logo-background {
+    background-image: url(../imgs/PIA17563_orig.jpg);
+    background-attachment: fixed;
     background-size: contain;
+    background-position: bottom;
+}
+
+.alt-logo {
+    background-color: white;
+    mix-blend-mode: screen;
+    display: table-cell;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
 }
 
 .alt-big-menu {
@@ -593,11 +602,12 @@ ARROWS THAT TRACK CURSOR
 }
 .timeline-body {
     font-family: Roboto, sans-serif;
-    background: #00B3BE;
     margin: 0 0 30px 0;
     padding: 30px 0 30px 0;
     margin-top: -8px;
     background-color: #00B3BE;
+    background-image: linear-gradient(141deg, #00B3BE 0%, #1fc8db 51%, #0eb1c0 75%);
+    opacity: 1;
     box-sizing: border-box;
 }
 
@@ -1521,6 +1531,10 @@ blockquote.default {
         }
 
         #the-menu a.nav-big {
+            display: none;
+        }
+
+        .alt-logo {
             display: none;
         }
 
