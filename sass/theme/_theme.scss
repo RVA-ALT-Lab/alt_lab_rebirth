@@ -895,6 +895,7 @@ h2.connect-with-us a {
     -webkit-transition: all .3s; /* Safari */
     transition: all .3s;
     display: inline-block;
+    margin-top: 10px;
 }
 
 .facet-workshop a h2:hover {
@@ -904,6 +905,14 @@ h2.connect-with-us a {
 .facet-holder .btn-alp {
     display: block;
     margin: 30px 0;
+}
+
+.workshop-learn-more {
+    color: $dark-gray;
+}
+
+.btn-workshop {
+    padding-top: 25px;
 }
 
 //faculty bio things
