@@ -1009,10 +1009,11 @@ h2.connect-with-us a {
 
 .nav-next a, .nav-previous a {
     color: $dark-gray;
-    border: 1px solid $aqua;
+    border: 2px solid $aqua;
     padding: 10px 8px;
     text-align: center;
     margin: 10px 0;
+    display: block;
 }
 
 //************************BASIC CONTENT CHOICES************************
