@@ -927,6 +927,22 @@ h2.connect-with-us a {
     padding-top: 25px;
 }
 
+//workshop modal
+#workshopModal #input_3_6 li {
+    margin: 10px 0;
+}
+
+#workshopModal #input_3_6 li:hover {
+    background-color: $light-gray;
+} 
+
+#workshopModal #input_3_6 input[type='checkbox'] {      
+    white-space: nowrap;
+    overflow:hidden;
+    width:20px !important;
+    height:20px !important;
+}
+
 //faculty bio things
 .faculty-page {
     position: relative;
@@ -987,6 +1003,16 @@ h2.connect-with-us a {
     color: $dark-gray;
     font-size: 1em;
     line-height: 1.8em;
+}
+
+//page navigation 
+
+.nav-next a, .nav-previous a {
+    color: $dark-gray;
+    border: 1px solid $aqua;
+    padding: 10px 8px;
+    text-align: center;
+    margin: 10px 0;
 }
 
 //************************BASIC CONTENT CHOICES************************
