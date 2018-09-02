@@ -21,8 +21,8 @@
 			<?php the_content(); ?>			
 		</div>
 			<div class="col-md-6">
-				<?php echo learning_outcomes();?>
 				<?php echo acf_fetch_audience();?>
+				<?php echo learning_outcomes();?>				
 				<?php echo vcu_examples();?>
 				<?php echo outside_examples();?>
 			</div>
