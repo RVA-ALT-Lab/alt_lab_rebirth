@@ -606,7 +606,9 @@ ARROWS THAT TRACK CURSOR
     padding: 30px 0 30px 0;
     margin-top: -8px;
     background-color: #00B3BE;
-    background-image: linear-gradient(141deg, #00B3BE 0%, #1fc8db 51%, #0eb1c0 75%);
+    // background-image: linear-gradient(141deg, #00B3BE 0%, #1fc8db 51%, #0eb1c0 75%);
+    background-image: linear-gradient(110deg, #0eb1c0 42.86%, #49c7c3 42.86%, #49c7c3 50%, #0eb1c0 50%, #0eb1c0 92.86%, #49c7c3 92.86%, #49c7c3 100%);
+    background-size: 7.00px 19.23px;
     opacity: 1;
     box-sizing: border-box;
 }
@@ -1534,9 +1536,9 @@ blockquote.default {
             display: none;
         }
 
-        .alt-logo {
-            display: none;
-        }
+        // .alt-logo {
+        //     display: none;
+        // }
 
         .alt-big-menu {
             padding-left: 0;
