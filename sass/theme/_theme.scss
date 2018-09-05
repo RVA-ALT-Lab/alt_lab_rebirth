@@ -108,6 +108,7 @@ ul.dropdown-menu.show{
 .menu-item {
     font-size: 1.5em;
     line-height: .9em;
+    margin-top: .5em;
     padding-left: .4em;
     padding-top: .5em;
     position: relative;
@@ -1403,8 +1404,8 @@ blockquote.default {
     background-size: contain;
     background-position: center;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 } 
 
 .mail {
@@ -1543,6 +1544,11 @@ blockquote.default {
         .alt-big-menu {
             padding-left: 0;
             padding-right: 0;
+            margin-top: -1em;
+        }
+
+        .alt-menu {
+            margin-top: 1em;
         }
 
         .menu-item {
@@ -1573,7 +1579,12 @@ blockquote.default {
         }
 
         .home-description {
-            font-size: 1em;
+            font-size: 1.2em;
+            padding: 0;
+        }
+
+        .about-us-description p {
+            font-size: 1.2em;
         }
 
         .workshop-description {
@@ -1652,6 +1663,14 @@ blockquote.default {
             width: 100%;
             float: none;
             padding: 0;
+        }
+
+        .box-content p {
+            font-size: 1em;
+        }
+
+        .box-content h2 {
+            font-size: 1.5em;
         }
 
         .box-ender {
