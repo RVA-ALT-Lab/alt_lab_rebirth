@@ -1484,6 +1484,18 @@ blockquote.default {
 }
 
 
+//events 
+
+.event-acf-meta {
+    margin-top: 50px;
+    border-top: 1px solid $light-gray;
+    padding-top: 30px;
+}
+
+.event-acf-meta li {
+    margin-top: 10px;
+}
+
 
 @media only screen and (max-width: 1199px) {
     .alt-center {
