@@ -871,7 +871,7 @@ h2.connect-with-us a {
     position: relative;
 }
 
-.workshop-template-default h2::before {
+.workshop-template-default h2::before, .event-acf-meta h2::before, {
     content: '';
     background-color: $gold;
     width: 10px;
