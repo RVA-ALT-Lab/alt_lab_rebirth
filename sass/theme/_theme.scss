@@ -1484,16 +1484,21 @@ blockquote.default {
 }
 
 
-//events 
+//single events 
 
 .event-acf-meta {
     margin-top: 50px;
     border-top: 1px solid $light-gray;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .event-acf-meta li {
     margin-top: 10px;
+}
+
+.single-tribe_events .tribe-events-event-meta {
+    padding: 8px;
 }
 
 

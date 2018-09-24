@@ -89,6 +89,10 @@ $venue_address = tribe_get_address();
 		<?php echo vcu_examples();?>
 		<?php echo outside_examples();?>
 	</div>
+	<div class="workshop-request">
+		<a href="#workshopModal" data-toggle="modal" class="btn btn-alt">Request a workshop</a>				
+	</div>
 </div>
+
 <?php
 do_action( 'tribe_events_after_the_content' );
