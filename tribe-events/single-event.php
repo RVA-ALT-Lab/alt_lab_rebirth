@@ -78,7 +78,15 @@ $venue_address = tribe_get_address();
 <!-- Event Content -->
 <?php do_action( 'tribe_events_before_the_content' ) ?>
 <div class="tribe-events-list-event-description tribe-events-content description entry-summary">
-	<?php echo get_the_content(); ?>	
+	<?php echo get_the_content(); ?>
+
+	<div class="event-review"><a class="aside btn btn-alt" data-toggle="collapse" href="#review" role="button" aria-expanded="false" aria-controls="collapseExample">Review this event</a></div>
+
+	<div class="collapse" id="review">
+		<div class="card card-body">
+			<?php echo do_shortcode('[gravityform id="4" title="false" description="false"]');?>
+		</div>
+	</div>	
 </div><!-- .tribe-events-list-event-description -->
 <div class="row event-acf-meta">
 	<div class="col-md-6">
