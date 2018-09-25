@@ -12,7 +12,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<div class="bio-title"><?php echo acf_fetch_title();?></div>
 	</header><!-- .entry-header -->
-	<div class="row">
+	<div class="row the-faculty">
 		<div class="col-md-4">
 				<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 		</div>
