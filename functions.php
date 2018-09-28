@@ -645,7 +645,7 @@ function showFaculty($department){
       'post_type'   => 'faculty', 
       'post_status' => 'publish', 
       'order' => 'ASC',
-      'orderby' => 'post_title',
+      'orderby' => 'name',
         'tax_query' => array(
             array(
               'taxonomy' => 'departments',
