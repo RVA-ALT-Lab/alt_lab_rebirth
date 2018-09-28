@@ -649,7 +649,7 @@ function showFaculty($department){
         'tax_query' => array(
             array(
               'taxonomy' => 'departments',
-              'field'    => 'slug',
+              'field'    => 'slug', //KEEP IN MIND THIS SORTS BY SLUG AND I HAVE YET TO MAKE A FUNCTION TO SWITCH FIRST & LAST NAMES
               'terms'    => $department,
             ),
           ),
