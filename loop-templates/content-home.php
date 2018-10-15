@@ -62,13 +62,13 @@
 <!--END WORK-->
 
 <!--quote slider-->
-<!-- 	<div class="container">
+<div class="container">
 					<div class="row quotes justify-content-md-center">
 						<div class="col-md-12 quote-box">
 							<div id="carouselExampleControls" class="carousel slide" data-ride="false">
 								  <div class="carousel-inner">
 								  <div class="quote-slogan">Words from VCU Faculty</div>	
-									<? //echo quote_maker();?>												
+									<? echo quote_maker();?>												
 								  </div>
 								  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">								   
 								    <span class="quote-nav left"><i class="fa fa-chevron-left"></i></span>
@@ -79,7 +79,7 @@
 								</div>
 						</div>	
  					</div>
-	</div> -->
+	</div> 
 <!--end quote-->
 <div class="container-fluid">
 <div class="row image-row">

@@ -394,7 +394,7 @@ ARROWS THAT TRACK CURSOR
 //quote carousel 
 //QUOTES
 .carousel-inner {
-    height: 350px;
+    height: 450px;
     background-color: $white; //border: 1px solid $dark-gray;
 }
 
@@ -455,12 +455,18 @@ ARROWS THAT TRACK CURSOR
 }
 
 .quote-speaker {
-    margin-top: 2em;
+    margin-top: 20px;
+    font-size: 1.5em;
 }
 
 .quote-school {
     font-weight: 300;
     margin-top: .5em;
+}
+
+.the-quote {
+    font-size: 1.3em;
+    line-height: 1.5em;
 }
 
 //home topics
