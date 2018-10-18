@@ -437,7 +437,7 @@ function quoteTitles ($post_id){
     $quote = substr(get_field( "the_quote", $post_id ),0, 40) . ' . . .';
     $my_post = array(
         'ID'           => $post_id,
-        'post_title'   => $quote,      
+        'post_title'   => wp_strip_all_tags($quote),      
     );
 
   // Update the post into the database
