@@ -23,10 +23,8 @@
 
 
 	<div class="entry-content single-quote-content">
-		<blockquote >
-			<?php
-		   echo  get_the_quote();
-			?>
+		<blockquote>
+			<?php echo get_the_quote();?>
 		</blockquote>
 		
 
