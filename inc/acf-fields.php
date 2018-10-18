@@ -879,7 +879,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_5b3fb2d372ed0',
 			'label' => 'Quote',
 			'name' => 'the_quote',
-			'type' => 'textarea',
+			'type' => 'wysiwyg',
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
