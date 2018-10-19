@@ -100,6 +100,17 @@ ul.dropdown-menu.show{
     // background-repeat: no-repeat;
     // background-size: contain;
 }
+// .alt-logo::before {
+//     content: '';
+//     background-color: #ffb300;
+//     width: 40px;
+//     height: 240px;
+//     display: inline-block;
+//     margin-bottom: -107px;
+//     margin-right: 20px;
+//     -webkit-transform: skew(-15deg);
+//     transform: skew(-15deg);
+// }
 
 .alt-big-menu {
     padding-left: 2em;
@@ -360,14 +371,26 @@ ARROWS THAT TRACK CURSOR
     padding: .5em;
     text-align: center;
     font-weight: 400;
-    background-image:linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(250, 235, 215, 0.46), rgba(250, 235, 215, 0.46), rgba(255, 255, 255, 0.1));
+    // background-image:linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(250, 235, 215, 0.46), rgba(250, 235, 215, 0.46), rgba(255, 255, 255, 0.1));
 }
 
-.entry-home.interested::before, .entry-home.about::before {
+.entry-home::before {
     content: '';
     background-color: #ffb300;
     width: 15px;
     height: 65px;
+    display: inline-block;
+    margin-bottom: -8px;
+    margin-right: 20px;
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg);
+}
+
+.entry-title.entry-home::before {
+    content: '';
+    background-color: #ffb300;
+    width: 0;
+    height: 0;
     display: inline-block;
     margin-bottom: -8px;
     margin-right: 20px;
