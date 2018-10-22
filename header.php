@@ -109,7 +109,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php if(is_front_page() ):?>
 			<div class="container big-menu">
 			  <div class="row alt-menu justify-content-md-center">
-			    <div class="alt-logo-background"><div class="col-md-4 alt-logo"><img src="https://altlab.vcu.edu/wp-content/themes/alt_lab_rebirth/imgs/altlab_logo_blackgold3.svg" style="height:240px;"></div></div>
+			    <div class="alt-logo-background"><div class="col-md-4 alt-logo"><img src="https://altlab.vcu.edu/wp-content/themes/alt_lab_rebirth/imgs/altlab_logo_blackgold3.svg" style="height:240px;" alt="The ALT Lab logo with a solar system background."></div></div>
 			    <div class="col-md-6 alt-big-menu">
 			      <div class="row">
 			        <div class="col-6 menu-item hvr-sweep-to-right"><a href="design-instruction"><i class="fa fa-cog" aria-hidden="true"></i>
