@@ -71,7 +71,7 @@
                     <div class="alt-proj-faculty-name fromLeft">
                       <?php the_title(); ?>
                     </div>
-                    <div class="alt-proj-faculty-school"><?php getFacultyDept($id); ?></div>
+                    <div class="alt-proj-faculty-school"><?php //getFacultyDept($id); ?></div>
                   </div>
                 </a> 
               </div> 
