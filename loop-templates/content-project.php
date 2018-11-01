@@ -41,46 +41,7 @@
         }
         ?>
 
-       <?php         
-          // args
-          $args = array(
-            'numberposts' => -1,
-            'post_type'   => 'faculty',
-            'tax_query' => array(
-            array(
-              'taxonomy' => 'emails',
-              'field'    => 'slug',
-              'terms'    => $fac_email,
-            ),
-          ),
-            
-          );
-
-
-          // query
-          $the_query = new WP_Query( $args );
-
-          ?>
-          <?php if( $the_query->have_posts() ): ?>
-            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-            <!--faculty-->
-              <div class="alt-proj-faculty-member col-md-6">   
-                <a href="<?php the_permalink(); ?>">             
-                  <img class="alt-proj-faculty-thumb" src="<?php the_post_thumbnail_url('thumbnail');?>">
-                  <div class="alt-proj-faculty-details">
-                    <div class="alt-proj-faculty-name fromLeft">
-                      <?php the_title(); ?>
-                    </div>
-                    <div class="alt-proj-faculty-school"><?php //getFacultyDept($id); ?></div>
-                  </div>
-                </a> 
-              </div> 
-            <!--end faculty--> 
-            <?php endwhile; ?>
-          <?php endif; ?>
-
-          <?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>
-
+       <?php  faculty_bios_for_project();?>
          
           
       </div>

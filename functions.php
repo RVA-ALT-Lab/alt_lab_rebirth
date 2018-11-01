@@ -884,3 +884,44 @@ function populate_checkbox( $form ) {
  
     return $form;
 }
+
+
+//PROJECT FUNCTIONS
+
+function faculty_bios_for_project () {    
+        global $post;
+         //get emails for query
+        $terms = get_the_terms( get_the_ID(),'emails');
+        $fac_email = [];
+        if($terms){
+          foreach ($terms as $term) {
+            $fac_email[] = $term->slug;
+          }
+        }
+          // args
+          $args = array(
+            'numberposts' => -1,
+            'post_type'   => 'faculty',
+            'tax_query' => array(
+            array(
+              'taxonomy' => 'emails',
+              'field'    => 'slug',
+              'terms'    => $fac_email,
+            ),
+          ),
+            
+          );
+
+
+          // query
+          $the_query = new WP_Query( $args );
+
+         if( $the_query->have_posts() ):
+           while ( $the_query->have_posts() ) : $the_query->the_post(); 
+            echo '<!--faculty--><div class="alt-proj-faculty-member col-md-6"><a href="' . get_the_permalink() . '"><img class="alt-proj-faculty-thumb" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="The faculty bio picture for '. get_the_title() . '."><div class="alt-proj-faculty-details"><div class="alt-proj-faculty-name fromLeft">' . get_the_title() . '</div></a><div class="alt-proj-faculty-school">DEPT</div></div></a></div><!--end faculty-->';
+            endwhile;
+          endif;
+
+        wp_reset_query();  // Restore global post data stomped by the_post()
+
+        }
