@@ -29,18 +29,6 @@
       <div class="alt-proj-faculty row">
         <div class="col-md-12"><h3>Faculty:</h3></div>
        
-
-        <?php 
-        //get emails for query
-        $terms = get_the_terms( get_the_ID(),'emails');
-        $fac_email = [];
-        if($terms){
-          foreach ($terms as $term) {
-            $fac_email[] = $term->slug;
-          }
-        }
-        ?>
-
        <?php  faculty_bios_for_project();?>
          
           
