@@ -624,7 +624,7 @@ function create_course_cpt() {
     'labels' => $labels,
     'menu_icon' => '',
     'supports' => array('title', 'editor', 'revisions', 'author', 'trackbacks', 'custom-fields', 'thumbnail',),
-    'taxonomies' => array(),
+    'taxonomies' => array('emails'),
     'public' => true,
     'show_ui' => true,
     'show_in_menu' => true,
@@ -647,3 +647,4 @@ function create_course_cpt() {
   $wp_rewrite->flush_rules();
 }
 add_action( 'init', 'create_course_cpt', 0 );
+
