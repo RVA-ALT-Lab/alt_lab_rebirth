@@ -16,18 +16,26 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 	</header><!-- .entry-header -->
-	
-	<div class="row workshop-details">
-		<div class="workshop-description col-md-6">
-			<h2>Description</h2>
-			<?php the_content(); ?>			
+	<div class="alt-lab-lead data"><?php alt_lab_lead();?></div>
+		<div class="department data"><?php project_department();?></div>
+		<div class="design data"><?php alt_lab_design_pattern();?></div>
+		
+		<div class="project-dates">
+			<h2>Dates</h2>
+			<ul>
+				<li class="start-date">Start Date: <?php echo acf_fetch_work_start_date();?></li>
+				<li class="start-date">Due Date: <?php echo acf_fetch_due_date();?></li>			
+				<li class="start-date">Launch Date: <?php echo acf_fetch_launch_date();?></li>
+			</ul>
 		</div>
-			<div class="col-md-6">
-				<?php echo acf_fetch_audience();?>
-				<?php echo learning_outcomes();?>				
-				<?php echo vcu_examples();?>
-				<?php echo outside_examples();?>
-			</div>
+
+		<div class="faculty-accordion">Faculty: <?php project_faculty();?></div>
+		<div class="description-accordion">Description: <?php echo project_description();?></div>
+
+		<div class="updates">
+			<h2>Updates</h2>
+			<?php echo acf_fetch_updates();?>
+
 		</div>
 
 
