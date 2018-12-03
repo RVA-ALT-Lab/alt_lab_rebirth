@@ -87,7 +87,6 @@ require get_template_directory() . '/inc/acf-fields.php';
 require get_template_directory() . '/inc/how_it_works_timeline.php';
 
 
-
 //ADD FONTS and VCU Brand Bar
 add_action('wp_enqueue_scripts', 'alt_lab_scripts');
 function alt_lab_scripts() {
@@ -934,3 +933,130 @@ function faculty_dept_for_project(){
  return $name;
 
 }
+//data
+
+
+
+function alt_lab_design_pattern(){
+   if (have_rows('course_specific')):
+      while( have_rows('course_specific') ): the_row() ;
+         $pattern = get_sub_field('design_pattern');
+           if ($pattern){
+            echo '<a href="?fwp_project_type=' . sanitize_title($pattern) . '">' . $pattern . '</a>';            
+          }
+      endwhile;
+    endif;
+}
+
+
+function alt_lab_project_status(){
+    global $post;
+    $terms = get_the_terms( $post->ID , 'state' );
+    echo sanitize_title($terms[0]->name);
+
+}
+
+
+
+
+function acf_fetch_work_start_date(){
+  global $post;
+  $html = '';
+  $work_start_date = get_field('work_start_date');
+
+    if( $work_start_date) {      
+      $html = $work_start_date;  
+      return $html;    
+    }
+
+}
+
+
+function acf_fetch_launch_date(){
+  global $post;
+  $html = '';
+  $launch_date = get_field('launch_date');
+
+    if( $launch_date) {      
+      $html = $launch_date;  
+     return $html;    
+    }
+
+}
+
+
+function acf_fetch_due_date(){
+  global $post;
+  $html = '';
+  $due_date = get_field('due_date');
+
+    if( $due_date) {      
+      $html = $due_date;  
+     return $html;    
+    }
+
+}
+
+
+function acf_fetch_updates(){
+  $values = get_field('updates');
+  if($values)
+  {
+    echo '<ul class="updates-list">';
+    foreach($values as $value)
+    {
+      echo '<li>' . $value['update_date'] . ' ' . $value['update_details'] . '</li>';
+    }
+    echo '</ul>';
+  }
+}
+
+
+function acf_count_updates(){
+  $values = get_field('updates');
+  $count = 0;
+  if($values)
+  {
+    foreach($values as $value)
+    {
+     $count++;
+    }
+   echo ' (' . $count . ')';
+  }
+}
+
+
+//add project to author page
+function wpbrigade_author_custom_post_types( $query ) {
+  if( is_author() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $query->set( 'post_type', array(
+     'post', 'project'
+    ));
+    return $query;
+  }
+}
+
+
+function alt_lab_lead(){
+   if (have_rows('alt_lab_specific_information')):
+      while( have_rows('alt_lab_specific_information') ): the_row() ;
+         $leads = get_sub_field('alt_lab_lead');
+          if ($leads){
+            echo '<a href="?fwp_project_lead=' . $leads->ID . '">' . $leads->display_name . '</a>';        
+       }
+      endwhile;
+    endif;
+}
+
+function project_department(){
+  global $post;
+  $post_id = $post->ID;
+  $terms = wp_get_post_terms( $post_id, 'departments');
+  if ($terms){
+    foreach ( $terms as $term ) {
+        echo '<a href="?departments=' . $term->slug . '">' . $term->name . '</a><br>'; //build this out for archive sorting
+        ///?departments=foo
+    }
+  }
+}
+add_filter( 'pre_get_posts', 'wpbrigade_author_custom_post_types' );
