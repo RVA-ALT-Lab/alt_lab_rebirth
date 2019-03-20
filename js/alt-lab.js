@@ -29,18 +29,18 @@ document.getElementById('search-button').addEventListener('click', function(){
 //HIGHLIGHT TOPIC ELEMENT ON CLICK
 
 function topicHighlighter(){
-	if (document.getElementsByClassName('topic-link')){
-		var topicLinks = document.getElementsByClassName('topic-link');
-		for (var i = 0; i < topicLinks.length; i++) {
-  			topicLinks[i].addEventListener("click", function() {
-  			jQuery(".topic-highlight").removeClass('topic-highlight');
-		    this.parentElement.className += " topic-highlight";
-		  });
-		}
-	}
+  if (document.getElementsByClassName('topic-link')){
+    var topicLinks = document.getElementsByClassName('topic-link');
+    for (var i = 0; i < topicLinks.length; i++) {
+        topicLinks[i].addEventListener("click", function() {
+        jQuery(".topic-highlight").removeClass('topic-highlight');
+        this.parentElement.className += " topic-highlight";
+      });
+    }
+  }
 }
 
-var addHightlight = function() {	
+var addHightlight = function() {  
     var attribute = this.parentElement.classList.add("topic-highlight");
 };
 
@@ -50,8 +50,8 @@ topicHighlighter();
 //RESTRUCTURE FOR TOPICS ON HOME PAGE
 
 if (document.getElementById('topic-parent')){
-	window.addEventListener("resize", onSquish);
-	window.addEventListener("load", onSquish);
+  window.addEventListener("resize", onSquish);
+  window.addEventListener("load", onSquish);
 }
 
 
@@ -160,10 +160,26 @@ jQuery('#contactModal').on('show.bs.modal', function (event) {
   modal.find('#the-greeting').html('<h2>Talk to ' + name + '!</h2>');
 })
 
-//remove the person
-jQuery('#contactModal').on('hide.bs.modal', function (event) {
-  var modal = jQuery(this);
-  modal.find('#the-person').removeClass();
+
+//populate registration modal
+jQuery('#registrationModal').on('show.bs.modal', function (event){
+
+     var button = jQuery(event.relatedTarget); // Button that triggered the modal
+      if(button.data('course')){
+        var course = button.data('course'); // Extract info from data-* attributes
+      }
+     var modal = jQuery(this);
+    
+     if(course == 'Going Online@VCU'){
+     document.getElementById('choice_5_3_0').checked = true;
+     }
+     if(course == 'Developing Online@VCU'){
+       document.getElementById('choice_5_3_1').checked = true;
+     }
+     if(course == 'Teaching Online@VCU'){
+       document.getElementById('choice_5_3_2').checked = true;
+     }
+   
 })
 
 //turn on tool tips
