@@ -253,3 +253,9 @@ function twisterMath(x,y, xShapeCenter, yShapeCenter){
 
 
 
+//allow modal by url parameter 
+ if(window.location.hash) {
+    var hash = window.location.hash;
+    console.log(hash);
+    jQuery(hash).modal();
+  }
