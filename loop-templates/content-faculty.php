@@ -28,7 +28,7 @@
 	<div class="leadership" id="faculty-list-leadership">
 		<div class="container">
 			<h2 class="faculty-group">Administration</h2>
-			<?php echo showFaculty('Administration');?>
+			<?php echo showFaculty('administration');?>
 		</div>
 	</div>
 	<div class="design" id="faculty-list-instructional-design">
@@ -39,13 +39,13 @@
 	</div>
 	<div class="media">
 		<div class="container" id="faculty-list-learning-media">
-			<h2 class="faculty-group">Learning Media</h2>
-			<?php echo showFaculty('learning-media');?>
+			<h2 class="faculty-group">Media Production</h2>
+			<?php echo showFaculty('innovative-media');?>
 		</div>
 	</div>
 	<div class="rd" id="faculty-list-rd">
 		<div class="container">		
-			<h2 class="faculty-group">R+D</h2>
+			<h2 class="faculty-group">Web Development & R+D</h2>
 			<?php echo showFaculty('rd');?>
 		</div>
 	</div>		

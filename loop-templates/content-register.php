@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial template for content in service
+ * Partial template for content in register
  *
  * @package understrap
  */
@@ -12,27 +12,24 @@
 </div>
 </div>
 
-<div class="entry-content service-page">
+<div class="entry-content register-page">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
 				<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/altlab_vert_slash.svg" alt="ALT Lab logo" class="services-logo">
-				<h2 class="services-services">services:</h2>
+				<h2 class="services-services">register:</h2>
 			</div>
 			<div class="col-md-8">
 				<header class="entry-header">
-					<?php the_title( '<h1 class="entry-title-service">', '</h1>' ); ?>					
+					<?php the_title( '<h1 class="entry-title-register">', '</h1>' ); ?>					
 				</header><!-- .entry-header -->
+
 				<?php echo acf_fetch_call_out_one_text() ?>
 				
-
-					<?php 
-					$dept = sanitize_title(acf_fetch_department_alignment());
-					echo show_faculty_service($dept);?>
 				
 			</div>
 		</div>
-		<div class="service-separator">
+			<div class="service-separator">
 		</div>
 	</div>
 	<div class="container-fluid service-callout-two">
@@ -60,33 +57,33 @@
 		</div>
 	</div>	
 
-	<!-- <div class="container-fluid yellow extra-info">
+	<div class="container-fluid yellow extra-info">
 		<div class="container white">			
 			<div class="row">
 				<div class="col-md-3 related">
-					<h2>Related</h3>
+					<!-- <h2>Related</h3>
 					<a href="http://192.168.33.10/wordpress/altlab/events/category/video/list/">
 						<div class="service-icon">
 							<h3>Events</h3>
 							<i class="icon-events"></i>
 						</div>
-					</a>
-					<a href="http://192.168.33.10/wordpress/altlab/events/category/video/list/">
+					</a> -->
+					<!-- <a href="http://192.168.33.10/wordpress/altlab/events/category/video/list/">
 						<div class="service-icon">
 							<h3>Projects</h3>
 							<i class="icon-projects"></i>
 						</div>
-					</a>
+					</a> -->
 				</div>
 				<div class="col-md-3">
-					
+					<!-- services -->
 				</div>
 				<div class="col-md-3">
-					
+					<!-- button -->
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 	
 

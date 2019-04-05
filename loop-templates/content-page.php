@@ -14,7 +14,7 @@
 
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content full-page">
 
 		<?php the_content(); ?>
 

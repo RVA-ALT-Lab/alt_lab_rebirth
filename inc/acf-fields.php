@@ -527,6 +527,13 @@ acf_add_local_field_group(array(
 				'value' => 'page-templates/fullwidthpage-service.php',
 			),
 		),
+		array(
+			array(
+				'param' => 'page_template',
+				'operator' => '==',
+				'value' => 'page-templates/fullwidthpage-register.php',
+			),
+		),
 	),
 	'menu_order' => 0,
 	'position' => 'normal',

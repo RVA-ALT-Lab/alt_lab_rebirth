@@ -84,7 +84,13 @@ require get_template_directory() . '/inc/acf-fields.php';
 /**
  * Load how it works timeline
  */
-require get_template_directory() . '/inc/how_it_works_timeline.php';
+// require get_template_directory() . '/inc/how_it_works_timeline.php';
+
+/**
+ * Load new how it works section
+ */
+
+require get_template_directory() . '/inc/how_it_works_area.php';
 
 
 //ADD FONTS and VCU Brand Bar
@@ -671,6 +677,9 @@ function showFaculty($department){
 
 //faculty loop for service page
 function show_faculty_service($department){
+    if ($department=='instructional-design') {
+      return;
+    }
     $args = array(
       'posts_per_page' => -1,
       'post_type'   => 'faculty', 
@@ -688,12 +697,14 @@ function show_faculty_service($department){
     $html = '';
     $the_query = new WP_Query( $args );
                     if( $the_query->have_posts() ): 
+                      $html .= '<h2 class="team-header">The Team</h2><div class="team-holder">';
                       while ( $the_query->have_posts() ) : $the_query->the_post();
                         $html .= '<div class="team-member">';
                         $html .= '<a href="../about-us#'.sanitize_title(get_the_title()).'"><img class="service-team-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="Faculty bio picture for '. get_the_title() . '">';
                         $html .= '<span class="faculty-service-info">' . get_the_title() . '</span></a>';
                         $html .= '<a data-toggle="modal" href="#contactModal" data-name="' . get_the_title() . '" data-css="' . basename(get_permalink()) . '" data-person="'.acf_fetch_email().'"><div class="icon mail"></div></a></div>';
                       endwhile;
+                      $html .= '</div>';
                     endif;
     wp_reset_query();  // Restore global post data stomped by the_post().
    return $html;
