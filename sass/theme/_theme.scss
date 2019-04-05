@@ -211,10 +211,15 @@ ul.dropdown-menu.show{
 .home-side-bar .display-posts-listing .listing-item .excerpt-dash {
 	display: none;
 }
+
 .home-side-bar .display-posts-listing .listing-item .date {
     display: inline-block;
     font-size: .8em;
     font-style: italic;
+}
+.home-side-bar .display-posts-listing .listing-item .excerpt a {
+    color: #626a71;
+    text-decoration: underline;
 }
 
 .tribe-mini-calendar-event .list-info h2 a {
@@ -1384,6 +1389,10 @@ img.wp-post-image {
 
 .service-page li {
     margin-bottom: 10px;
+}
+
+.below-videos {
+    margin-bottom: 30px;
 }
 
 // .service-page .col-md-8, .service-callout-two  {
