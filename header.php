@@ -104,31 +104,38 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</nav><!-- .site-navigation -->
 	</div><!-- #wrapper-navbar end -->
-
+	<div class="special-border">
 		<!--BIG MENU-->
 		<?php if(is_front_page() ):?>
 			<div class= "big-menu">
 				<div class="container">
-				<div class="row alt-menu justify-content-md-center">
-					<div class="alt-logo-background"><div class="col-md-4 alt-logo"><img src="https://altlab.vcu.edu/wp-content/themes/alt_lab_rebirth/imgs/altlab_logo_blackgold3.svg" style="height:240px;" alt="The ALT Lab logo with a solar system background."></div></div>
-					<div class="col-md-6 alt-big-menu">
-					<div class="row">
-						<div class="col-6 menu-item hvr-sweep-to-right"><a href="design-instruction"><i class="fa fa-cog" aria-hidden="true"></i>
-						online<br />course design</a></div>
-						<div class="col-6 menu-item hvr-sweep-to-right"><a href="create-websites"><i class="fa fa-file-code-o" aria-hidden="true"></i>
-						web<br />creation</a></div>
-						<div class="col-6 menu-item hvr-sweep-to-right"><a href="produce-videos"><i class="fa fa-play" aria-hidden="true"></i>
-						media<br />production</a></div>
-						<div class="col-6 menu-item last hvr-sweep-to-right"><a href="professional-development"><i class="fa fa-briefcase" aria-hidden="true"></i>
-						professional<br />development</a></div>
-						<div class="col-6 menu-item hvr-sweep-to-right"><a href="faculty-resources"><i class="fa fa-university" aria-hidden="true"></i>
-						faculty<br />resources</a></div>   
-						<div class="col-6 menu-item last hvr-sweep-to-right"><a href="innovate-with-us"><i class="fa fa-rocket" aria-hidden="true"></i>
-						innovate<br />with us</a></div>   
-					</div>        
+					<div class="row alt-menu justify-content-md-center">
+						<div class="alt-logo-background"><div class="col-md-4 alt-logo"><img src="https://altlab.vcu.edu/wp-content/themes/alt_lab_rebirth/imgs/altlab_logo_blackgold3.svg" style="height:240px;" alt="The ALT Lab logo with a solar system background.">
+						</div>
 					</div>
+						<div class="col-md-6 alt-big-menu">
+							<div class="row">
+								<div class="col-6 menu-item hvr-sweep-to-right"><a href="design-instruction"><i class="fa fa-cog" aria-hidden="true"></i>
+							online<br />course design</a>
+								</div>
+								<div class="col-6 menu-item hvr-sweep-to-right"><a href="create-websites"><i class="fa fa-file-code-o" aria-hidden="true"></i>
+							web<br />creation</a>
+									</div>
+								<div class="col-6 menu-item hvr-sweep-to-right"><a href="produce-videos"><i class="fa fa-play" aria-hidden="true"></i>
+									media<br />production</a>
+								</div>
+								<div class="col-6 menu-item last hvr-sweep-to-right"><a href="professional-development"><i class="fa fa-briefcase" aria-hidden="true"></i>
+									professional<br />development</a>
+								</div>
+								<div class="col-6 menu-item hvr-sweep-to-right"><a href="faculty-resources"><i class="fa fa-university" aria-hidden="true"></i>
+									faculty<br />resources</a>
+								</div>   
+								<div class="col-6 menu-item last hvr-sweep-to-right"><a href="innovate-with-us"><i class="fa fa-rocket" aria-hidden="true"></i>
+									innovate<br />with us</a>
+								</div>   
+							</div>        
+						</div>
 					</div>
-				</div>
 				</div>
 			</div>
 		<?php endif;?>

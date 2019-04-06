@@ -29,6 +29,11 @@ p {
     justify-content: flex-end;
 }
 
+.special-border {
+    border-right: 5vw solid $gold;
+    border-left: 5vw solid $gold;
+}
+
 //gets rid of round edges on child menu elements
 .dropdown-menu {
     border-radius: 0;
