@@ -1842,7 +1842,7 @@ blockquote.default {
         -webkit-column-gap: 40px;
         column-count: 1;
         column-gap: 40px;
-        padding: 20px;
+        padding: .7em;
     }
     .course-card-link {
         position: initial;
@@ -1862,9 +1862,10 @@ blockquote.default {
 
 
 @media only screen and (max-width: 767px) {
-        // .service-thumb .col-md-6 {
-        //     background-color: #fff;
-        // }    
+        .service-thumb {
+            background-color: $white;
+            padding-bottom: 30px;
+        } 
     
         .mobile-logo {
             display: block;
@@ -2024,10 +2025,48 @@ blockquote.default {
         
         .card {
             flex-direction: column;
+            margin-left: -15px;
+            margin-right: -15px;
         }
 
         .card-img-top {
             margin: 2em auto 0 auto; 
+        }
+
+        .card-body {
+            padding: 1.5em;
+        }    
+
+        .faculty-group {
+            font-size: 2.2em;
+            font-weight: 600;
+            margin-top: 30px;
+        }
+
+        .faculty-bio-text {
+            color: $dark-gray;
+            font-size: .9em;
+            line-height: 1.7em;
+        }
+
+        .faculty {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .course-card {
+            padding: 1.2em;
+            margin-left: -1.5em;
+            margin-right: -1.5em;
+        }
+
+        .full-page {
+            padding: .8em;
+        }
+        
+        .full-page p {
+            font-size: 1em; //**was going to change this**//
+            line-height: 1.7em;
         }
 
         /* Place the timelime to the left */
