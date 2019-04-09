@@ -27,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					endif; ?> content-area"
 				id="primary">
 
-				<main class="site-main" id="main" role="main">
+				<main class="site-main" id="main">
 
 					<?php while ( have_posts() ) : the_post(); ?>
 
