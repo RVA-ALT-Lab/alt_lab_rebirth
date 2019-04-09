@@ -431,6 +431,36 @@ ARROWS THAT TRACK CURSOR
    // background-color: green;
 }
 
+// .external-link::after {
+//     background: url(../imgs/external-link.svg) no-repeat 0 0;
+//     background-size: 100%;
+//     content: "";
+//     display: inline-block;
+//     height: .65em;
+//     margin-bottom: -1px;
+//     margin-left: .25rem;
+//     width: .65em;
+// }
+
+.starburst {
+    position: relative;
+}
+
+.rotate-text {
+    -ms-transform: translate(-50%, -50%) rotate(20deg) skew(-6deg); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%) rotate(20deg) skew(-6deg); /* Safari 3-8 */
+    transform: translate(-50%, -50%) rotate(-20deg) skew(-6deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: Kalam, sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    color: $white;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+}
 
 /*from https://github.com/IanLunn/Hover/blob/master/css/hover.css*/
 
