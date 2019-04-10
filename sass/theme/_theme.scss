@@ -431,16 +431,16 @@ ARROWS THAT TRACK CURSOR
    // background-color: green;
 }
 
-// .external-link::after {
-//     background: url(../imgs/external-link.svg) no-repeat 0 0;
-//     background-size: 100%;
-//     content: "";
-//     display: inline-block;
-//     height: .65em;
-//     margin-bottom: -1px;
-//     margin-left: .25rem;
-//     width: .65em;
-// }
+.external-link::after {
+    background: url(../imgs/external-link.svg) no-repeat 0 0;
+    background-size: 100%;
+    content: "";
+    display: inline-block;
+    height: .65em;
+    margin-bottom: -1px;
+    margin-left: .25rem;
+    width: .65em;
+}
 
 .starburst {
     position: relative;
@@ -460,6 +460,19 @@ ARROWS THAT TRACK CURSOR
     text-align: center;
     line-height: 1;
     text-transform: uppercase;
+}
+
+.display-posts-listing .listing-item .title::before {
+    content: "";
+    background-color: #ffb300;
+    display: inline-block;
+    height: 1.2em;
+    margin-bottom: -3px;
+    margin-right: .4rem;
+    margin-left: .25rem;
+    width: .3em;
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg);
 }
 
 /*from https://github.com/IanLunn/Hover/blob/master/css/hover.css*/
@@ -2043,6 +2056,10 @@ blockquote.default {
         .quote-nav {
             bottom: 0;
             width: 100%;
+        }
+
+        .rotate-text {
+            font-size: 3em;
         }
 
         .card-container .row .col-sm-3 {
