@@ -1353,6 +1353,16 @@ img.wp-post-image {
     background-size: cover;
 }
 
+.column-flow u {
+    font-weight: bold;
+    font-style: normal;
+    color: #111;
+    letter-spacing: .1em;
+    text-decoration: none;
+    box-shadow: 0 1px 0 #fff,0 4px 0 $gold;
+    text-transform: uppercase;
+}
+
 //BACKGROUND
 #full-width-page-wrapper {
     // background-repeat: no-repeat;
