@@ -64,7 +64,7 @@
 					<h5><span class="side-bar-title">Upcoming</span></h5>
 					<?php echo do_shortcode('[tribe_events_list limit="4"]');?>
 					<h5><span class="side-bar-title">News</span></h5>
-					<?php echo do_shortcode('[display-posts category="news" include_excerpt="true" include_date="true" excerpt_length="20" excerpt_more="...Continue Reading" excerpt_more_link="true" posts_per_page="4"]');?>
+					<?php echo do_shortcode('[display-posts category="news" include_excerpt="true" include_date="true" excerpt_length="20" excerpt_more="..." posts_per_page="4"]');?>
 				</div>
 			</div>
 
