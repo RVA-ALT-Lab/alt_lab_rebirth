@@ -46,7 +46,10 @@
 				</div>				
 			</div>
 			<?php if (!acf_fetch_special_media()) :?>
-				<img src="<?php echo the_post_thumbnail_url('large');?>" class="img-fluid img-right">
+				<img src="<?php echo the_post_thumbnail_url('large');?>" class="img-fluid img-right" alt="<?php 
+				$thumbnail_id = get_post_thumbnail_id( $post->ID );
+				$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+				echo $alt;?>">
 			<?php else:?>
 				<div class="special-media">
 			   		<?php echo acf_fetch_special_media();?>	
