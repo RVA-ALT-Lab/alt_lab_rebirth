@@ -7,7 +7,7 @@ html {
 
 p {
     color: #4b4f54;
-    font-size: 1em; //**changed this**//
+    font-size: 1.1em; //**changed this**//
     line-height: 1.8em;
     padding-bottom: 10px;
     padding-left: 0;
@@ -141,6 +141,7 @@ ul.dropdown-menu.show{
 }
 
 .alt-button {
+    font-family: 'Roboto', sans-serif;
     background: $gold;
     // box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
     border-radius: 9px;
@@ -155,6 +156,7 @@ ul.dropdown-menu.show{
 }
 
 .alt-button-gray {
+    font-family: 'Roboto', sans-serif;
     background: #D8D8D8;
     // box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
     border-radius: 9px;
@@ -208,6 +210,7 @@ ul.dropdown-menu.show{
 }
 
 .home-side-bar .display-posts-listing .listing-item .title {
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: #000;
@@ -237,6 +240,7 @@ ul.dropdown-menu.show{
 // }
 
 .menu-item {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     line-height: .9em;
     margin-top: .5em;
@@ -290,6 +294,7 @@ li.menu-item:hover {
 }
 
 #the-menu a {
+    font-family: 'Roboto', sans-serif;
     color: $black;
     text-transform: uppercase;
     font-weight: 700;
@@ -786,6 +791,7 @@ ARROWS THAT TRACK CURSOR
 }
 
 .btn-alt, .gform_button  {
+    font-family: 'Roboto', sans-serif;
     padding: 20px;
     background-color: $dark-gray;
     color: $white;
@@ -842,7 +848,7 @@ ARROWS THAT TRACK CURSOR
   }
   
   .card-text {
-    font-family: Roboto;
+    font-family: 'Roboto';
   }
 
   .card {
@@ -1086,6 +1092,7 @@ ARROWS THAT TRACK CURSOR
 }
 
 .underline-special {
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-style: normal;
     color: #111;
@@ -1334,10 +1341,11 @@ article a, p a {
     color: $black;
 }
 
-
-
 body,
-p,
+p {
+    font-family: 'Georgia', serif;
+}
+
 h1,
 h2,
 h3,
@@ -1398,6 +1406,7 @@ img.wp-post-image {
 
 //FOOTER 
 #wrapper-footer {
+    font-family: 'Roboto', sans-serif;
     padding-top: 5em;
     background-color: $gold;
 }
@@ -1427,6 +1436,11 @@ img.wp-post-image {
 }
 
 .footer-address a, .footer-required a {
+    color: $black;
+    text-decoration: underline;
+}
+
+.footer-widget a {
     color: $black;
     text-decoration: underline;
 }
