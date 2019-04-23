@@ -1935,6 +1935,12 @@ blockquote.default {
 //     }
 // }
 
+@media only screen and (min-width: 768px) {
+        .navbar-expand-md>.container, .navbar-expand-md>.container-fluid {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
 
 @media only screen and (max-width: 767px) {
         .service-thumb {
