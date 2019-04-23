@@ -261,7 +261,7 @@ function home_topics(){
                     if( $the_query->have_posts() ): 
                       while ( $the_query->have_posts() ) : $the_query->the_post();
                       $clean_title = sanitize_title(get_the_title());                            
-                      $html_a .= '<div class="col-md-4 topic-slide" id="'. $clean_title .'-parent"><a class="btn btn-primary topic-link" data-toggle="collapse" href="#' . $clean_title .'" role="button" aria-expanded="false" aria-controls="' . sanitize_title(get_the_title()) . '" ><h3>' . get_the_title() . '</h3><i class="fa fa-caret-down"></i></a></div>';
+                      $html_a .= '<div class="col-md-4 topic-slide" id="'. $clean_title .'-parent"><a class="btn btn-primary topic-link" data-toggle="collapse" href="#' . $clean_title .'" role="button" aria-expanded="false"><h3>' . get_the_title() . '</h3><i class="fa fa-caret-down"></i></a></div>';
                       $html_b .= '<div class="col-md-12 collapse accordion" data-parent="#topic-parent" id="' . sanitize_title(get_the_title()) . '"><div class="topic-description">'. acf_fetch_topic_callout() .'</div><i class="icon mail"></i></div>'; 
                       $i++;     
                        if ($i === 3 || $i === 6 || $i === 9 || $i === 12 || $i === 15 || $i === 18 ) {
