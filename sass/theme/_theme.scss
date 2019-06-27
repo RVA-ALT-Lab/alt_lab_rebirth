@@ -137,12 +137,12 @@ ul.dropdown-menu.show{
     margin-bottom: 20px;
 }
 
-.big-menu {
-    background-image: url(../imgs/side_edges_cov_gold_sm.svg);
-    background-repeat: repeat-y;
-    background-size: 100%;
-    background-attachment: fixed;
-}
+// .big-menu {
+//     background-image: url(../imgs/side_edges_cov_gold_sm.svg);
+//     background-repeat: repeat-y;
+//     background-size: 100%;
+//     background-attachment: fixed;
+// }
 
 .alt-button {
     font-family: 'Roboto', sans-serif;
@@ -1136,25 +1136,25 @@ ARROWS THAT TRACK CURSOR
     line-height: 1.4em;
 }
 
-.about-us::after {
-  content: "";
-  background-image: url(../imgs/side_edges_cov_gold_sm.svg);
-// opacity: 0.2;
-  background-repeat: repeat-y;
-  background-size: 100%;
-  background-attachment: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-}
+// .about-us::after {
+//   content: "";
+//   background-image: url(../imgs/side_edges_cov_gold_sm.svg);
+// // opacity: 0.2;
+//   background-repeat: repeat-y;
+//   background-size: 100%;
+//   background-attachment: fixed;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+//   z-index: -1;   
+// }
 
-.about-us-img {
-    outline: 2px solid $gold;
-    outline-offset: -15px;
-}
+// .about-us-img {
+//     outline: 2px solid $gold;
+//     outline-offset: -15px;
+// }
 
 //workshop 
 
@@ -1385,16 +1385,16 @@ img.wp-post-image {
 }
 
 //BACKGROUND
-#full-width-page-wrapper {
-    // background-repeat: no-repeat;
-    // background-position: right;
-    // background-size: 400px 800px;
-    background-attachment: fixed;
-    margin-bottom: -40px;
-    background-image: url(../imgs/side_edges_cov_gold_sm.svg);
-    background-repeat: repeat-y;
-    background-size: contain;
-}
+// #full-width-page-wrapper {
+//     // background-repeat: no-repeat;
+//     // background-position: right;
+//     // background-size: 400px 800px;
+//     background-attachment: fixed;
+//     margin-bottom: -40px;
+//     background-image: url(../imgs/side_edges_cov_gold_sm.svg);
+//     background-repeat: repeat-y;
+//     background-size: contain;
+// }
 
 .full-page {
     padding: 20px;
