@@ -19,7 +19,7 @@
 		<div class="workshop-description col-md-6">
 			<h2>Description</h2>
 			<?php the_content(); ?>			
-		</div>
+		</div>	
 			<div class="col-md-6">
 				<?php echo acf_fetch_audience();?>
 				<?php echo learning_outcomes();?>				

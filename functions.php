@@ -967,7 +967,21 @@ function alt_lab_project_status(){
 
 }
 
-
+/*
+ACF LAND
+*/
+//ACF JSON SAVER
+add_filter('acf/settings/save_json', 'my_acf_json_save_point');
+ 
+function my_acf_json_save_point( $path ) {
+    
+    // update path
+    $path = get_stylesheet_directory() . '/acf-json';
+    
+    // return
+    return $path;
+    
+}
 
 
 function acf_fetch_work_start_date(){
@@ -1094,3 +1108,90 @@ function project_faculty(){
     }
   }
 }
+
+function acf_fetch_course_url(){
+  global $post;
+  $html = '';
+  $course_url = get_field('course_register_url');
+
+    if( $course_url) {      
+      $html = $course_url;  
+     return $html;    
+    }
+}
+
+function acf_fetch_course_description(){
+  global $post;
+  $html = '';
+  $course_description = get_field('course_description');
+
+    if( $course_description) {      
+      $html = $course_description;  
+     return $html;    
+    }
+}
+
+// function acf_fetch_course_image(){
+//   global $post;
+//   $html = '';
+//   $course_image = get_field('course_image');
+
+//     if( $course_image) {      
+//       $html = $course_image;  
+//      return $html;    
+//     }
+// }
+
+// function acf_fetch_course_date(){
+//   global $post;
+//   $html = '';
+//   $course_date = get_field('course_date');
+
+//     if( $course_date) {      
+//       $html = $course_date;  
+//      return $html;    
+//     }
+// }
+
+
+//Self-paced Courses loop
+function showSelfcourses(){
+  $args = array(
+    'posts_per_page' => -1,
+    'post_type'   => 'selfcourse', 
+    'post_status' => 'publish', 
+    'order' => 'ASC',
+    'orderby' => 'name',
+    );
+  $html = '';
+  $the_query = new WP_Query( $args );
+                  if( $the_query->have_posts() ): 
+                    while ( $the_query->have_posts() ) : $the_query->the_post();
+                      $html .= '<div class="course-card" id="' . sanitize_title(get_the_title()) . '"><div class="card-body">';
+                      $html .= '<img class="course-img img-fluid" src="' . get_the_post_thumbnail_url(get_the_ID(),'small') . '" alt="Course image for ' . get_the_title() . '">';
+                      $html .= '<h3 class="faculty-name">' . get_the_title() . '</h3>';
+                      $html .= '<div class="faculty-bio-text">' . acf_fetch_course_description() . '</div>';
+                      $html .= '<div class="workshop-request self-course-url"><a href="' . acf_fetch_course_url() . '" class="btn btn-alt">Register for \'' . get_the_title() . '\' </a></div></div></div>';
+                    endwhile;
+                  endif;
+  wp_reset_query();  // Restore global post data stomped by the_post().
+ return $html;
+ }
+
+// function acf_fetch_course_info(){
+//   global $post;
+//   $html = '';
+//   $rows = get_field('self_paced_course_info');
+
+//   if($rows)
+//     {
+//       echo '<div class="course-card">';
+
+//       foreach($rows as $row)
+//       {
+//         echo '<h3 class="course-title">' . $row['course_title'] . '</h3> <div class="course_description">' . $row['course_description'] . '</div> <div class="course_date">' . $row['course_date'] . '</div>';
+//       }
+
+//       echo '</div>';
+//     }
+// }

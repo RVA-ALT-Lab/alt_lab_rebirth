@@ -105,6 +105,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 	</div><!-- #wrapper-navbar end -->
 	<div class="special-border">
+		<!-- <h3>This is the best of times. This is the worst of times...<h3> -->
 		<!--BIG MENU-->
 		<?php if(is_front_page() ):?>
 			<div class= "big-menu">

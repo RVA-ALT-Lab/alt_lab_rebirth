@@ -38,6 +38,24 @@ p {
     border-left: 2vw solid $gold;
 }
 
+// .special-border h3 {
+//     font-size: 1rem;
+//     color: rgb(0, 0, 0);
+//     text-transform: uppercase;
+//     letter-spacing: 3px;
+//     margin-left: -30px;
+//     -webkit-transform: rotate(270deg);
+//     -moz-transform: rotate(270deg);
+//     -ms-transform: rotate(270deg);
+//     -o-transform: rotate(270deg);
+//     transform: rotate(270deg);
+//     -webkit-transform-origin: 0 0;
+//     -moz-transform-origin: 0 0;
+//     -ms-transform-origin: 0 0;
+//     -o-transform-origin: 0 0;
+//     transform-origin: 0 0;
+// }
+
 //gets rid of round edges on child menu elements
 .dropdown-menu {
     border-radius: 0;
@@ -804,6 +822,7 @@ ARROWS THAT TRACK CURSOR
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 0;
+    white-space: normal;
 }
 
 
@@ -1484,6 +1503,17 @@ img.wp-post-image {
 //     background-color: #fff;
 // }
 
+
+.course-grid {
+    display: block;
+    // grid-template-columns: 1fr 1fr;
+}
+
+.course-img {
+    margin-right: 1em;
+    float: left;
+}
+
 .course-card {
     position: relative;
     margin-bottom: 20px;
@@ -1953,6 +1983,16 @@ blockquote.default {
     }
 }
 
+@media only screen and (min-width: 992px) {
+        .course-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: (1em 2em);
+        grid-auto-rows: minmax(200px, auto);
+
+    }
+}
+
 @media only screen and (max-width: 767px) {
         .service-thumb {
             background-color: $white;
@@ -2258,6 +2298,5 @@ blockquote.default {
             max-width: 95%;
         }
 
-        
-
+    
     }
