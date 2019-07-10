@@ -108,7 +108,18 @@ ul.dropdown-menu.show{
 }
 
 
-
+.entry-header .entry-title::before {
+    content: "";
+    background-color: #ffb300;
+    display: inline-block;
+    height: 1.1em;
+    margin-bottom: -3px;
+    margin-right: .5rem;
+    margin-left: .25rem;
+    width: .2em;
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg);
+}
 
 // .service-page .container {
 //     background-color: #fff;
