@@ -1131,29 +1131,6 @@ function acf_fetch_course_description(){
     }
 }
 
-// function acf_fetch_course_image(){
-//   global $post;
-//   $html = '';
-//   $course_image = get_field('course_image');
-
-//     if( $course_image) {      
-//       $html = $course_image;  
-//      return $html;    
-//     }
-// }
-
-// function acf_fetch_course_date(){
-//   global $post;
-//   $html = '';
-//   $course_date = get_field('course_date');
-
-//     if( $course_date) {      
-//       $html = $course_date;  
-//      return $html;    
-//     }
-// }
-
-
 //Self-paced Courses loop
 function showSelfcourses(){
   $args = array(
@@ -1172,6 +1149,53 @@ function showSelfcourses(){
                       $html .= '<h3 class="faculty-name">' . get_the_title() . '</h3>';
                       $html .= '<div class="faculty-bio-text">' . acf_fetch_course_description() . '</div>';
                       $html .= '<div class="workshop-request self-course-url"><a href="' . acf_fetch_course_url() . '" class="btn btn-alt">Register for \'' . get_the_title() . '\' </a></div></div></div>';
+                    endwhile;
+                  endif;
+  wp_reset_query();  // Restore global post data stomped by the_post().
+ return $html;
+ }
+
+ //RESOURCES
+ function acf_fetch_resource_url(){
+  global $post;
+  $html = '';
+  $resource_url = get_field('resource_url');
+
+    if( $resource_url) {      
+      $html = $resource_url;  
+     return $html;    
+    }
+}
+
+function acf_fetch_resource_description(){
+  global $post;
+  $html = '';
+  $resource_description = get_field('resource_description');
+
+    if( $resource_description) {      
+      $html = $resource_description;  
+     return $html;    
+    }
+}
+
+//RESOURCES loop
+function showResource(){
+  $args = array(
+    'posts_per_page' => -1,
+    'post_type'   => 'resource', 
+    'post_status' => 'publish', 
+    'order' => 'ASC',
+    'orderby' => 'name',
+    );
+  $html = '';
+  $the_query = new WP_Query( $args );
+                  if( $the_query->have_posts() ): 
+                    while ( $the_query->have_posts() ) : $the_query->the_post();
+                      $html .= '<div class="course-card" id="' . sanitize_title(get_the_title()) . '"><div class="card-body">';
+                      $html .= '<img class="course-img img-fluid" src="' . get_the_post_thumbnail_url(get_the_ID(),'small') . '" alt="Resource image for ' . get_the_title() . '">';
+                      $html .= '<h3 class="faculty-name">' . get_the_title() . '</h3>';
+                      $html .= '<div class="faculty-bio-text">' . acf_fetch_resource_description() . '</div>';
+                      $html .= '<div class="workshop-request self-course-url"><a href="' . acf_fetch_resource_url() . '" class="btn btn-alt">Learn more about \'' . get_the_title() . '\' </a></div></div></div>';
                     endwhile;
                   endif;
   wp_reset_query();  // Restore global post data stomped by the_post().
