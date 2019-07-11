@@ -1,0 +1,109 @@
+{
+    "key": "group_5d275df29badb",
+    "title": "Programs",
+    "fields": [
+        {
+            "key": "field_5d275df2ab229",
+            "label": "Program Description",
+            "name": "program_description",
+            "type": "wysiwyg",
+            "instructions": "Write a brief description of the program.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5d27612280711",
+            "label": "Program File",
+            "name": "program_file",
+            "type": "file",
+            "instructions": "Upload the course Syllabus as a PDF file.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "pdf"
+        },
+        {
+            "key": "field_5d275e705d35d",
+            "label": "Program Date",
+            "name": "program_date",
+            "type": "date_picker",
+            "instructions": "Pick the course's start date.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_5d275df2ab298",
+            "label": "Program URL",
+            "name": "program_url",
+            "type": "url",
+            "instructions": "Type in the link to the actual program registration.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "self-course-button",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https:\/\/"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "program"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1562864804
+}

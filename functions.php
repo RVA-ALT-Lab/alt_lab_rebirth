@@ -1202,6 +1202,77 @@ function showResource(){
  return $html;
  }
 
+ //PROGRAMS
+ function acf_fetch_program_url(){
+  global $post;
+  $html = '';
+  $program_url = get_field('program_url');
+
+    if( $program_url) {      
+      $html = $program_url;  
+     return $html;    
+    }
+}
+
+function acf_fetch_program_description(){
+  global $post;
+  $html = '';
+  $program_description = get_field('program_description');
+
+    if( $program_description) {      
+      $html = $program_description;  
+     return $html;    
+    }
+}
+
+function acf_fetch_program_date(){
+  global $post;
+  $html = '';
+  $program_date = get_field('program_date');
+
+    if( $program_date) {      
+      $html = $program_date;  
+     return $html;    
+    }
+}
+
+function acf_fetch_program_file(){
+  global $post;
+  $html = '';
+  $program_file = get_field('program_file');
+
+    if( $program_file) {      
+      $html = $program_file;  
+     return $html;    
+    }
+}
+
+//PROGRAMS loop
+function showProgram(){
+  $args = array(
+    'posts_per_page' => -1,
+    'post_type'   => 'program', 
+    'post_status' => 'publish', 
+    'order' => 'ASC',
+    'orderby' => 'name',
+    );
+  $html = '';
+  $the_query = new WP_Query( $args );
+                  if( $the_query->have_posts() ): 
+                    while ( $the_query->have_posts() ) : $the_query->the_post();
+                      $html .= '<div class="course-card" id="' . sanitize_title(get_the_title()) . '"><div class="card-body">';
+                      $html .= '<img class="course-img img-fluid" src="' . get_the_post_thumbnail_url(get_the_ID(),'small') . '" alt="Program image for ' . get_the_title() . '">';
+                      $html .= '<h3 class="faculty-name">' . get_the_title() . '</h3>';
+                      $html .= '<div class="faculty-bio-text">' . acf_fetch_program_description() . '</div>';
+                      $html .= '<div class="faculty-bio-text">View the <a href="' . acf_fetch_program_file() . '"> ' . get_the_title() . ' syllabus</a></div><br />';
+                      $html .= '<div class="faculty-bio-text">Next start date: <strong> ' . acf_fetch_program_date() . '</strong></div>';
+                      $html .= '<div class="workshop-request self-course-url"><a href="' . acf_fetch_program_url() . '" class="btn btn-alt">Register for \'' . get_the_title() . '\' </a></div></div></div>';
+                    endwhile;
+                  endif;
+  wp_reset_query();  // Restore global post data stomped by the_post().
+ return $html;
+ }
+
 // function acf_fetch_course_info(){
 //   global $post;
 //   $html = '';
