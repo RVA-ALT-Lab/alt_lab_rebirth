@@ -25,10 +25,10 @@
 			<div class="service-separator">
 	</div>
 	<div>
-		<ul><strong><em>Coming Soon!!</em></strong>
+		<!--<ul><strong><em>Coming Soon!!</em></strong>
 			<li>Evaluating Online@VCU – An overview for faculty of the OSCQR rubric and the VCU version of the rubric</li>
 			<li>Leading Online@VCU – Course to train leaders in guiding their departments to transitioning online</li>
-		</ul>
+		</ul>-->
 
 		<?php
 		wp_link_pages( array(
