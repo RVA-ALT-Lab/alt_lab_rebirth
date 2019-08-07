@@ -179,7 +179,6 @@ jQuery('#registrationModal').on('show.bs.modal', function (event){
      if(course == 'Teaching Online@VCU'){
        document.getElementById('choice_5_3_2').checked = true;
      }
-   
 })
 
 //turn on tool tips
@@ -252,9 +251,8 @@ function twisterMath(x,y, xShapeCenter, yShapeCenter){
 }
 
 
-
-//allow modal by url parameter 
- if(window.location.hash.indexOf("-") === -1) {
+//allow modal by url parameter but prevent on dashes to avoid issues with anchor nav 
+ if(window.location.hash.indexOf("-") === -1 && window.location.hash.indexOf("_") === -1) {
     var hash = window.location.hash;
     console.log(hash);
     jQuery(hash).modal();
