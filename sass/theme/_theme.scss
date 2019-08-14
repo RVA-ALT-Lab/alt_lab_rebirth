@@ -138,7 +138,7 @@ ul.dropdown-menu.show{
     background-image: url(../imgs/15488907109_1ecafba339_k.jpg);
     background-attachment: fixed;
     background-size: contain;
-    background-position: left;
+    background-position: top;
 }
 
 .alt-logo {
@@ -1872,6 +1872,15 @@ blockquote.default {
 .modal-required {
     font-size: 16px;
     font-style: italic;
+}
+
+//force line break on long titles in menu
+.dropdown-item {
+    white-space: pre-wrap;   
+    white-space: -moz-pre-wrap; 
+    white-space: -pre-wrap;    
+    white-space: -o-pre-wrap;    
+    word-wrap: break-word; 
 }
 
 #gform_wrapper_2 {
