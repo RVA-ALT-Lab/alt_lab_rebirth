@@ -28,6 +28,16 @@
 			<div class="course-grid">
 				<?php echo showResource();?>
 			</div>
+			<div class="service-separator">
+			</div>
+			<div>
+				<p>
+				Are we missing something? Have an idea for a resource page that would be useful to you or your colleagues? To suggest a topic for a faculty resources page please fill out this form.
+				</p>
+			</div>
+			<div class="col-md-6 offset-md-3">
+					<?php echo do_shortcode ( '[gravityform id="8" title="false" description="false"]' ) ?>
+			</div>
 		</div>
 	</div>
 

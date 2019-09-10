@@ -22,6 +22,17 @@
 			<?php echo showSelfcourses();?>
 
 	</div>
+	</div>
+			<div class="service-separator">
+	</div>
+	<div>
+		<p>
+		Are we missing something? Have an idea for a self-paced course that would be useful to you or your colleagues? To suggest a topic for a self-paced course please fill out this form.
+		</p>
+	</div>
+	<div class="col-md-6 offset-md-3">
+			<?php echo do_shortcode ( '[gravityform id="8" title="false" description="false"]' ) ?>
+	</div>
 
 		<?php
 		wp_link_pages( array(

@@ -25,6 +25,14 @@
 			<div class="service-separator">
 	</div>
 	<div>
+		<p>
+		Are we missing something? Have an idea for a facilitated course that would be useful to you or your colleagues? To suggest a topic for a facilitated course please fill out this form.
+		</p>
+	</div>
+	<div class="col-md-6 offset-md-3">
+			<?php echo do_shortcode ( '[gravityform id="8" title="false" description="false"]' ) ?>
+	</div>
+	<div>
 		<!--<ul><strong><em>Coming Soon!!</em></strong>
 			<li>Evaluating Online@VCU – An overview for faculty of the OSCQR rubric and the VCU version of the rubric</li>
 			<li>Leading Online@VCU – Course to train leaders in guiding their departments to transitioning online</li>
