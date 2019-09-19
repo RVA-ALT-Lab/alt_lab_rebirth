@@ -483,6 +483,13 @@ function get_the_quote_speaker_dept(){
    }
 }
 
+function get_the_quote_speaker_course(){
+  global $post;
+   $course = get_field( "course", $post->ID );
+   if ($course){
+    return $course;
+   }
+}
 
 //get the quotes for the front page
 function quote_maker($atts){  
@@ -516,6 +523,7 @@ function quote_maker($atts){
                       $html .= '<div class="the-quote">' . get_the_quote() . '</div><div class="quote-speaker">' . get_the_quote_speaker(); 
                       $html .=  '</div><div class="quote-title">' . get_the_quote_speaker_title() . '</div>' ;
                       $html .= '<div class="quote-dept">' . get_the_quote_speaker_dept() . '</div>';
+                      $html .= '<div class="quote-dept">' . get_the_quote_speaker_course() . '</div>';
                       $html .= '</div></div>';
                       $inc++;
                        endwhile;

@@ -396,6 +396,25 @@ acf_add_local_field_group(array(
 			'append' => '',
 			'maxlength' => '',
 		),
+		array(
+			'key' => 'field_5b3fb31f73g57',
+			'label' => 'Course',
+			'name' => 'course',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '33',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
 	),
 	'location' => array(
 		array(
