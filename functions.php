@@ -485,11 +485,20 @@ function get_the_quote_speaker_dept(){
 
 
 //get the quotes for the front page
-function quote_maker(){  
+function quote_maker($atts){  
+  $a = shortcode_atts( array(
+    'category' => '',
+  ), $atts );
+
+  if (!$a['category']) {
+    $category = '*';
+  }
+
   $html = "";
   $inc = 1;
   $args = array(
       'posts_per_page' => 15,
+      'category_name' => $a['category'],
       'post_type'   => 'quote', 
       'post_status' => 'publish', 
       'order_by' => 'date',  
@@ -515,6 +524,7 @@ function quote_maker(){
    return $html;
 }
 
+add_shortcode( 'quote', 'quote_maker' );
 
 //auto create topics taxonomy elements based on creation of taxonomy post type
 

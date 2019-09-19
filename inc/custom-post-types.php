@@ -46,7 +46,7 @@ function create_quote_cpt() {
     'description' => __( 'comments from the great people we work with', 'textdomain' ),
     'labels' => $labels,
     'supports' => array('revisions', 'author', 'custom-fields', 'thumbnail',),
-    'taxonomies' => array(),
+    'taxonomies' => array('category'),
     'public' => true,
     'show_ui' => true,
     'show_in_menu' => true,
