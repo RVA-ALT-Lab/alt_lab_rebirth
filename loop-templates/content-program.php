@@ -16,6 +16,28 @@
 
 	<div class="container full-page p">
 		<?php the_content(); ?>
+	
+
+<!--quote slider-->
+		<div class="container">
+							<div class="row quotes justify-content-md-center">
+								<div class="col-md-12 quote-box">
+									<div id="carouselExampleControls" class="carousel slide" data-ride="false">
+										<div class="carousel-inner">
+										<div class="quote-slogan">Words from VCU Faculty</div>	
+										<? echo do_shortcode('[quote category="quote-cert-courses"]');?>												
+										</div>
+										<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">								   
+											<span class="quote-nav left"><i class="fa fa-chevron-left"></i></span>
+										</a>
+										<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+											<span class="quote-nav right"><i class="fa fa-chevron-right"></i></span>
+										</a>
+										</div>
+								</div>	
+							</div>
+		</div>
+<!--end quote-->
 	</div>
 	<div class="course-grid">
 
