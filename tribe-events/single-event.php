@@ -78,7 +78,7 @@ $venue_address = tribe_get_address();
 <!-- Event Content -->
 <?php do_action( 'tribe_events_before_the_content' ) ?>
 <div class="tribe-events-list-event-description tribe-events-content description entry-summary">
-	<?php echo get_the_content(); ?>
+	<?php echo wpautop(get_the_content()); ?>
 
 	<div class="event-review"><a class="aside btn btn-alt" data-toggle="collapse" href="#review" role="button" aria-expanded="false" aria-controls="collapseExample">Review this event</a></div>
 
