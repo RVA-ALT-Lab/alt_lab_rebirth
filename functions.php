@@ -1165,8 +1165,8 @@ function showSelfcourses(){
                       $html .= '<div class="course-card" id="' . sanitize_title(get_the_title()) . '"><div class="card-body">';
                       $html .= '<img class="course-img img-fluid" src="' . get_the_post_thumbnail_url(get_the_ID(),'small') . '" alt="Course image for ' . get_the_title() . '">';
                       $html .= '<h3 class="faculty-name">' . get_the_title() . '</h3>';
-                      $html .= '<div class="faculty-bio-text">' . acf_fetch_course_description() . '</div>';
-                      $html .= '<div class="workshop-request self-course-url"><a href="' . acf_fetch_course_url() . '" class="btn btn-alt">Register for \'' . get_the_title() . '\' </a></div></div></div>';
+                      $html .= '<div class="faculty-bio-text">' . acf_fetch_course_description() . '</div></div>';
+                      $html .= '<div class="card-footer"><div class="workshop-request self-course-url"><a href="' . acf_fetch_course_url() . '" class="btn btn-alt">Register for \'' . get_the_title() . '\' </a></div></div></div>';
                     endwhile;
                   endif;
   wp_reset_query();  // Restore global post data stomped by the_post().

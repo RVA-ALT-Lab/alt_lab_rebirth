@@ -834,6 +834,7 @@ ARROWS THAT TRACK CURSOR
     text-decoration: none;
     border-radius: 0;
     white-space: normal;
+    width: 100%;
 }
 
 
@@ -1535,6 +1536,8 @@ img.wp-post-image {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     // background-color: #fffdf7;
+    flex-direction: column;
+    display: flex;
 }
 
 .course-card-link {
@@ -1544,6 +1547,11 @@ img.wp-post-image {
     font-size: 1.3em;
     line-height: 1.8em;
 }
+
+.card-footer {
+    background-color: transparent;
+    border-top: 1px solid rgba(0,0,0,.125);
+} 
 
 .course-icon {
     margin-top: 1.5em;
