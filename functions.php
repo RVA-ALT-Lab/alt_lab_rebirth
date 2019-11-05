@@ -940,7 +940,6 @@ function faculty_bios_for_project () {
             
           );
 
-
           // query
           $the_query = new WP_Query( $args );
 

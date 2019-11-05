@@ -408,7 +408,7 @@ function create_tool_taxonomies()
   ));
 }
 
-/*
+
 //PROJECT CONCEPTS
 add_action( 'init', 'create_project_concept_taxonomies', 0 );
 function create_project_concept_taxonomies()
@@ -445,7 +445,6 @@ function create_project_concept_taxonomies()
   ));
 }
 
-*/
 
 
 //topic custom post type

@@ -1939,6 +1939,30 @@ blockquote.default {
     background-color: #fff;
 }
 
+/*PROJECT*/
+#cone {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+
+.alt-proj-faculty {
+    margin-top: 20px;
+}
+
+.alt-proj-faculty-name {
+    font-family: Roboto,sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.alt-proj-faculty-school {
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
 @media only screen and (max-width: 1199px) {
     .alt-center {
         height: 330px;

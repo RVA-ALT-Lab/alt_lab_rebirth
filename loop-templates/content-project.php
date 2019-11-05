@@ -23,13 +23,13 @@
       </div>
               
       <?php if(get_field('site_url')): ?>
-              <button class="btn btn-default alt-proj-button"><a href="<?php the_field('site_url');?>">Go to the project</a></button>            
+              <button class="btn btn-default alt-button alt-proj-button"><a href="<?php the_field('site_url');?>">See the project live</a></button>            
       <?php endif; ?>
-      <!--FACULTY-->
+<!--FACULTY-->
       <div class="alt-proj-faculty row">
         <div class="col-md-12"><h3>Faculty:</h3></div>
        
-       <?php  faculty_bios_for_project();?>
+       <?php faculty_bios_for_project();?>
          
           
       </div>
@@ -38,21 +38,22 @@
       <!--Project meta-->
       <div class="alt-proj-meta">
         <div class="row">
-          <div class="col-md-6 alt-proj-concepts"><h3>Concepts:</h3> 
+        
             <?php // vars	
             $concepts = get_the_terms( get_the_ID(), 'concepts' );
 
-
 			// check
 			if( $concepts ): ?>
-			<ul>
-				<?php foreach( $concepts as $concept ): ?>
-          <li><a href="<?php echo get_site_url().'/concept/'.$concept->slug; ?>"><?php echo $concept->name; ?></a></li>
-				<?php endforeach; ?>
-			</ul>
+      <div class="col-md-6 alt-proj-concepts"><h3>Concepts:</h3> 
+  			<ul>
+  				<?php foreach( $concepts as $concept ): ?>
+            <li><a href="<?php echo get_site_url().'/concept/'.$concept->slug; ?>"><?php echo $concept->name; ?></a></li>
+  				<?php endforeach; ?>
+  			</ul>
+      </div>
 			<?php endif; ?>
 
-          </div>
+          
           <div class="col-md-6 alt-proj-tools"><h3>Tools:</h3>
            <?php
             $tools = get_the_terms( get_the_ID(), 'tools' );
@@ -75,9 +76,9 @@
     <div class="col-md-7">
 		    <?php  if ( has_post_thumbnail()) {
             $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
-            the_post_thumbnail('large', ['class' => 'img img-fluid alt-proj-img align-right', 'title' => 'Screens hot of the website].']);
+            the_post_thumbnail('large', ['class' => 'img img-fluid alt-proj-img align-right', 'title' => 'Screens hot of the website].', 'alt' => 'Project screenshot.']);
          } else {
-          echo '<img src="'. get_stylesheet_directory_uri() . '/imgs/UnderConstruction.png" class="img img-fluid alt-proj-img align-right"><img src="'. get_stylesheet_directory_uri() . '/imgs/WalkingCone.gif" class="img img-fluid" id="cone">';
+          echo '<img src="'. get_stylesheet_directory_uri() . '/imgs/UnderConstruction.png" class="img img-fluid alt-proj-img align-right" alt="Under construction sign."><img src="'. get_stylesheet_directory_uri() . '/imgs/WalkingCone.gif" class="img img-fluid" id="cone" alt="A walking caution cone.">';
         } ?>
     </div>
   </div>
