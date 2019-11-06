@@ -1940,6 +1940,11 @@ blockquote.default {
 }
 
 /*PROJECT*/
+
+.type-project {
+    padding: 30px;
+}
+
 #cone {
     position: absolute;
     left: 50%;
@@ -1952,7 +1957,6 @@ blockquote.default {
 
 .alt-proj-faculty-name {
     font-family: Roboto,sans-serif;
-    font-weight: 600;
     font-size: 1.3em;
 }
 
@@ -1961,6 +1965,7 @@ blockquote.default {
     color: #333;
     margin-bottom: 20px;
     font-size: 1em;
+    font-family: Roboto,sans-serif;
 }
 
 @media only screen and (max-width: 1199px) {

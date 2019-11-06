@@ -953,12 +953,8 @@ function faculty_bios_for_project () {
 
         }
 function faculty_dept_for_project(){
-  $terms = get_terms( array( 
-    'taxonomy' => 'departments',
-    ) 
-  );
-  $name = $terms[0]->name;
- return $name;
+  global $post;
+ return get_the_term_list($post->ID, 'departments', '', ', ', '');
 
 }
 //data

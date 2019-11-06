@@ -86,33 +86,7 @@
   
   <!--project data -->
     <div class="row alt-proj-data">
-      <div class="col-md-12"><h3>Project Data<i data-toggle="tooltip" data-placement="top" title="These are some auto-generated stats that we found interesting and thought we'd share." class="fa fa-question-circle-o alt-proj-question" aria-hidden="true"></i></h3>
-      </div>
-       <!-- days -->
-      <div class="col-md-2 col-sm-6">
-        <i class="fa fa-calendar-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="The total number of days involved in creating this project."></i>
-        Days: <span class="alt-proj-numbers" id="day-count"><?php echo 'dayCounter()';?></span>
-      </div>
-      
-        <!-- emails -->
-      <div class="col-lg-2 col-md-3 col-sm-6">
-        <i class="fa fa-envelope-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="All the emails shared about this project"></i>
-        Emails: <span class="alt-proj-numbers" id="email-count">other data</span></div>
-
-        <!-- slack -->      
-      <div class="col-lg-2 col-md-3 col-sm-6"><i class="fa fa-slack" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Slack messages exchanged regarding this project"></i></a>
-         Slack:<span class="alt-proj-numbers"></span>
-      </div>
-      
-        <!-- google drive -->      
-      <div class="col-lg-2 col-md-3 col-sm-6">
-       <i class="fa fa-files-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Google Drive files associated with this project"></i>
-        Drive: <span class="alt-proj-numbers" id="gdrive-count" data-hash="#<?php echo $post->post_name; ?>"></span></div>
-      
-        <!-- github  needs some extra room-->
-      <div class="col-lg-4 col-md-4 col-sm-6">
-       <i class="fa fa-file-code-o" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Bytes worth of data in the GitHub repository"></i>
-        Bytes of Code: <span class="alt-proj-numbers" id="git-count" data-repo="<?php echo $post->post_name; ?>"></span></div>
+     
   </div> 
   <!--End project data-->
 </div>
