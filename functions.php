@@ -1242,10 +1242,13 @@ function acf_fetch_program_date(){
   global $post;
   $html = '';
   $program_date = get_field('program_date');
+  $other = get_field('program_date2');
 
     if( $program_date) {      
       $html = $program_date;  
      return $html;    
+    } else if ($other){
+      return $other;
     }
 }
 
