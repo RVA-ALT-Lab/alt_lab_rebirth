@@ -66,9 +66,10 @@ $container = get_theme_mod( 'understrap_container_type' );
               <div class="footer-widget col-md-5">
                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer - far left") ) : ?><?php endif;?>
                 <div class="footer-address">
-                  <div class="alt-name">Academic Learning Transformation Lab </div>
+                  <div class="alt-name">Academic Learning Transformation Lab</div>
                   <div class="alt-address">1000 Floyd Ave, Suite 4102 | Richmond, Virginia 23284 </div>
-                  <div class="alt-contact">altlab@vcu.edu | <a href="tel:8048286786">804-828-6786</a></div>
+                  <div class="alt-contact">altlab@vcu.edu | <a class="footer-link" href="tel:8048286786">Tel: 804-828-6786</a></div>
+                  <div class="alt-name"><a class="footer-link" href="https://www.vcu.edu/">Virginia Commonwealth University</a></div>
                 </div>
               </div>
               <div class="footer-widget col-md-3">
@@ -78,7 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <a href="https://ts.vcu.edu/cgi-bin/posh.pl?posh_referer=https://altlab.vcu.edu/">View text version</a>
                   </div>
                   <div class="last-update">
-                    Last updated: March 9, 2020
+                    Last updated: March 10, 2020
                   </div>
                   <div class="kitchen-sink">
                     <a class="footer-link" href="https://www.vcu.edu/privacy-statement/">Privacy</a> | <a class="footer-link" href="http://accessibility.vcu.edu/">Accessibility</a> | <a class="footer-link" href="mailto:altlab@vcu.edu">Webmaster</a>

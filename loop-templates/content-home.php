@@ -69,7 +69,7 @@
 			</div>
 
 			<div class="col-md-8">
-				<h4 class="entry-home interested">How does this work?</h4>
+				<h2 class="entry-home interested">How does this work?</h2>
 				<div class="timeline-body">	
 					<?php how_does_this_work();?>
 				</div>
