@@ -46,7 +46,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-
+	  	<div class="alert-banner">
+	  		<div class="alert-message col-md-12">ALERT: In response to COVID-19, we are offering rapid online transition support for faculty. <a href="https://altlab.vcu.edu/rapid-response/#alert">Learn more ></a></div>
+		</div>
 		<nav class="navbar navbar-expand-md" id="the-menu">
 
 		<?php if ( 'container' == $container ) : ?>
