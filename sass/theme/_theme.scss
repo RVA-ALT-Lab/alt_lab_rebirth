@@ -38,6 +38,27 @@ p {
     border-left: 2vw solid $gold;
 }
 
+.alert-banner {
+    color: white;
+    background-color: #d43900;
+    display: flex;
+}
+
+.alert-message {
+    text-align: center;
+    line-height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 25px 10px 25px 10px;
+}
+
+.alert-message a {
+    color: white;
+}
+
 // .special-border h3 {
 //     font-size: 1rem;
 //     color: rgb(0, 0, 0);
