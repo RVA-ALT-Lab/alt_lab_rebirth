@@ -241,7 +241,11 @@ ul.dropdown-menu.show{
     font-family: 'Roboto', sans-serif;
 }
 
-
+#remote-boot {
+    background-color: $light-gray;
+    padding: 20px;
+    margin: 20px 0;
+}
 
 .home-side-bar {
     // margin-top: 30px;

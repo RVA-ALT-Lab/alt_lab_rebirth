@@ -1280,7 +1280,9 @@ function showProgram(){
                       $html .= '<img class="course-img img-fluid" src="' . get_the_post_thumbnail_url(get_the_ID(),'small') . '" alt="Program image for ' . get_the_title() . '">';
                       $html .= '<h3 class="faculty-name">' . get_the_title() . '</h3>';
                       $html .= '<div class="faculty-bio-text">' . acf_fetch_program_description() . '</div>';
-                      $html .= '<div class="faculty-bio-text">View the <a href="' . acf_fetch_program_file() . '"> ' . get_the_title() . ' syllabus</a></div><br />';
+                      if ( acf_fetch_program_file()){
+                        $html .= '<div class="faculty-bio-text">View the <a href="' . acf_fetch_program_file() . '"> ' . get_the_title() . ' syllabus</a></div><br />';
+                      }
                       $html .= '<div class="faculty-bio-text">Next start date: <strong> ' . acf_fetch_program_date() . '</strong></div>';
                       $html .= '<div class="workshop-request self-course-url"><a href="' . acf_fetch_program_url() . '" class="btn btn-alt">Register for \'' . get_the_title() . '\' </a></div></div></div>';
                     endwhile;

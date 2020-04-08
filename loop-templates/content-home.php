@@ -12,8 +12,20 @@
 					<?php the_title( '<h1 class="entry-title entry-home">', '</h1>' ); ?>
 						
 				</header><!-- .entry-header -->
+				<!--REMOTE ALERT-->
+				<div class="row" id="remote-boot">
+					<div class="pd-alert col-md-4" >
+						<h2>Surviving Remote@VCU</h2>
+					</div>
+					<div class="col-md-8">
+						<p>Surviving Remote@VCU is a two week course tailored for faculty that must move a face-to-face course to emergency remote teaching in response to a crisis like the COVID-19 pandemic. Learn more by clicking on the button below.</p>
+						<a class="btn alt-button" href="https://altlab.vcu.edu/program/surviving-remotevcu/">Surviving Remote@VCU</a> 
+					</div>
+				</div>
+				<!--END REMOTE ALERT-->
 				<div class="row">
-					<div class="entry-content col-md-8">
+					<div class="entry-content col-md-8">						
+
 						<div class="home-description"><?php echo acf_fetch_description_one();?></div>
 						
 						<?php the_content(); ?>
