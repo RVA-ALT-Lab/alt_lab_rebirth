@@ -2005,6 +2005,12 @@ blockquote.default {
     font-family: Roboto,sans-serif;
 }
 
+/*TOOL*/
+
+.type-tool .entry-meta {
+    display: none;
+}
+
 @media only screen and (max-width: 1199px) {
     .alt-center {
         height: 330px;
