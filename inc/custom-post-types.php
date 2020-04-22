@@ -401,7 +401,7 @@ function create_tool_taxonomies()
     'show_ui' => true,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'tool' ),
+    'rewrite' => array( 'slug' => 'tool_tax' ),
     'show_in_rest'          => true,
     'rest_base'             => 'tools',
     'rest_controller_class' => 'WP_REST_Terms_Controller',
