@@ -2094,6 +2094,10 @@ blockquote.default {
 }
 
 @media only screen and (max-width: 767px) {
+        p {
+            font-size: .9em;
+        }
+        
         .service-thumb {
             background-color: $white;
             padding-bottom: 30px;
@@ -2163,19 +2167,23 @@ blockquote.default {
             margin: 0 auto;
         }
 
+        .alert-message {
+            font-size: 1rem;
+        }
+
         .home-callout, .entry-home {
-            font-size: 3em;
+            font-size: 2em;
         }
 
         .entry-home.interested::before, .entry-home.about::before {
             margin-bottom: -5px;
             margin-right: 10px;
-            width: 10px;
-            height: 45px;
+            width: 8px;
+            height: 35px;
         }
 
         .home-description {
-            font-size: 1.8em;
+            font-size: 1.2em;
             padding: 10px;
         }
 
