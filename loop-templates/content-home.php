@@ -9,7 +9,7 @@
 			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 				<header class="entry-header">
-					<?php the_title( '<h1 class="entry-title entry-home">', '</h1>' ); ?>
+					<?php the_title( '<h1 class="entry-title entry-home" id="pd-2020">', '</h1>' ); ?>
 						
 				</header><!-- .entry-header -->
 					<!--fall PD ALERT-->
