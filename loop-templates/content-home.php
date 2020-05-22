@@ -12,6 +12,29 @@
 					<?php the_title( '<h1 class="entry-title entry-home">', '</h1>' ); ?>
 						
 				</header><!-- .entry-header -->
+					<!--fall PD ALERT-->
+				<div class="row anchor-pad" id="fall-pd">
+					<div class="pd-alert col-md-4" >
+						<h2>Preparing for Fall 2020</h2>
+					</div>
+					<div class="col-md-8" id="fall-2020">
+						<p>If you need assistance in making your Fall 2020 course more flexible (face-to-face, hybrid, or online), we recommend two options:</p>
+						<ul>
+							<li><a href="https://altlab.vcu.edu/facilitated-courses/">Designing Online@VCU Course</a> (eight-week)</li>
+							<li><a href="https://altlab.vcu.edu/design-instruction/">Flexible Design Services</a> (six-week) with <a href="https://altlab.vcu.edu/facilitated-courses/">Teaching Online@VCU Course</a> (four-week)</li>
+						</ul>
+						<p>If the course you plan to teach in Fall 2020 already exists online, we recommend:</p>
+						<ul>
+							<li><a href="https://altlab.vcu.edu/facilitated-courses/">Teaching Online@VCU</a> Course (four-week)</li>
+						</ul>
+						<p>If you have an online course and have experience in teaching online, we recommend our other resources:</p>
+						<ul>
+							<li><a href="https://altlab.vcu.edu/self-paced-courses/">Self-paced courses</a></li>
+							<li><a href="https://altlab.vcu.edu/faculty-resources/">Faculty Resources</a></li>
+						</ul>
+					</div>
+			    </div>
+				<!--END fall pd ALERT-->
 				<!--REMOTE ALERT-->
 				<div class="row" id="remote-boot">
 					<div class="pd-alert col-md-4" >
