@@ -22,7 +22,8 @@
 					<div class="container chooser">
 						<div class="row">
 							<div class="col-md-12">
-								<p>Whether you're looking to increase your online skills, giving more consideration to flexibility, or trying to prepare for the uncertain future we have the resources to help you succeed.</p>
+							<h3>Need to create a Flexible course?</h3>
+								<p>If you need assistance in making your Fall 2020 course flexible (face-to-face, hybrid, or online), we recommend two options</p>
 									<table class="table">
 										<thead>
 											<tr>
@@ -51,6 +52,29 @@
 
 											</tbody>
 									</table>
+									<h3>Already have an existing Online@VCU course?</h3>
+										<p>If the course you plan to teach in Fall 2020 already exists online, we recommend:</p>
+											<table class="table">
+												<thead>
+													<tr>
+													<th scope="col"></th>
+													<th scope="col">Description</th>
+													<th scope="col">Time</th>
+													<th scope="col">Result</th>
+													</tr>
+												</thead>
+													<tbody>
+														<tr>
+														<th scope="row"><h3>Teaching Online@VCU Course</h3>
+															<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/teaching-onlinevcusum2020" class="btn btn-primary btn-register btn-2020">Register for Teaching Online@VCU</a>
+														</th>
+														<td class="desc">This fully online course helps instructors understand different aspects of online course management, including instructor presence, communication with students, time/work management, and accessibility.</td>
+														<td>6 weeks</td>
+														<td>Online course</td>
+														</tr>
+
+													</tbody>
+											</table>
 							</div>
 						</div>
 					</div>
