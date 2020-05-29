@@ -66,7 +66,7 @@
 													<tbody>
 														<tr>
 														<th scope="row"><h3>Teaching Online@VCU Course</h3>
-															<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/teaching-onlinevcusum2020" class="btn btn-primary btn-register btn-2020">Register for Teaching Online@VCU</a>
+															<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/teaching-onlinevcusum2020" class="btn btn-primary btn-register btn-2020">Register for Teaching Online</a>
 														</th>
 														<td class="desc">This fully online course helps instructors understand different aspects of online course management, including instructor presence, communication with students, time/work management, and accessibility.</td>
 														<td>6 weeks</td>
