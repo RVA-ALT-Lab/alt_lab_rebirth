@@ -23,7 +23,7 @@
 						<div class="row">
 							<div class="col-md-12">
 							<h3>Need to create a Flexible course?</h3>
-								<p>If you need assistance in making your Fall 2020 course flexible (face-to-face, hybrid, or online), we recommend two options</p>
+								<p>If you need assistance in making your Fall 2020 course flexible (face-to-face, hybrid, or online), we recommend two options:</p>
 									<table class="table">
 										<thead>
 											<tr>
