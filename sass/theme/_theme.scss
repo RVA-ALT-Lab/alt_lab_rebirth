@@ -60,6 +60,41 @@ p {
     text-decoration: underline;
 }
 
+.chooser .col-md-2 {
+    background-color: #efefef;
+}
+
+.chooser tbody tr:hover {
+    background-color: #ffb300;
+}
+
+td.desc{
+    max-width: 350px;
+}
+
+.table thead th {
+    font-family: Roboto, sans-serif;
+}
+
+.table td, .table th {
+    font-family: Roboto, sans-serif;
+}
+
+.btn-register {
+    margin: 20px auto;
+    display: block;
+}
+
+.btn-2020 {
+    font-family: Roboto,sans-serif;
+    background: #ffb300;
+    border: 0;
+}
+
+.btn-2020:hover {
+    background: #5a5a5a;
+}
+
 // .special-border h3 {
 //     font-size: 1rem;
 //     color: rgb(0, 0, 0);
@@ -2076,6 +2111,38 @@ blockquote.default {
 //     }
 // }
 
+@media only screen and (max-width: 1200px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr { border: 1px solid #ccc; }
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 200px;
+    margin-left: 100px;
+  }
+  td:before {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    width: 200px;
+    padding-right: 40px;
+    white-space: nowrap;
+    margin-left: -100px;
+  }
+  td:nth-of-type(1):before { content: "Description"; }
+  td:nth-of-type(2):before { content: "Time"; }
+  td:nth-of-type(3):before { content: "Result"; }
+  td:nth-of-type(4):before { content: "";}
+}
+
 @media only screen and (min-width: 768px) {
         .navbar-expand-md>.container, .navbar-expand-md>.container-fluid {
         -ms-flex-wrap: wrap;
@@ -2108,6 +2175,34 @@ blockquote.default {
             margin: 0 auto;
             width: 100px;
             height: auto;
+        }
+
+        .big-menu {
+            display: none;
+        }
+
+        .pd-alert {
+            display: none;
+        }
+
+        #fall-pd {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        #fall-2020 {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .chooser > .row > .col-md-12 {
+            padding-right: 0;
+            padding-left: 0
+        }
+
+        #primary {
+            padding-right: 0;
+            padding-left: 0
         }
 
         .row {

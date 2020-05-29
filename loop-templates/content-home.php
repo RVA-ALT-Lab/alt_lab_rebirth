@@ -19,7 +19,44 @@
 						<img class="fluid" src="https://altlab.vcu.edu/wp-content/themes/alt_lab_rebirth/imgs/forward_arrow.png" alt="Forward arrow icon.">
 					</div>
 					<div class="col-md-8" id="fall-2020">
-						<p>If you need assistance in making your Fall 2020 course flexible (face-to-face, hybrid, or online), we recommend two options:</p>
+					<div class="container chooser">
+						<div class="row">
+							<div class="col-md-12">
+								<p>Whether you're looking to increase your online skills, giving more consideration to flexibility, or trying to prepare for the uncertain future we have the resources to help you succeed.</p>
+									<table class="table">
+										<thead>
+											<tr>
+											<th scope="col"></th>
+											<th scope="col">Description</th>
+											<th scope="col">Time</th>
+											<th scope="col">Result</th>
+											</tr>
+										</thead>
+											<tbody>
+												<tr>
+												<th scope="row"><h3>Designing Online Course</h3>
+													<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/designingonline" class="btn btn-primary btn-register btn-2020">Register for Designing Online</a>
+												</th>
+												<td class="desc">A self-paced and fully-online course to get you prepared to teach in a flexible environment with no requisite knowledge or experience in online teaching practices needed.</td>
+												<td>6 weeks</td>
+												<td>Flexible course</td>
+												</tr>
+												<tr>
+												<th scope="row"><h3>Flexible Design Program</h3>
+													<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/flex" class="btn btn-primary btn-register btn-2020">Register for Flexible Design</a></th>
+												<td class="desc">A highly-interactive experience where you will work with instructional designers and course builders from Online@VCU to design and develop a course to fit your needs for Fall 2020.</td>
+												<td>6 weeks</td>
+												<td>Flexible course</td>
+												</tr>
+
+											</tbody>
+									</table>
+							</div>
+						</div>
+					</div>
+
+
+						<!-- <p>If you need assistance in making your Fall 2020 course flexible (face-to-face, hybrid, or online), we recommend two options:</p>
 						<ul>
 							<li><a href="https://altlab.vcu.edu/facilitated-courses/">Designing Online@VCU Course</a></li>
 							<li><a href="https://altlab.vcu.edu/design-instruction/">Flexible Design Services</a>  </li>							
@@ -32,7 +69,7 @@
 						<ul>
 							<li><a href="https://altlab.vcu.edu/self-paced-courses/">Self-paced courses</a></li>
 							<li><a href="https://altlab.vcu.edu/faculty-resources/">Faculty Resources</a></li>
-						</ul>
+						</ul> -->
 					</div>
 			    </div>
 				<!--END fall pd ALERT-->
@@ -42,7 +79,7 @@
 						<h2>Surviving Remote@VCU Summer Edition</h2>
 					</div>
 					<div class="col-md-8">
-						<p>Surviving Remote@VCU is a two week course tailored for faculty that must move a face-to-face course to emergency remote teaching in response to a crisis like the COVID-19 pandemic. Learn more by clicking on the button below.</p>
+						<p>Surviving Remote@VCU Summer Edition is a two week course tailored for faculty that must move a face-to-face course to emergency remote teaching in response to a crisis like the COVID-19 pandemic. Learn more by clicking on the button below.</p>
 						<a class="btn alt-button" href="https://altlab.vcu.edu/program/surviving-remotevcu/">Surviving Remote@VCU</a> 
 					</div>
 				</div>
@@ -86,7 +123,6 @@
 				<h2 class="home-callout">What are you interested in?</h2>
 			</div>
 		</div>
-			<?php //echo home_topics();?>
 		</div>
 	</div>
 </div> -->
