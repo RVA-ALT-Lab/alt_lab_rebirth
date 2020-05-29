@@ -15,17 +15,18 @@
 					<!--fall PD ALERT-->
 				<div class="row anchor-pad" id="fall-pd">
 					<div class="pd-alert col-md-4" >
-						<h2>Preparing for Fall 2020</h2>
+						<h2>Get Ready for Fall!</h2>
+						<img class="fluid" src="https://altlab.vcu.edu/wp-content/themes/alt_lab_rebirth/imgs/forward_arrow.png" alt="Forward arrow icon.">
 					</div>
 					<div class="col-md-8" id="fall-2020">
-						<p>If you need assistance in making your Fall 2020 course more flexible (face-to-face, hybrid, or online), we recommend two options:</p>
+						<p>If you need assistance in making your Fall 2020 course flexible (face-to-face, hybrid, or online), we recommend two options:</p>
 						<ul>
-							<li><a href="https://altlab.vcu.edu/facilitated-courses/">Designing Online@VCU Course</a> (eight-week)</li>
-							<li><a href="https://altlab.vcu.edu/design-instruction/">Flexible Design Services</a> (six-week) with <a href="https://altlab.vcu.edu/facilitated-courses/">Teaching Online@VCU Course</a> (four-week)</li>
+							<li><a href="https://altlab.vcu.edu/facilitated-courses/">Designing Online@VCU Course</a></li>
+							<li><a href="https://altlab.vcu.edu/design-instruction/">Flexible Design Services</a>  </li>							
 						</ul>
 						<p>If the course you plan to teach in Fall 2020 already exists online, we recommend:</p>
 						<ul>
-							<li><a href="https://altlab.vcu.edu/facilitated-courses/">Teaching Online@VCU</a> Course (four-week)</li>
+							<li><a href="https://altlab.vcu.edu/facilitated-courses/">Teaching Online@VCU</a> Course</li>
 						</ul>
 						<p>If you have an online course and have experience in teaching online, we recommend our other resources:</p>
 						<ul>
@@ -38,7 +39,7 @@
 				<!--REMOTE ALERT-->
 				<div class="row" id="remote-boot">
 					<div class="pd-alert col-md-4" >
-						<h2>Surviving Remote@VCU</h2>
+						<h2>Surviving Remote@VCU Summer Edition</h2>
 					</div>
 					<div class="col-md-8">
 						<p>Surviving Remote@VCU is a two week course tailored for faculty that must move a face-to-face course to emergency remote teaching in response to a crisis like the COVID-19 pandemic. Learn more by clicking on the button below.</p>
