@@ -60,6 +60,10 @@ p {
     text-decoration: underline;
 }
 
+#full-width-page-wrapper {
+    padding-top: 10px;
+}
+
 .chooser .col-md-2 {
     background-color: #efefef;
 }
@@ -2180,6 +2184,10 @@ blockquote.default {
 
         .big-menu {
             display: none;
+        }
+
+        #full-width-page-wrapper {
+            padding-top: 0;
         }
 
         .pd-alert {

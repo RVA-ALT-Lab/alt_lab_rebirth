@@ -39,13 +39,13 @@
 													<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/designingonline" class="btn btn-primary btn-register btn-2020">Register for Designing Online</a>
 												</th>
 												<td class="desc">A self-paced and fully-online course to get you prepared to teach in a flexible environment with no requisite knowledge or experience in online teaching practices needed.</td>
-												<td>6 weeks</td>
+												<td>12-15 hrs</td>
 												<td>Flexible course</td>
 												</tr>
 												<tr>
 												<th scope="row"><h3>Flexible Design Program</h3>
 													<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/flex" class="btn btn-primary btn-register btn-2020">Register for Flexible Design</a></th>
-												<td class="desc">A highly-interactive experience where you will work with instructional designers and course builders from Online@VCU to design and develop a course to fit your needs for Fall 2020.</td>
+												<td class="desc">A highly-interactive online experience where you will work with instructional designers and course builders from Online@VCU to design and develop a course to fit your needs for Fall 2020.</td>
 												<td>6 weeks</td>
 												<td>Flexible course</td>
 												</tr>
@@ -69,7 +69,7 @@
 															<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/teaching-onlinevcusum2020" class="btn btn-primary btn-register btn-2020">Register for Teaching Online</a>
 														</th>
 														<td class="desc">This fully online course helps instructors understand different aspects of online course management, including instructor presence, communication with students, time/work management, and accessibility.</td>
-														<td>6 weeks</td>
+														<td>12-15 hrs</td>
 														<td>Online course</td>
 														</tr>
 
