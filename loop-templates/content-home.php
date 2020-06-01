@@ -14,11 +14,11 @@
 				</header><!-- .entry-header -->
 					<!--fall PD ALERT-->
 				<div class="row anchor-pad" id="fall-pd">
-					<div class="pd-alert col-md-4" >
+					<!-- <div class="pd-alert col-md-4" >
 						<h2>Get Ready for Fall!</h2>
 						<img class="fluid" src="https://altlab.vcu.edu/wp-content/themes/alt_lab_rebirth/imgs/forward_arrow.png" alt="Forward arrow icon.">
-					</div>
-					<div class="col-md-8" id="fall-2020">
+					</div> -->
+					<div class="col-md-12" id="fall-2020">
 					<div class="container chooser">
 						<div class="row">
 							<div class="col-md-12">
@@ -46,7 +46,7 @@
 												<th scope="row"><h3>Flexible Design Program</h3>
 													<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/flex" class="btn btn-primary btn-register btn-2020">Register for Flexible Design</a></th>
 												<td class="desc">A highly-interactive online experience where you will work with instructional designers and course builders from Online@VCU to design and develop a course to fit your needs for Fall 2020.</td>
-												<td>6 weeks</td>
+												<td>12-15 hours consulting and prep work</td>
 												<td>Flexible course</td>
 												</tr>
 
