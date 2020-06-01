@@ -68,9 +68,13 @@ p {
     background-color: #efefef;
 }
 
-.chooser tbody tr:hover {
-    background-color: #ffb300;
+.chooser tbody tr {
+    transition: all .3s;
 }
+
+// .chooser tbody tr:hover {
+//     background-color: #00B3BE;
+// }
 
 td.desc{
     max-width: 350px;

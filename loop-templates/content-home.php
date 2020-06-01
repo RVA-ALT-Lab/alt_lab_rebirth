@@ -46,7 +46,7 @@
 												<th scope="row"><h3>Flexible Design Program</h3>
 													<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/flex" class="btn btn-primary btn-register btn-2020">Register for Flexible Design</a></th>
 												<td class="desc">A highly-interactive online experience where you will work with instructional designers and course builders from Online@VCU to design and develop a course to fit your needs for Fall 2020.</td>
-												<td>12-15 hours consulting and prep work</td>
+												<td>12-15 hours consulting<br>& prep work</td>
 												<td>Flexible course</td>
 												</tr>
 
