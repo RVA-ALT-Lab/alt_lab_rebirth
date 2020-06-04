@@ -38,14 +38,14 @@
 												<th scope="row"><h3>Designing Online Course</h3>
 													<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/designingonline" class="btn btn-primary btn-register btn-2020">Register for Designing Online</a>
 												</th>
-												<td class="desc">A self-paced and fully-online course to get you prepared to teach in a flexible environment with no requisite knowledge or experience in online teaching practices needed.</td>
+												<td class="desc">A self-paced online course where you learn how to design and develop a course for a flexible environment. Instructional Designers from Online@VCU will provide feedback on your course elements as you create them.</td>
 												<td>12-15 hrs of<br>coursework</td>
 												<td>Flexible course</td>
 												</tr>
 												<tr>
 												<th scope="row"><h3>Flexible Design Program</h3>
 													<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/flex" class="btn btn-primary btn-register btn-2020">Register for Flexible Design</a></th>
-												<td class="desc">A highly-interactive online experience where you will work with instructional designers and course builders from Online@VCU to design and develop a course to fit your needs for Fall 2020.</td>
+												<td class="desc">An interactive online program where you work with instructional designers and course builders from Online@VCU to design a course for a flexible environment. Course builders will construct the learning objects and build all the elements of your course.</td>
 												<td>12-15 hours consulting<br>& preparation</td>
 												<td>Flexible course</td>
 												</tr>
@@ -68,7 +68,7 @@
 														<th scope="row"><h3>Teaching Online@VCU Course</h3>
 															<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/teaching-onlinevcusum2020" class="btn btn-primary btn-register btn-2020">Register for Teaching Online</a>
 														</th>
-														<td class="desc">This fully online course helps instructors understand different aspects of online course management, including instructor presence, communication with students, time/work management, and accessibility.</td>
+														<td class="desc">A self-paced online course with that helps instructors understand different aspects of online course management, including instructor presence, communication with students, time/work management, and accessibility.</td>
 														<td>12-15 hrs of<br>coursework</td>
 														<td>Online course</td>
 														</tr>
