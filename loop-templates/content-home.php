@@ -10,7 +10,7 @@
 
 				<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title entry-home" id="pd-2020">', '</h1>' ); ?>
-						
+
 				</header><!-- .entry-header -->
 					<!--fall PD ALERT-->
 				<div class="row anchor-pad" id="fall-pd">
@@ -75,6 +75,31 @@
 
 													</tbody>
 											</table>
+                      <h3>Want to see if your online course is ready?</h3>
+										<p>If you want to evaluate your online course to see if it is ready for Fall 2020, we recommend:</p>
+											<table class="table">
+												<thead>
+													<tr>
+													<th scope="col"></th>
+													<th scope="col">Description</th>
+													<th scope="col">Time</th>
+													<th scope="col">Result</th>
+													</tr>
+												</thead>
+													<tbody>
+														<tr>
+														<th scope="row"><h3>Evaluating Online@VCU Course</h3>
+															<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/evaluating-onlinevcu" class="btn btn-primary btn-register btn-2020">Register for Evaluating Online</a>
+														</th>
+														<td class="desc">Evaluating Online@VCU is a self-paced, facilitated course designed to introduce faculty, department chairs, deans and other stakeholders in online learning to the evaluation process and rubric used at VCU.</td>
+														<td>12-15 hrs of<br>coursework</td>
+														<td>Online course</td>
+														</tr>
+
+													</tbody>
+											</table>
+                      <h4>Looking for the VCU Quality Online Course Rubric?</h4>
+                      <a href="https://rampages.us/facultyresources/vcu-course-evaluation/">Click here to access a copy of the rubric.</a>
 							</div>
 						</div>
 					</div>
@@ -83,7 +108,7 @@
 						<!-- <p>If you need assistance in making your Fall 2020 course flexible (face-to-face, hybrid, or online), we recommend two options:</p>
 						<ul>
 							<li><a href="https://altlab.vcu.edu/facilitated-courses/">Designing Online@VCU Course</a></li>
-							<li><a href="https://altlab.vcu.edu/design-instruction/">Flexible Design Services</a>  </li>							
+							<li><a href="https://altlab.vcu.edu/design-instruction/">Flexible Design Services</a>  </li>
 						</ul>
 						<p>If the course you plan to teach in Fall 2020 already exists online, we recommend:</p>
 						<ul>
@@ -104,15 +129,15 @@
 					</div>
 					<div class="col-md-8">
 						<p>Surviving Remote@VCU Summer Edition is a two week course tailored for faculty that must move a face-to-face course to emergency remote teaching in response to a crisis like the COVID-19 pandemic. Learn more by clicking on the button below.</p>
-						<a class="btn alt-button" href="https://altlab.vcu.edu/program/surviving-remotevcu/">Surviving Remote@VCU</a> 
+						<a class="btn alt-button" href="https://altlab.vcu.edu/program/surviving-remotevcu/">Surviving Remote@VCU</a>
 					</div>
 				</div> -->
 				<!--END REMOTE ALERT-->
 				<div class="row">
-					<div class="entry-content col-md-8">						
+					<div class="entry-content col-md-8">
 
 						<div class="home-description"><?php echo acf_fetch_description_one();?></div>
-						
+
 						<?php the_content(); ?>
 
 						<?php
@@ -166,7 +191,7 @@
 
 			<div class="col-md-8">
 				<h2 class="entry-home interested">How does this work?</h2>
-				<div class="timeline-body">	
+				<div class="timeline-body">
 					<?php how_does_this_work();?>
 				</div>
 			</div>
@@ -182,17 +207,17 @@
 						<div class="col-md-12 quote-box">
 							<div id="carouselExampleControls" class="carousel slide" data-ride="false">
 								  <div class="carousel-inner">
-								  <div class="quote-slogan">Words from VCU Faculty</div>	
-									<? //echo do_shortcode('[quote category="foo"]');?>												
+								  <div class="quote-slogan">Words from VCU Faculty</div>
+									<? //echo do_shortcode('[quote category="foo"]');?>
 								  </div>
-								  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">								   
+								  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 								    <span class="quote-nav left"><i class="fa fa-chevron-left"></i></span>
 								  </a>
 								  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
 								    <span class="quote-nav right"><i class="fa fa-chevron-right"></i></span>
 								  </a>
 								</div>
-						</div>	
+						</div>
  					</div>
 	</div> -->
 <!--end quote-->
@@ -212,11 +237,11 @@
 
 <!--about us-->
 <div class="about-us">
-	<div class="container">		
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2 class="entry-home about">About Us</h2>				
-			</div>						
+				<h2 class="entry-home about">About Us</h2>
+			</div>
 		</div>
 		<div class="row about-us-row">
 			<div class="col-md-6">
@@ -232,7 +257,7 @@
 <!--END about us-->
 <div class="container">
 	<footer class="entry-footer">
-</footer>		
+</footer>
 
 		<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
 
