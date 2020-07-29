@@ -99,7 +99,7 @@
 													</tbody>
 											</table>
                       <h4>Looking for the VCU Quality Online Course Rubric?</h4>
-                      <a href="https://rampages.us/facultyresources/vcu-course-evaluation/">Click here to access a copy of the rubric.</a>
+                      <a href="https://rampages.us/facultyresources/vcu-course-evaluation/vcu-course-rubric-template_may2020/">Click here to access a copy of the rubric.</a>
 							</div>
 						</div>
 					</div>
