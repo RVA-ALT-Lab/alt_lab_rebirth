@@ -109,6 +109,25 @@ acf_add_local_field_group(array(
 	'title' => 'Home',
 	'fields' => array(
 		array(
+			'key' => 'field_5f35271b9c5cb',
+			'label' => 'Primary Message',
+			'name' => 'primary_message',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+			'delay' => 0,
+		),
+		array(
 			'key' => 'field_5b3e76e6f7b54',
 			'label' => 'Description One',
 			'name' => 'description_one',

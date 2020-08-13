@@ -19,106 +19,14 @@
 						<img class="fluid" src="https://altlab.vcu.edu/wp-content/themes/alt_lab_rebirth/imgs/forward_arrow.png" alt="Forward arrow icon.">
 					</div> -->
 					<div class="col-md-12" id="fall-2020">
-					<div class="container chooser">
-						<div class="row">
-							<div class="col-md-12">
-							<h3>Need to create a Flexible course?</h3>
-								<p>If you need assistance in making your Fall 2020 course flexible (face-to-face, hybrid, or online), we recommend two options:</p>
-									<table class="table">
-										<thead>
-											<tr>
-											<th scope="col"></th>
-											<th scope="col">Description</th>
-											<th scope="col">Time</th>
-											<th scope="col">Result</th>
-											</tr>
-										</thead>
-											<tbody>
-												<tr>
-												<th scope="row"><h3>Designing Online Course</h3>
-													<a class="btn btn-primary btn-register btn-2020" href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/designing-onlinevcu---fall-2020">Register for Designing Online</a>
-												</th>
-												<td class="desc">A self-paced online course where you learn how to design and develop a course for a flexible environment. Instructional Designers from Online@VCU will provide feedback on your course elements as you create them.</td>
-												<td>12-15 hrs of<br>coursework</td>
-												<!-- <td>Flexible course</td>
-												</tr>
-												<tr>
-												<th scope="row"><h3>Flexible Design Program</h3>
-													<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/flex" class="btn btn-primary btn-register btn-2020">Register for Flexible Design</a></th>
-												<td class="desc">An interactive online program where you work with instructional designers and course builders from Online@VCU to design a course for a flexible environment. Course builders will construct the learning objects and build all the elements of your course.</td>
-												<td>12-15 hours consulting<br>& preparation</td>
-												<td>Flexible course</td> -->
-												</tr>
-
-											</tbody>
-									</table>
-									<h3>Already have an existing Online@VCU course?</h3>
-										<p>If the course you plan to teach in Fall 2020 already exists online, we recommend:</p>
-											<table class="table">
-												<thead>
-													<tr>
-													<th scope="col"></th>
-													<th scope="col">Description</th>
-													<th scope="col">Time</th>
-													<th scope="col">Result</th>
-													</tr>
-												</thead>
-													<tbody>
-														<tr>
-														<th scope="row"><h3>Teaching Online@VCU Course</h3>
-															<a class="btn btn-primary btn-register btn-2020" href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/teaching-onlinevcu---fall-2020">Register for Teaching Online</a>
-														</th>
-														<td class="desc">A self-paced online course with that helps instructors understand different aspects of online course management, including instructor presence, communication with students, time/work management, and accessibility.</td>
-														<td>12-15 hrs of<br>coursework</td>
-														<td>Online course</td>
-														</tr>
-
-													</tbody>
-											</table>
-											                      <h3>Want to see if your online course is ready?</h3>
-										<p>If you want to evaluate your online course to see if it is ready for Fall 2020, we recommend:</p>
-											<table class="table">
-												<thead>
-													<tr>
-													<th scope="col"></th>
-													<th scope="col">Description</th>
-													<th scope="col">Time</th>
-													<th scope="col">Result</th>
-													</tr>
-												</thead>
-													<tbody>
-														<tr>
-														<th scope="row"><h3>Evaluating Online@VCU Course</h3>
-															<a href="https://virginiacommonwealth.catalog.instructure.com/browse/oavcu/courses/evaluating-onlinevcu" class="btn btn-primary btn-register btn-2020">Register for Evaluating Online</a>
-														</th>
-														<td class="desc">Evaluating Online@VCU is a self-paced, facilitated course designed to introduce faculty, department chairs, deans and other stakeholders in online learning to the evaluation process and rubric used at VCU.</td>
-														<td>12-15 hrs of<br>coursework</td>
-														<td>Online course</td>
-														</tr>
-
-													</tbody>
-											</table>
-                      <h4>Looking for the VCU Quality Online Course Rubric?</h4>
-                      <a class="btn btn-primary btn-register btn-2020" href="https://rampages.us/facultyresources/vcu-course-evaluation/vcu-course-rubric-template_may2020/">Click here to access a copy of the rubric.</a>
+						<div class="container chooser">
+							<div class="row">
+								<div class="col-md-12">
+								<h3>Need to create a Flexible course?</h3>
+									<?php the_field('primary_message');?>
+								</div>
 							</div>
 						</div>
-					</div>
-
-
-						<!-- <p>If you need assistance in making your Fall 2020 course flexible (face-to-face, hybrid, or online), we recommend two options:</p>
-						<ul>
-							<li><a href="https://altlab.vcu.edu/facilitated-courses/">Designing Online@VCU Course</a></li>
-							<li><a href="https://altlab.vcu.edu/design-instruction/">Flexible Design Services</a>  </li>							
-						</ul>
-						<p>If the course you plan to teach in Fall 2020 already exists online, we recommend:</p>
-						<ul>
-							<li><a href="https://altlab.vcu.edu/facilitated-courses/">Teaching Online@VCU</a> Course</li>
-						</ul>
-						<p>If you have an online course and have experience in teaching online, we recommend our other resources:</p>
-						<ul>
-							<li><a href="https://altlab.vcu.edu/self-paced-courses/">Self-paced courses</a></li>
-							<li><a href="https://altlab.vcu.edu/faculty-resources/">Faculty Resources</a></li>
-						</ul> -->
 					</div>
 			    </div>
 				<!--END fall pd ALERT-->
