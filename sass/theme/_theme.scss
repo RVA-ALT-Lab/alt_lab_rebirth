@@ -493,6 +493,95 @@ li.menu-item:hover {
     font-weight: 400;
 }
 
+/*FRONT PAGE COURSE STUFF*/
+.chooser .col-md-6 {
+  margin-top: 10px;
+}
+
+.course-box.card {
+    flex-direction: column;
+}
+
+.chooser .card h3::before {
+  content: "";
+    background-color: #ffb300;
+    display: inline-block;
+    height: 1.1em;
+    margin-bottom: -3px;
+    margin-right: .5rem;
+    margin-left: .25rem;
+    width: .2em;
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg);
+}
+
+.course-box {
+  margin: 15px 15px 45px 0;
+  background: #fff;
+  padding: 50px 30px 20px 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course-prefs {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; 
+  margin-top: 20px;
+}
+
+.course-prefs li {
+   padding: 3px 5px;
+   border-bottom: 1px solid #efefef;
+}
+
+.course-label {
+/*   font-style: italic; */
+  font-weight: 600;
+  min-width: 140px;
+  display: inline-block;
+  text-transform:capitalize;
+  color: #424242;
+}
+
+.evaluation-row {
+  margin: 60px 0;
+}
+
+.btn-2020 {
+  margin-top: auto;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.course-box p {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.checkmark {
+  margin: 10px auto;
+  width: 40%;
+  display: block;
+  border-radius: 50%;
+  border:2px solid #ffb300;
+}
+
+@media (max-width: 768px) {
+  .chooser .col-md-6 {
+   margin-top: 10px;
+  } 
+  
+  .course-label {
+      min-width: 100%;
+  }
+  .btn-2020 {
+    white-space: normal;
+  }
+}
+
 /*********************************
 ARROWS THAT TRACK CURSOR
 *********************************/

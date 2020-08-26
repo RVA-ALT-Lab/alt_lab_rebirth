@@ -18,16 +18,9 @@
 						<h2>Get Ready for Fall!</h2>
 						<img class="fluid" src="https://altlab.vcu.edu/wp-content/themes/alt_lab_rebirth/imgs/forward_arrow.png" alt="Forward arrow icon.">
 					</div> -->
-					<div class="col-md-12" id="fall-2020">
-						<div class="container chooser">
-							<div class="row">
-								<div class="col-md-12">
-								<h3>Need to create a Flexible course?</h3>
-									<?php the_field('primary_message');?>
-								</div>
-							</div>
-						</div>
-					</div>
+					
+					<?php the_field('primary_message');?>
+								
 			    </div>
 				<!--END fall pd ALERT-->
 				<!--REMOTE ALERT-->

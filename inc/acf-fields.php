@@ -112,7 +112,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_5f35271b9c5cb',
 			'label' => 'Primary Message',
 			'name' => 'primary_message',
-			'type' => 'wysiwyg',
+			'type' => 'textarea',
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
