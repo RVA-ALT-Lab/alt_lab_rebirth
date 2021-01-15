@@ -46,9 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
 		<div id="skip-links">
-			<!-- <a href="#main-navigation" tabindex="1">Skip to main navigation</a> -->
 			<a href="#content" tabindex="1">Skip to main content</a>
-			<!-- <a href="#footer" tabindex="3">Skip to footer</a> -->
 		</div>
 		<!-- <a class="skip-link screen-reader-text sr-only" href="#content"><//?php esc_html_e( 'Skip to content', 'understrap' ); ?></a> -->
 	  	<div class="alert-banner">

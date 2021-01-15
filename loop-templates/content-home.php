@@ -84,7 +84,7 @@
 			<div class="col-md-4">
 				<div class="home-side-bar">
 					<span class="side-bar-title">Upcoming</span>
-					<?php echo do_shortcode('[tribe_events_list limit="4"]');?>
+					<?php echo do_shortcode('[tribe_events_list limit="4" title="Events"]');?>
 					<span class="side-bar-title">News</span>
 					<?php echo do_shortcode('[display-posts category="news" include_excerpt="true" include_date="true" excerpt_length="20" posts_per_page="4"]');?>
 				</div>
