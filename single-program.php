@@ -17,7 +17,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 			<main class="site-main" id="main">
 			
-			<h1>Going Online@VCU Certificate Program</h1>
+			<h1>VCU Online Certificate Program</h1>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
