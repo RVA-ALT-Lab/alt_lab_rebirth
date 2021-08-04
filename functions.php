@@ -719,8 +719,8 @@ function show_faculty_service($department){
                       while ( $the_query->have_posts() ) : $the_query->the_post();
                         $html .= '<div class="team-member">';
                         $html .= '<a href="../about-us#'.sanitize_title(get_the_title()).'"><img class="service-team-img" src="' . get_the_post_thumbnail_url(get_the_ID(),'thumbnail') . '" alt="Faculty bio picture for '. get_the_title() . '">';
-                        $html .= '<span class="faculty-service-info">' . get_the_title() . '</span></a>';
-                        $html .= '<a data-toggle="modal" href="#contactModal" data-name="' . get_the_title() . '" data-css="' . basename(get_permalink()) . '" data-person="'.acf_fetch_email().'"><div class="icon mail"></div></a></div>';
+                        $html .= '<span class="faculty-service-info">' . get_the_title() . '</span></a></div>';
+                        // $html .= '<a data-toggle="modal" href="#contactModal" data-name="' . get_the_title() . '" data-css="' . basename(get_permalink()) . '" data-person="'. acf_fetch_email() .'" alt="Faculty bio picture for '. get_the_title() . '"><div class="icon mail"></div></a>';
                       endwhile;
                       $html .= '</div>';
                     endif;
