@@ -54,7 +54,6 @@
     "instruction_placement": "label",
     "hide_on_screen": [
         "permalink",
-        "the_content",
         "excerpt",
         "discussion",
         "comments",
@@ -67,7 +66,7 @@
         "tags",
         "send-trackbacks"
     ],
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1562784875
+    "modified": 1628090966
 }

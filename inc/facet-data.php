@@ -14,7 +14,7 @@
 		<div class="department facet-data col-md-2"><?php project_department();?></div>
 		<div class="design facet-data col-md-2"><?php alt_lab_design_pattern();?></div>
 	<!-- <div class="col-md-2">
-		<a class="btn btn-workshop" data-toggle="collapse" href="#<?php //echo $post->post_name?>" role="button" aria-expanded="false" aria-label="more details about the <?php //the_title(); ?> workshop" aria-controls="collapseExample">+</a>		
+		<a class="btn btn-workshop" data-toggle="collapse" href="#<?php //echo $post->post_name?>" role="button" aria-expanded="false" aria-label="more details about the <?php //the_title(); ?> workshop" aria-controls="collapseExample"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>		
 	</div>
 		<div class="collapse" id="<?php //echo $post->post_name?>">
 		  <div class="card card-body">
