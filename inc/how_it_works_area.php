@@ -27,7 +27,7 @@ function how_does_this_work() { ?>
         <img class="card-img-top" src="https://altlab.vcu.edu/wp-content/themes/alt_lab_rebirth/imgs/hander.svg" alt="Card image cap">
           <div class="card-body">
             <h3 class="card-title">2. You get in touch</h3>
-            <p class="card-text">You can reach out to us in a number of ways; If you prefer to learn as a part of a group, you can <a href="events">attend an upcoming workshop</a>. If you'd prefer a one-on-one consultation, you can <a href="about-us">choose someone with similar interests or relevant skills</a> and reach out to them. If you're still not sure what you need, you can attend <a href="https://altlab.vcu.edu/event/agora-open-office-hours/all/">our open office hours</a>.</p>
+            <p class="card-text">You can reach out to us in a number of ways; If you prefer to learn as a part of a group, you can <a href="events">attend an upcoming workshop</a>. If you'd prefer a one-on-one consultation, you can <a href="about-us">choose someone with similar interests or relevant skills</a> and reach out to them. If you're still not sure what you need, you can attend <a href="https://altlab.vcu.edu/event/virtual-open-office-hours/all/">our open office hours</a>.</p>
           </div>
         </div>
       </div>

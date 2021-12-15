@@ -78,13 +78,13 @@ $venue_address = tribe_get_address();
 <div class="tribe-events-list-event-description tribe-events-content description entry-summary">
 	<?php echo wpautop(get_the_content()); ?>
 
-	<div class="event-review"><a class="aside btn btn-alt" data-toggle="collapse" href="#review" role="button" aria-expanded="false" aria-controls="collapseExample">Review this event</a></div>
+	<!-- <div class="event-review"><a class="aside btn btn-alt" data-toggle="collapse" href="#review" role="button" aria-expanded="false" aria-controls="collapseExample">Review this event</a></div>
 
 	<div class="collapse" id="review">
 		<div class="card card-body">
-			<?php echo do_shortcode('[gravityform id="4" title="false" description="false"]');?>
+			<?php /* echo do_shortcode('[gravityform id="4" title="false" description="false"]');*/ ?>
 		</div>
-	</div>	
+	</div>	 -->
 </div><!-- .tribe-events-list-event-description -->
 <div class="row event-acf-meta">
 	<div class="col-md-6">
@@ -95,9 +95,9 @@ $venue_address = tribe_get_address();
 		<?php echo vcu_examples();?>
 		<?php echo outside_examples();?>
 	</div>
-	<div class="workshop-request">
+	<!-- <div class="workshop-request">
 		<a href="#workshopModal" data-toggle="modal" class="btn btn-alt">Request a workshop</a>				
-	</div>
+	</div> -->
 </div>
 
 <?php

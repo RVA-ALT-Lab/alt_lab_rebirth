@@ -36,6 +36,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 	  })();
 	</script>
 	<!-- End Matomo Code -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RYQM3KCRHG"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-RYQM3KCRHG');
+	</script>
+	<!-- End Google Analytics Code -->
 </head>
 
 <body <?php body_class(); ?>>
@@ -50,8 +60,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 		<!-- <a class="skip-link screen-reader-text sr-only" href="#content"><//?php esc_html_e( 'Skip to content', 'understrap' ); ?></a> -->
 	  	<div class="alert-banner">
-		  <div class="alert-message col-md-12">NEW: Enroll in our <a href="https://vcuonline.catalog.vcu.edu/browse/vcuonlineworkshops/courses/teaching-with-technology-survival-camp-2021">Teaching with Technology Survival Camp</a> running LIVE Aug 17 - 24, 2021</div>
-		  <!-- <div class="alert-message col-md-12">ALERT: In response to COVID-19, we are offering <a href="https://altlab.vcu.edu/#pd-2020">professional and curriculum development to assist faculty.</a></div> -->
+		  <div class="alert-message col-md-12">All Open Office Hours are cancelled until Jan 4th, 2022</div>
+		  <!-- <div class="alert-message col-md-12">NEWS: Check out our new comprehensive <a href="https://vcuonline.catalog.vcu.edu/">Professional Development Programs</a> with VCU Online.</div> -->
 		</div>
 		</div>
 		<nav class="navbar navbar-expand-md" id="the-menu">
