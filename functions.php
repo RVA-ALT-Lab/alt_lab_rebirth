@@ -107,7 +107,18 @@ function alt_lab_scripts() {
 	wp_enqueue_script( 'alt_lab_js', get_template_directory_uri() . '/js/alt-lab.js', array(), '1.1.2', true );
     }
 
-
+//Adds the Options page for ACF to use with Notification bar
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+}
 
 function alt_lab_register_admin_scripts() {
 

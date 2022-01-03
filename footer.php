@@ -79,7 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <a href="https://ts.vcu.edu/cgi-bin/posh.pl?posh_referer=https://altlab.vcu.edu/">View text version</a>
                   </div>
                   <div class="last-update">
-                    Last updated: March 10, 2020
+                    Last updated: January 3rd, 2022
                   </div>
                   <div class="kitchen-sink">
                     <a class="footer-link" href="https://www.vcu.edu/privacy-statement/">Privacy</a> | <a class="footer-link" href="http://accessibility.vcu.edu/">Accessibility</a> | <a class="footer-link" href="mailto:altlab@vcu.edu">Webmaster</a>

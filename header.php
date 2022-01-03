@@ -59,10 +59,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<a href="#content" tabindex="1">Skip to main content</a>
 		</div>
 		<!-- <a class="skip-link screen-reader-text sr-only" href="#content"><//?php esc_html_e( 'Skip to content', 'understrap' ); ?></a> -->
-	  	<div class="alert-banner">
-		  <div class="alert-message col-md-12">All Open Office Hours are cancelled until Jan 4th, 2022</div>
-		  <!-- <div class="alert-message col-md-12">NEWS: Check out our new comprehensive <a href="https://vcuonline.catalog.vcu.edu/">Professional Development Programs</a> with VCU Online.</div> -->
-		</div>
+			<?php
+			$show_notification = get_field('show_notification', 'option');;
+			if($show_notification === true):
+			?>
+				<div class="alert-banner">
+					<div class="alert-message col-md-12">
+						<?php
+						$notification_content = get_field('notification_content', 'option');
+						echo $notification_content;
+						?>
+					</div>
+				</div>
+				<?php endif; ?>
 		</div>
 		<nav class="navbar navbar-expand-md" id="the-menu">
 

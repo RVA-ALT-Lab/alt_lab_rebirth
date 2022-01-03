@@ -71,7 +71,8 @@ p {
     display: flex;
 }
 
-.alert-message {
+.alert-message p {
+    color: white;
     text-align: center;
     line-height: 100px;
     font-family: 'Roboto', sans-serif;
@@ -79,12 +80,12 @@ p {
     font-size: 1.3rem;
     line-height: 1.5;
     text-align: center;
-    padding: 25px 10px 25px 10px;
+    padding: 25px 10px 10px 10px;
 }
 
 .alert-message a {
-    color: white;
     text-decoration: underline;
+    color: white;
 }
 
 #full-width-page-wrapper {
@@ -2391,7 +2392,7 @@ blockquote.default {
             margin: 0 auto;
         }
 
-        .alert-message {
+        .alert-message p {
             font-size: 1rem;
         }
 
