@@ -1066,7 +1066,8 @@ ARROWS THAT TRACK CURSOR
     border: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 0;
+    border-radius: 20px;
+    margin: .5rem;
   }
   
   .card-img-top {
@@ -1364,7 +1365,7 @@ ARROWS THAT TRACK CURSOR
 }
 
 .about-us-description p {
-    font-size: 2em;
+    font-size: 1.4em;
     font-weight: 300;
     padding-top: 0;
     line-height: 1.4em;
@@ -1735,7 +1736,7 @@ img.wp-post-image {
     margin-bottom: 20px;
     padding: 2.2em;
     border: 0;
-    border-radius: 0;
+    border-radius: 20px;
     min-height: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -2419,7 +2420,7 @@ blockquote.default {
         }
 
         .about-us-description p {
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
 
         .workshop-description {
