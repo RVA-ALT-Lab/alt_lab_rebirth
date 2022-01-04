@@ -39,6 +39,33 @@
             "toolbar": "full",
             "media_upload": 0,
             "delay": 0
+        },
+        {
+            "key": "field_61d47b854770a",
+            "label": "Notification Icon",
+            "name": "notification_icon",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "<i class=\"fa fa-exclamation-triangle\" aria-hidden=\"true\"><\/i>": "Alert triangle",
+                "<i class=\"fa fa-bell\" aria-hidden=\"true\"><\/i>": "Bell",
+                "<i class=\"fa fa-bullhorn\" aria-hidden=\"true\"><\/i>": "Bullhorn",
+                "<i class=\"fa fa-newspaper-o\" aria-hidden=\"true\"><\/i>": "News"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -59,5 +86,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1641235897
+    "modified": 1641320789
 }

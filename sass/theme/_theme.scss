@@ -73,7 +73,6 @@ p {
 
 .alert-message p {
     color: white;
-    text-align: center;
     line-height: 100px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -86,6 +85,13 @@ p {
 .alert-message a {
     text-decoration: underline;
     color: white;
+}
+
+.alert-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
 }
 
 #full-width-page-wrapper {

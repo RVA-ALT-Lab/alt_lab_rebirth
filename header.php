@@ -60,15 +60,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 		<!-- <a class="skip-link screen-reader-text sr-only" href="#content"><//?php esc_html_e( 'Skip to content', 'understrap' ); ?></a> -->
 			<?php
-			$show_notification = get_field('show_notification', 'option');;
+			$show_notification = get_field('show_notification', 'option');
 			if($show_notification === true):
 			?>
 				<div class="alert-banner">
-					<div class="alert-message col-md-12">
-						<?php
-						$notification_content = get_field('notification_content', 'option');
-						echo $notification_content;
-						?>
+					<div class="col-md-12">
+						<div class="alert-wrap">
+							<?php
+								$notification_icon = get_field('notification_icon', 'option');
+								echo $notification_icon;
+							?>
+							<span class="alert-message">
+								<?php
+								$notification_content = get_field('notification_content', 'option');
+								echo $notification_content;
+								?>
+							</span>
+						</div>
 					</div>
 				</div>
 				<?php endif; ?>
