@@ -1,0 +1,44 @@
+{
+    "key": "group_5953e8b004dc6",
+    "title": "faculty",
+    "fields": [
+        {
+            "key": "field_5953e8d7c6322",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "Asst. Prof. and stuff like that",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "faculty"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1658852149
+}
